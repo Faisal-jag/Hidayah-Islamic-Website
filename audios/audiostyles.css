@@ -4,7 +4,7 @@ body{
     font-family: 'Roboto', sans-serif;
   }
   #myProgress {
-    width: 400px;
+    width: 360px;
      background-color: #d9d9f2; 
     cursor: pointer;
     border-radius: 10px;
@@ -63,7 +63,7 @@ body{
   
   .player-ctn{
     border-radius: 15px;
-    width: 420px;
+    width: 380px;
     padding: 10px;
     background-color: #373737;
     margin:auto;
