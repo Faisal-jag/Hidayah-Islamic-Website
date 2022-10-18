@@ -155,6 +155,76 @@ function createTrackItem(index,name,duration){
       file:"https://docs.google.com/uc?export=download&id=111RRz8E8YfZ4SLGcmGbsvaLaybbK-Orw",
       duration:"07:09"
     },
+    {
+      name:"S3A1 Direct Command",
+      file:"https://docs.google.com/uc?export=download&id=11L4zgyAsFJNJrakBDBdHaJYuerS5E-H8",
+      duration:"06:06"
+    },
+    {
+      name:"S3A2 Desire as God",
+      file:"https://docs.google.com/uc?export=download&id=11UiyWQGWVyb0dBcSgOffM6h38PT51wyD",
+      duration:"05:11"
+    },
+    {
+      name:"S3A3 Desire-Idols",
+      file:"https://docs.google.com/uc?export=download&id=11XDYP8sXm5OVTfXWkTJbe-TSMK4y6VcT",
+      duration:"00:00"
+    },
+    {
+      name:"S3A4",
+      file:"https://docs.google.com/uc?export=download&id=11YyMVCA11q-yQjzIu3ZEdcbJbuCXHU7b",
+      duration:"06:40"
+    },
+    {
+      name:"S3A5 Desire-La Yahdi",
+      file:"https://docs.google.com/uc?export=download&id=11_0enM_ojaFpsW6Yv7_r6fqeq6m3_dhL",
+      duration:"06:22"
+    },
+    {
+      name:"S3A6 Buzurg-Part 1",
+      file:"https://docs.google.com/uc?export=download&id=11huSjNiqyKYuOYnStOqupeBYb8vkM8n4",
+      duration:"06:03"
+    },
+    {
+      name:"S3A7 Buzurg-Part 2",
+      file:"https://docs.google.com/uc?export=download&id=11jDvztk7ebZ2835A6F0yUbG6Ysboxtq3",
+      duration:"05:02"
+    },
+    {
+      name:"S3A8",
+      file:"https://docs.google.com/uc?export=download&id=11kczu4uiCdXhBYyjujhPTWw_3mBExGQz",
+      duration:"07:07"
+    },
+    {
+      name:"S3A9",
+      file:"https://docs.google.com/uc?export=download&id=11l6BWgMd8xKhg0jjaPpye-LmgN0g0Tnc",
+      duration:"06:06"
+    },
+    {
+      name:"S4A1 Shaytan-Part 1",
+      file:"https://docs.google.com/uc?export=download&id=11qASMVyL-sWBAW_t7kznxTRqwtpbYpSk",
+      duration:"06:14"
+    },
+    {
+      name:"S4A2 Shaytan-Part 2",
+      file:"https://docs.google.com/uc?export=download&id=11rxEYKxcEgS7MJOGdZVHiQaFhmP5z-KX",
+      duration:"05:12"
+    },
+    {
+      name:"S5A1 Eid Ul Adha",
+      file:"https://docs.google.com/uc?export=download&id=11xci23nzHhFcHK_tm11pKNhwFj5YKJG1",
+      duration:"06:18"
+    },
+    {
+      name:"S6A1 ZillHajj",
+      file:"https://docs.google.com/uc?export=download&id=12GXG0ff3RaCWuHF4XVcBYgzC4IjbaE2Q",
+      duration:"14:02"
+    },
+    // {
+    //   name:"S7A2 Dumm Karna Sawal",
+    //   file:"https://docs.google.com/uc?export=download&id=12SacL1880y1yueIn7j3IoxNqX4V3_kdr",
+    //   duration:"05:05"
+    // },
     
     {
       name:"Shafa'at Series - Part 1",
