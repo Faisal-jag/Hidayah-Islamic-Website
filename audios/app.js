@@ -29,6 +29,133 @@ function createTrackItem(index,name,duration){
   }
 
   var listAudio = [
+    
+    {
+      name:"S1A1 Deen Ko Samajh Kar Ikhtiyar Karna Chahiye",
+      file:"https://docs.google.com/uc?export=download&id=109k9Ut0t7HsQAxpCpqkU761tk3LFtNzt",
+      duration:"06:42"
+    },
+    {
+      name:"S1A2 Kufr Bit-Taghut",
+      file:"https://docs.google.com/uc?export=download&id=10B1XHLwUSHdy_ZDqWg1Za3R5T3SO0Z2g",
+      duration:"07:04"
+    },
+    {
+      name:"S1A3 Allah tala ka humare sath jo rishta hai",
+      file:"https://docs.google.com/uc?export=download&id=107sCG6OQeeuwkhrS8Lw_cgLYoiglG3a8",
+      duration:"05:55"
+    },
+    {
+      name:"S1A4 Allah Humara Sarparast Hai",
+      file:"https://docs.google.com/uc?export=download&id=109k9Ut0t7HsQAxpCpqkU761tk3LFtNzt",
+      duration:"05:28"
+    },
+    // {
+    //   name:"S1A5 Namaz Me Topi Sawal?",
+    //   file:"https://docs.google.com/uc?export=download&id=10B1XHLwUSHdy_ZDqWg1Za3R5T3SO0Z2g",
+    //   duration:"04:07"
+    // },
+    // {
+    //   name:"S1A6 kaza e umari sawal?",
+    //   file:"https://docs.google.com/uc?export=download&id=10BqbgPiEDSb0YoNoor2-91CCfINFY3CR",
+    //   duration:"09:43"
+    // },
+    {
+      name:"S1A7",
+      file:"https://docs.google.com/uc?export=download&id=10BrqIwGuJApySFriln_aOUQA4bbHqxMX",
+      duration:"05:07"
+    },
+    {
+      name:"S1A8 Hidayat Kya Hai",
+      file:"https://docs.google.com/uc?export=download&id=10Dl0sbvdTmyv9EOY5QQpG3wnRbn13RgS",
+      duration:"07:36"
+    },
+    {
+      name:"S1A9",
+      file:"https://docs.google.com/uc?export=download&id=10SECOAHfLswGXx6YLPvWipDN0CZ7C7fZ",
+      duration:"03:45"
+    },
+    {
+      name:"S1A10 Akhlaq e Rasoolullah SAW",
+      file:"https://docs.google.com/uc?export=download&id=1-KKUp2oeoiA7ym45f0dzMfoE_1MUqZs8",
+      duration:"07:38"
+    },
+    {
+      name:"S1A11 Allah Zabardasti Nahi Karta",
+      file:"https://docs.google.com/uc?export=download&id=1-NrPIriJ_LOKrQRg30y4lmXisRsKX_Np",
+      duration:"03:30"
+    },
+    {
+      name:"S1A12 Hidayat Allah Ke Hath Hai",
+      file:"https://docs.google.com/uc?export=download&id=1-_NRApO2-qbUWf14hwIkdnQm_PIS5eWA",
+      duration:"06:25"
+    },
+    {
+      name:"S1A13 Basaa'ir",
+      file:"https://docs.google.com/uc?export=download&id=1-gHDgPYnkSb8JDbYdp69rrt-46lopgOj",
+      duration:"04:38"
+    },
+    {
+      name:"S1A14 Quran 10:108",
+      file:"https://docs.google.com/uc?export=download&id=1-glefmprMs73klPOe9PdNVyPAoVrCGjc",
+      duration:"04:23"
+    },
+    {
+      name:"S1A15",
+      file:"https://docs.google.com/uc?export=download&id=1-r-ErTlpN-_N_TehDmK99CVT9NFz8Ldp",
+      duration:"07:08"
+    },
+    {
+      name:"S1A16 Haram & Halal",
+      file:"https://docs.google.com/uc?export=download&id=1-zybftKUwumeH_fu9r5HdqB_NeLBRTFa",
+      duration:"08:50"
+    },
+    {
+      name:"S1A17 Takwini",
+      file:"https://docs.google.com/uc?export=download&id=10-Cj3IHCociyFEnEthI-jYKQzMJI8lTz",
+      duration:"04:17"
+    },
+    {
+      name:"S2A1 Fitrat Quran 30:30",
+      file:"https://docs.google.com/uc?export=download&id=10_tZYm8lNc5zIcGqMx-MFKkKucHY6g31",
+      duration:"06:21"
+    },
+    {
+      name:"S2A2 Be Aql, Gafil",
+      file:"https://docs.google.com/uc?export=download&id=10fWQ4f5KQMBSCpnqhiqJsaexBV4nJmWy",
+      duration:"05:12"
+    },
+    {
+      name:"S2A3 Shaytan",
+      file:"https://docs.google.com/uc?export=download&id=10kXyJ1QyVzC-Mwhbh4zDlebFWlQfuR82",
+      duration:"06:54"
+    },
+    {
+      name:"S2A4 Quran4:119",
+      file:"https://docs.google.com/uc?export=download&id=10tbOxrf7qOezJR90oyhPnGOpZG3gmjHt",
+      duration:"05:26"
+    },
+    {
+      name:"S2A5 Quran 4:119 Detail",
+      file:"https://docs.google.com/uc?export=download&id=10trMomScoiYip5nv87QPPawsndDvByLs",
+      duration:"06:36"
+    },
+    {
+      name:"S2A6 Fitrat Ki Pehchan",
+      file:"https://docs.google.com/uc?export=download&id=10wjfJmjjmCu2hrfbaHgLrzxK5iD0qHi-",
+      duration:"06:38"
+    },
+    {
+      name:"S2A7 Creation & Cause",
+      file:"https://docs.google.com/uc?export=download&id=111RRz8E8YfZ4SLGcmGbsvaLaybbK-Orw",
+      duration:"06:21"
+    },
+    {
+      name:"S2A8 Ibaadat",
+      file:"https://docs.google.com/uc?export=download&id=111RRz8E8YfZ4SLGcmGbsvaLaybbK-Orw",
+      duration:"07:09"
+    },
+    
     {
       name:"Shafa'at Series - Part 1",
       file:"https://docs.google.com/uc?export=download&id=1MMwBOcNGyGhL088tVqZLQVYSNNQ_x6o3",
