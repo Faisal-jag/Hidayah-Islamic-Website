@@ -1,0 +1,64 @@
+
+
+body{
+    background-color: lightgray;
+}
+#logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+}
+
+
+
+audio{
+    width: 500px;
+}
+
+#topheader{
+    /* background-color: lightslategray; */
+    border-radius: 42px;
+   
+}
+#toplogo{
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    background-color: rgba(151, 246, 154, 0.87);
+    
+    /* width: 100%; */
+}
+#toplogo a span{
+    font-weight: bolder;
+}
+nav a{
+    padding: 4px 4px 4px 4px;
+    border-radius: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+nav a:hover{
+    background-color: skyblue;
+}
+
+div h1{
+    text-decoration: underline 4px black;
+
+}
+/* div p{
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 4px 4px 4px 4px;
+} */
+
+
+#playlistlink a{
+    text-decoration: underline;
+    padding: 4px;
+    border-radius: 10px;
+}
+#playlistlink a:hover{
+    background-color: lightgreen;
+}
