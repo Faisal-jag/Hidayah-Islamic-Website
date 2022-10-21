@@ -76,10 +76,11 @@ div h1{
 .course-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    grid-gap: 120px;
-    grid-auto-rows: minmax(120px, auto);
-    grid-auto-columns: minmax(120px, auto);
-    margin: 50px 200px;
+    grid-gap: 60px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: minmax(100px, auto);
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .items{
     font-size: 15px;
