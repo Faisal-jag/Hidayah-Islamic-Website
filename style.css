@@ -56,6 +56,12 @@ nav a:hover{
 .page-box iframe{
     margin: 5px 5px;
     padding: 5px 5px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.page-box iframe:hover{
+    border: 4px solid green;
+    border-radius: 3px;
 }
 /* div p{
     color: black;
