@@ -12,14 +12,16 @@
     <title>Home | Sirat Al Mustaqeem</title>
   </head>
   <body>
-    <header id="topheader" class="text-gray-600 body-font"> 
-      <div id="toplogo"
-      class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+    <header id="topheader" class="text-gray-600 body-font">
+      <div
+        id="toplogo"
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
       >
-      <a href="index.html"
-      class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-          >
-          <img id="logo" src="img/sirat_al_mustaqeem.jpg" alt="logo" /> 
+        <a
+          href="index.html"
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <img id="logo" src="img/sirat_al_mustaqeem.jpg" alt="logo" />
           <span class="ml-3 text-xl">Sirat Al Mustaqeem</span>
         </a>
         <nav
@@ -34,7 +36,8 @@
             >Islamic Courses</a
           >
         </nav>
-        <button id="topbtn"
+        <button
+          id="topbtn"
           class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
         >
           Q&A
@@ -63,7 +66,8 @@
           src="img/sirat_al_mustaqeem.jpg"
         />
         <div class="text-center lg:w-2/3 w-full">
-          <h1 id="home-title"
+          <h1
+            id="home-title"
             class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
           >
             SIRAT AL MUSTAQEEM
@@ -71,33 +75,152 @@
           <h1
             class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
           >
-          اِهۡدِنَا الصِّرَاطَ الۡمُسۡتَقِيۡمَۙ
+            اِهۡدِنَا الصِّرَاطَ الۡمُسۡتَقِيۡمَۙ
           </h1>
-          <p class="mb-8 leading-relaxed">
-            Direct us on to the Straight Way
-          </p>
+          <p class="mb-8 leading-relaxed">Direct us on to the Straight Way</p>
         </div>
       </div>
     </section>
-    
+
     <section>
+      <!-- hadith search bar start -->
+      <div
+        class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-center"
+      >
+        <div class="relative sm:w-30 w-20 sm:mr-4 mr-2">
+          <label for="footer-field" class="leading-7 text-sm text-gray-600"
+            >Enter Surah Number :</label
+          >
+          <br />
+          <input
+            type="text"
+            id="surah"
+            name="footer-field"
+            placeholder="Surah"
+            class="w-20 bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-black-700 font-bold py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          />
+        </div>
+        <div class="relative sm:w-30 w-20 sm:mr-4 mr-2">
+          <label for="footer-field" class="leading-7 text-sm text-gray-600"
+            >Enter Ayah Number :</label
+          >
+          <br />
+          <input
+            type="text"
+            id="ayah"
+            name="footer-field"
+            placeholder="ayah"
+            class="w-20 bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-black-700 font-bold py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+          />
+        </div>
+        <button
+          onclick="myfunc()"
+          class="inline-flex text-white bg-indigo-500 border-0 py-2 px-2 focus:outline-none hover:bg-green-600 rounded"
+          id="quran"
+        >
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 1024 1024"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <!-- hadith search bar end -->
+      <br />
+      <div class="page-box">
+        <iframe
+          src="https://quran.com/"
+          frameborder="0"
+          width="350px"
+          height="400px"
+          id="qurancom"
+        ></iframe>
+        <iframe
+          src="https://quranx.com/"
+          frameborder="0"
+          width="350px"
+          height="400px"
+          id="quranxcom"
+        ></iframe>
+      </div>
 
       <div class="page-box">
-        <iframe src="https://quran.com" frameborder="0" width="350px" height="400px"></iframe>
-        <iframe src="https://quranx.com" frameborder="0" width="350px" height="400px"></iframe>
-      <iframe src="https://sunnah.com" frameborder="0" width="350px" height="400px"></iframe>
-      <iframe src="https://hadeethenc.com/app/#/list-categories?lang=en" frameborder="0" width="350px" height="400px"></iframe>
-    </div>
-    <div class="page-box">
-      <iframe src="https://isnad.io" frameborder="0" width="1000px" height="600px"></iframe>
+        <!-- hadith search bar start -->
+        <div
+          class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-center"
+        >
+          <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
+            <label for="footer-field" class="leading-7 text-sm text-gray-600"
+              >Search Hadith By Word Or Text</label
+            >
+            <input
+              type="text"
+              id="iptext"
+              name="footer-field"
+              placeholder="Enter Text Here"
+              class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-black-700 font-bold py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            />
+          </div>
+          <button
+            onclick="mytextfunc()"
+            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-2 focus:outline-none hover:bg-green-600 rounded"
+            id="hadith"
+          >
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 1024 1024"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <!-- hadith search bar end -->
 
-    </div>
-  </section>
+        <div>
+          <iframe
+            src="https://sunnah.com/"
+            frameborder="0"
+            width="350px"
+            height="400px"
+            id="sunnah"
+          ></iframe>
+        </div>
 
+        <iframe
+          src="https://isnad.io/"
+          frameborder="0"
+          width="1000px"
+          height="600px"
+          id="isnad"
+        ></iframe>
+      </div>
 
+      <div class="page-box">
+        <iframe
+          src="https://hadeethenc.com/app/#/list-categories?lang=en"
+          frameborder="0"
+          width="350px"
+          height="400px"
+        ></iframe>
+      </div>
+    </section>
 
-
-<hr>
+    <hr />
     <footer class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
@@ -109,10 +232,18 @@
             </h2>
             <nav class="list-none mb-10">
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://theislam360.com">Islam 360</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://theislam360.com"
+                  >Islam 360</a
+                >
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://islamoneapp.github.io">Islam One</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://islamoneapp.github.io"
+                  >Islam One</a
+                >
               </li>
               <li>
                 <a class="text-gray-600 hover:text-gray-800">Third Link</a>
@@ -130,16 +261,32 @@
             </h2>
             <nav class="list-none mb-10">
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://quran.com">Quran.com</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://quran.com"
+                  >Quran.com</a
+                >
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://quranx.com">QuranX.com</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://quranx.com"
+                  >QuranX.com</a
+                >
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://sunnah.com">Sunnah.com</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://sunnah.com"
+                  >Sunnah.com</a
+                >
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://isnad.io">Isnad.io</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://isnad.io"
+                  >Isnad.io</a
+                >
               </li>
             </nav>
           </div>
@@ -151,10 +298,18 @@
             </h2>
             <nav class="list-none mb-10">
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://sites.google.com/view/sarfgenerator/home">Sarf Generator</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://sites.google.com/view/sarfgenerator/home"
+                  >Sarf Generator</a
+                >
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://www.quransarf.com">Sarf Generator</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://www.quransarf.com"
+                  >Sarf Generator</a
+                >
               </li>
               <li>
                 <a class="text-gray-600 hover:text-gray-800">Third Link</a>
@@ -164,7 +319,7 @@
               </li>
             </nav>
           </div>
-          
+
           <div class="lg:w-1/6 md:w-1/2 w-full px-4">
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
@@ -305,7 +460,33 @@
       </div>
     </footer>
 
+    <!-- search option script start -->
+    <script type="text/javascript">
+      const page1 = document.getElementById("qurancom");
+      const page2 = document.getElementById("quranxcom");
+      const page3 = document.getElementById("sunnah");
+      const page4 = document.getElementById("isnad");
+      function myfunc() {
+        var surah = document.getElementById("surah");
+        var ayah = document.getElementById("ayah");
+        // alert(input.value);
+        page2.src =
+          "https://quranx.com/hadiths/" + surah.value + "." + ayah.value + "";
 
+        page1.src =
+          "https://quran.com/" +
+          surah.value +
+          "?startingVerse=" +
+          ayah.value +
+          "";
+      }
 
+      function mytextfunc() {
+        var iptext = document.getElementById("iptext");
+        page3.src = "https://sunnah.com/search?q=" + iptext.value + "";
+        page4.src = "https://isnad.io/ahadith?query=" + iptext.value + "";
+      }
+    </script>
+    <!-- search option script end -->
   </body>
 </html>
