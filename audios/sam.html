@@ -106,15 +106,35 @@
                 <i id="icon-vol-up" class='fas fa-volume-up'></i>
                 <i id="icon-vol-mute" class='fas fa-volume-mute' style="display: none"></i>
               </div>
-           </div>
+            </div>
            <!-- <a href="tqw.html">home</a> -->
         </div>
         <div class="playlist-ctn"></div>
       </div>
-      <script src=app.js></script>
     </section>
 
+<!-- scroll back to top button -->
+    <!-- Back to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <svg
+        stroke="currentColor"
+        fill="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        height="2em"
+        width="2em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.001,1.993C6.486,1.994,2,6.48,2,11.994c0.001,5.514,4.487,10,10,10c5.515,0,10.001-4.486,10.001-10 S17.515,1.994,12.001,1.993z M12,19.994c-4.41,0-7.999-3.589-8-8c0-4.411,3.589-8,8.001-8.001c4.411,0.001,8,3.59,8,8.001 S16.412,19.994,12,19.994z"
+        ></path>
+        <path
+          d="M12.001 8.001L7.996 12.006 11.001 12.006 11.001 16 13.001 16 13.001 12.006 16.005 12.006z"
+        ></path>
+      </svg>
+    </button>
 
+    <!-- scroll back to top button -->
 
 
 <hr>
@@ -166,7 +186,7 @@
           <div class="lg:w-1/6 md:w-1/2 w-full px-4">
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
-            >
+              >
               Usefull Tools
             </h2>
             <nav class="list-none mb-10">
@@ -218,7 +238,7 @@
                 >Placeholder</label
               >
               <input
-                type="text"
+              type="text"
                 id="footer-field"
                 name="footer-field"
                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -226,7 +246,7 @@
             </div>
             <button
               class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
-            >
+              >
               Button
             </button>
             <p
@@ -239,7 +259,7 @@
           <span
             class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto"
           >
-            <a class="text-gray-500">
+          <a class="text-gray-500">
               <svg
                 fill="currentColor"
                 stroke-linecap="round"
@@ -262,7 +282,7 @@
                 class="w-5 h-5"
                 viewBox="0 0 24 24"
               >
-                <path
+              <path
                   d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
                 ></path>
               </svg>
@@ -276,7 +296,7 @@
                 stroke-width="2"
                 class="w-5 h-5"
                 viewBox="0 0 24 24"
-              >
+                >
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                 <path
                   d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
@@ -285,14 +305,14 @@
             </a>
             <a class="ml-3 text-gray-500">
               <svg
-                fill="currentColor"
+              fill="currentColor"
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="0"
                 class="w-5 h-5"
                 viewBox="0 0 24 24"
-              >
+                >
                 <path
                   stroke="none"
                   d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
@@ -324,5 +344,10 @@
         </div>
       </div>
     </footer>
+
+    <script src=app.js></script>
+
+    <script src="../backtotop.js"></script>
+
   </body>
 </html>
