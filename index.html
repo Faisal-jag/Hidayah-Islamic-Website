@@ -16,22 +16,21 @@
         width: 15px;
       }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #413f3f;
-}
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #413f3f;
+      }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(72, 151, 117);
-}
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(72, 151, 117);
+      }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgb(97, 95, 154);
-}
-/* scrollbar css end */
-
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgb(97, 95, 154);
+      }
+      /* scrollbar css end */
     </style>
     <title>Home | Sirat Al Mustaqeem</title>
   </head>
@@ -107,9 +106,10 @@
     </section>
 
     <section>
-      <!-- hadith search bar start -->
-      <div
-        class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-center"
+      <div>
+        <!-- quran search bar start -->
+        <div
+      class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-center"
       >
         <div class="relative sm:w-30 w-20 sm:mr-4 mr-2">
           <label for="footer-field" class="leading-7 text-sm text-gray-600"
@@ -157,31 +157,34 @@
           </svg>
         </button>
       </div>
-      <!-- hadith search bar end -->
-      <br />
-      <div class="page-box">
-        <iframe
-          src="https://quran.com/"
-          frameborder="0"
-          width="350px"
-          height="400px"
-          id="qurancom"
-        ></iframe>
-        <iframe
-          src="https://quranx.com/"
-          frameborder="0"
-          width="350px"
-          height="400px"
-          id="quranxcom"
-        ></iframe>
-      </div>
+        <!-- quran search bar end -->
+        <!-- width="350px"
+      height="400px" -->
+        <br />
 
-      <div class="page-box">
+        <div class="page-box">
+          <iframe
+            class="responsive-iframe"
+            src="https://quran.com/"
+            frameborder="0"
+            id="qurancom"
+          ></iframe>
+        </div>
+
+        <div class="page-box">
+          <iframe
+            class="responsive-iframe"
+            src="https://quranx.com/"
+            frameborder="0"
+            id="quranxcom"
+          ></iframe>
+        </div>
+
         <!-- hadith search bar start -->
         <div
           class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-center"
         >
-          <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
+          <div class="relative sm:w-64 w-40 sm:mr-4 mr-2 mt-20">
             <label for="footer-field" class="leading-7 text-sm text-gray-600"
               >Search Hadith By Word Or Text</label
             >
@@ -215,32 +218,31 @@
         </div>
         <!-- hadith search bar end -->
 
-        <div>
+        <div class="page-box">
           <iframe
+            class="responsive-iframe"
             src="https://sunnah.com/"
             frameborder="0"
-            width="350px"
-            height="400px"
             id="sunnah"
           ></iframe>
         </div>
 
-        <iframe
-          src="https://isnad.io/"
-          frameborder="0"
-          width="1000px"
-          height="600px"
-          id="isnad"
-        ></iframe>
-      </div>
+        <div class="page-box">
+          <iframe
+            class="responsive-iframe"
+            src="https://isnad.io/"
+            frameborder="0"
+            id="isnad"
+          ></iframe>
+        </div>
 
-      <div class="page-box">
-        <iframe
-          src="https://hadeethenc.com/app/#/list-categories?lang=en"
-          frameborder="0"
-          width="350px"
-          height="400px"
-        ></iframe>
+        <div class="page-box">
+          <iframe
+            class="responsive-iframe"
+            src="https://hadeethenc.com/app/#/list-categories?lang=en"
+            frameborder="0"
+          ></iframe>
+        </div>
       </div>
     </section>
 
