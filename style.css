@@ -49,7 +49,7 @@ nav a:hover{
 
 /* css for responsive-iframe start */
 
-.page-box{
+/* .page-box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +69,7 @@ nav a:hover{
 #qurancom, #quranxcom, #sunnah, #hadithenc{
     width: 400px;
     height: 600px;
-}
+} */
 
 
     /* css for responsive-iframe end */
