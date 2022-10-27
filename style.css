@@ -1,5 +1,5 @@
 
-
+/* 
 body{
     background-color: lightgray;
 }
@@ -11,21 +11,18 @@ body{
 
 
 
-/* audio{
-    width: 500px;
-} */
+
 
 #topheader{
-    /* background-color: lightslategray; */
     border-radius: 42px;
    
-}
-#toplogo{
-    /* border: 2px solid black; */
+} */
+/* #toplogo{
+    
     border-radius: 10px;
     background-color: rgba(151, 246, 154, 0.87);
     
-    /* width: 100%; */
+    
 }
 #toplogo a span{
     font-weight: bolder;
@@ -45,7 +42,7 @@ nav a:hover{
 #home-title{
     text-decoration: underline 4px black;
     
-}
+} */
 
 /* css for responsive-iframe start */
 
