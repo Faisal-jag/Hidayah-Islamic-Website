@@ -5,56 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../style.css" />
     <title>Yousuf A.S Series | Sirat Al Mustaqeem</title>
   </head>
-  <body>
-    <header id="topheader" class="text-gray-600 body-font">
-      <div
-        id="toplogo"
-        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
-      >
-        <a
-          href="../index.html"
-          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-        >
-          <img id="logo" src="../img/sirat_al_mustaqeem.jpg" alt="logo" />
-          <span class="ml-3 text-xl">Sirat Al Mustaqeem</span>
+  <body class="p-3 m-0 border-0 bd-example bg-secondary">
+    <!-- Navbar Start -->
+
+    <nav class="navbar navbar-expand-lg bg-dark rounded">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            src="../img/sirat_al_mustaqeem.jpg"
+            alt="Bootstrap"
+            width="75"
+            height="75"
+            class="rounded"
+          />
+          <span class="text-white bg-dark font-weight-bold"
+            >Sirat Al Mustaqeem</span
+          >
         </a>
-        <nav
-          class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
-        >
-          <a href="../audio.html" class="mr-10 hover:text-gray-900">Audio</a>
-          <a href="../pdf.html" class="mr-10 hover:text-gray-900">PDF</a>
-          <a href="../series.html" class="mr-10 hover:text-gray-900"
-            >Islamic Videos</a
-          >
-          <a href="../course.html" class="mr-10 hover:text-gray-900"
-            >Islamic Courses</a
-          >
-        </nav>
         <button
-          id="topbtn"
-          class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+          class="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          Q&A
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-4 h-4 ml-1"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item px-2 mx-2">
+              <a
+                class="nav-link align-center active text-white bg-dark"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav-link align-center text-white bg-dark"
+                href="../pdf.html"
+                >PDF</a
+              >
+            </li>
+            <li class="nav-item px-2 mx-2">
+              <a
+                class="nav-link align-center text-white bg-dark"
+                href="../series.html"
+                >Video</a
+              >
+            </li>
+            <li class="nav-item px-2 mx-2">
+              <a
+                class="nav-link align-center text-white bg-dark"
+                href="../course.html"
+                >Courses</a
+              >
+            </li>
+            <li class="nav-item px-2 mx-2 text-white bg-dark dropdown">
+              <a
+                class="nav-link align-center text-white bg-dark dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Audio
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../audios/sam.html"
+                    >Sirat Al Mustaqeem</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../audios/abb.html"
+                    >Ali Baag Bijapur</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../audios/abh.html"
+                    >Ali Baag Hospest</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../audios/tqw.html"
+                    >Taqwa (Only For Ladies)</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </header>
+    </nav>
+
+    <!-- Navbar End -->
 
     <section class="text-gray-600 body-font">
       <div
