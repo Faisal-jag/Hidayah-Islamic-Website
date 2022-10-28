@@ -13,17 +13,23 @@
       href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="audiostyles.css">
+    <link rel="stylesheet" href="audiostyles.css" />
     <link rel="stylesheet" href="../style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    
-    <script src="https://kit.fontawesome.com/a062562745.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/a062562745.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Sirat Al Mustaqeem Audio | Sirat Al Mustaqeem</title>
   </head>
   <body class="p-3 m-0 border-0 bd-example bg-secondary">
     <!-- Navbar Start -->
 
-    <nav class="navbar navbar-expand-lg bg-dark rounded">
+    <nav class="navbar navbar-expand-lg rounded">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
           <img
@@ -33,9 +39,7 @@
             height="75"
             class="rounded"
           />
-          <span class="text-white bg-dark font-weight-bold"
-            >Sirat Al Mustaqeem</span
-          >
+          <span class="text-white font-weight-bold">Sirat Al Mustaqeem</span>
         </a>
         <button
           class="navbar-toggler bg-white"
@@ -52,36 +56,30 @@
           <ul class="navbar-nav">
             <li class="nav-item px-2 mx-2">
               <a
-                class="nav-link align-center active text-white bg-dark"
+                class="nav-link align-center active text-white"
                 aria-current="page"
                 href="../index.html"
                 >Home</a
               >
             </li>
-            <li>
-              <a
-                class="nav-link align-center text-white bg-dark"
-                href="../pdf.html"
+            <li class="nav-item px-2 mx-2">
+              <a class="nav-link align-center text-white" href="../pdf.html"
                 >PDF</a
               >
             </li>
             <li class="nav-item px-2 mx-2">
-              <a
-                class="nav-link align-center text-white bg-dark"
-                href="../series.html"
+              <a class="nav-link align-center text-white" href="../series.html"
                 >Video</a
               >
             </li>
             <li class="nav-item px-2 mx-2">
-              <a
-                class="nav-link align-center text-white bg-dark"
-                href="../course.html"
+              <a class="nav-link align-center text-white" href="../course.html"
                 >Courses</a
               >
             </li>
-            <li class="nav-item px-2 mx-2 text-white bg-dark dropdown">
+            <li class="nav-item px-2 mx-2 text-white dropdown">
               <a
-                class="nav-link align-center text-white bg-dark dropdown-toggle"
+                class="nav-link align-center text-white dropdown-toggle"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -123,10 +121,10 @@
       <h1>Audio Clips</h1>
       <audio id="myAudio" ontimeupdate="onTimeUpdate()">
         <!-- <source src="audio.ogg" type="audio/ogg"> -->
-        <source id="source-audio" src="" type="audio/mpeg">
+        <source id="source-audio" src="" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
-      
+
       <div class="player-ctn">
         <div class="infos-ctn">
           <div class="timer">000:00</div>
@@ -137,45 +135,49 @@
           <div id="myBar"></div>
         </div>
         <div class="btn-ctn">
-           <div class="btn-action first-btn" onclick="previous()">
-              <div id="btn-faws-back">
-                <i class='fas fa-step-backward'></i>
-              </div>
-           </div>
-           <div class="btn-action" onclick="rewind()">
-              <div id="btn-faws-rewind">
-                <i class='fas fa-backward'></i>
-              </div>
-           </div>
-           <div class="btn-action" onclick="toggleAudio()">
-              <div id="btn-faws-play-pause">
-                <i class='fas fa-play' id="icon-play"></i>
-                <i class='fas fa-pause' id="icon-pause" style="display: none"></i>
-              </div>
-           </div>
-           <div class="btn-play" onclick="forward()">
-              <div id="btn-faws-forward">
-                <i class='fas fa-forward'></i>
-              </div>
-           </div>
-           <div class="btn-action" onclick="next()">
-              <div id="btn-faws-next">
-                <i class='fas fa-step-forward'></i>
-              </div>
-           </div>
-           <div class="btn-mute" id="toggleMute" onclick="toggleMute()">
-              <div id="btn-faws-volume">
-                <i id="icon-vol-up" class='fas fa-volume-up'></i>
-                <i id="icon-vol-mute" class='fas fa-volume-mute' style="display: none"></i>
-              </div>
+          <div class="btn-action first-btn" onclick="previous()">
+            <div id="btn-faws-back">
+              <i class="fas fa-step-backward"></i>
             </div>
-           <!-- <a href="tqw.html">home</a> -->
+          </div>
+          <div class="btn-action" onclick="rewind()">
+            <div id="btn-faws-rewind">
+              <i class="fas fa-backward"></i>
+            </div>
+          </div>
+          <div class="btn-action" onclick="toggleAudio()">
+            <div id="btn-faws-play-pause">
+              <i class="fas fa-play" id="icon-play"></i>
+              <i class="fas fa-pause" id="icon-pause" style="display: none"></i>
+            </div>
+          </div>
+          <div class="btn-play" onclick="forward()">
+            <div id="btn-faws-forward">
+              <i class="fas fa-forward"></i>
+            </div>
+          </div>
+          <div class="btn-action" onclick="next()">
+            <div id="btn-faws-next">
+              <i class="fas fa-step-forward"></i>
+            </div>
+          </div>
+          <div class="btn-mute" id="toggleMute" onclick="toggleMute()">
+            <div id="btn-faws-volume">
+              <i id="icon-vol-up" class="fas fa-volume-up"></i>
+              <i
+                id="icon-vol-mute"
+                class="fas fa-volume-mute"
+                style="display: none"
+              ></i>
+            </div>
+          </div>
+          <!-- <a href="tqw.html">home</a> -->
         </div>
         <div class="playlist-ctn"></div>
       </div>
     </section>
 
-<!-- scroll back to top button -->
+    <!-- scroll back to top button -->
     <!-- Back to top button -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <svg
@@ -198,8 +200,7 @@
 
     <!-- scroll back to top button -->
 
-
-<hr>
+    <hr />
     <footer class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
@@ -211,10 +212,18 @@
             </h2>
             <nav class="list-none mb-10">
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://theislam360.com">Islam 360</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://theislam360.com"
+                  >Islam 360</a
+                >
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://islamoneapp.github.io">Islam One</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://islamoneapp.github.io"
+                  >Islam One</a
+                >
               </li>
               <li>
                 <a class="text-gray-600 hover:text-gray-800">Third Link</a>
@@ -232,31 +241,55 @@
             </h2>
             <nav class="list-none mb-10">
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://quran.com">Quran.com</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://quran.com"
+                  >Quran.com</a
+                >
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://quranx.com">QuranX.com</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://quranx.com"
+                  >QuranX.com</a
+                >
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://sunnah.com">Sunnah.com</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://sunnah.com"
+                  >Sunnah.com</a
+                >
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://isnad.io">Isnad.io</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://isnad.io"
+                  >Isnad.io</a
+                >
               </li>
             </nav>
           </div>
           <div class="lg:w-1/6 md:w-1/2 w-full px-4">
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
-              >
+            >
               Usefull Tools
             </h2>
             <nav class="list-none mb-10">
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://sites.google.com/view/sarfgenerator/home">Sarf Generator</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://sites.google.com/view/sarfgenerator/home"
+                  >Sarf Generator</a
+                >
               </li>
               <li>
-                <a class="text-gray-600 hover:text-gray-800" href="https://www.quransarf.com">Sarf Generator</a>
+                <a
+                  class="text-gray-600 hover:text-gray-800"
+                  href="https://www.quransarf.com"
+                  >Sarf Generator</a
+                >
               </li>
               <li>
                 <a class="text-gray-600 hover:text-gray-800">Third Link</a>
@@ -266,7 +299,7 @@
               </li>
             </nav>
           </div>
-          
+
           <div class="lg:w-1/6 md:w-1/2 w-full px-4">
             <h2
               class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
@@ -300,7 +333,7 @@
                 >Placeholder</label
               >
               <input
-              type="text"
+                type="text"
                 id="footer-field"
                 name="footer-field"
                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
@@ -308,7 +341,7 @@
             </div>
             <button
               class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
-              >
+            >
               Button
             </button>
             <p
@@ -321,7 +354,7 @@
           <span
             class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto"
           >
-          <a class="text-gray-500">
+            <a class="text-gray-500">
               <svg
                 fill="currentColor"
                 stroke-linecap="round"
@@ -344,7 +377,7 @@
                 class="w-5 h-5"
                 viewBox="0 0 24 24"
               >
-              <path
+                <path
                   d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
                 ></path>
               </svg>
@@ -358,7 +391,7 @@
                 stroke-width="2"
                 class="w-5 h-5"
                 viewBox="0 0 24 24"
-                >
+              >
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                 <path
                   d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
@@ -367,14 +400,14 @@
             </a>
             <a class="ml-3 text-gray-500">
               <svg
-              fill="currentColor"
+                fill="currentColor"
                 stroke="currentColor"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="0"
                 class="w-5 h-5"
                 viewBox="0 0 24 24"
-                >
+              >
                 <path
                   stroke="none"
                   d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
@@ -407,7 +440,7 @@
       </div>
     </footer>
 
-    <script src=app.js></script>
+    <script src="app.js"></script>
 
     <script src="../backtotop.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>

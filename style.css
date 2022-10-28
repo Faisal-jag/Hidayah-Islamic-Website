@@ -1,4 +1,18 @@
 
+nav{
+    background-color: rgba(86, 46, 114, 0.645);;
+}
+
+#quran, #hadith{
+    background-color: rgba(76, 0, 130, 0.4);
+    color: white;
+}
+#quran:hover{
+    background-color: rgba(76, 0, 130, 0.8);
+}
+#hadith:hover{
+    background-color: rgba(76, 0, 130, 0.8);
+}
 /* 
 body{
     background-color: lightgray;
