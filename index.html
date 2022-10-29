@@ -146,11 +146,7 @@
             type="text"
             placeholder="Ayah"
           />
-          <button
-            class="btn border-dark"
-            onclick="myfunc()"
-            id="quran"
-          >
+          <button class="btn border-dark" onclick="myfunc()" id="quran">
             <svg
               stroke="currentColor"
               fill="currentColor"
@@ -169,7 +165,9 @@
       </div>
 
       <div class="container-sm">
-        <div class="my-4 ratio ratio-1x1">
+        <div
+          class="my-4 ratio ratio-1x1 border border-4 border-secondary rounded"
+        >
           <iframe
             src="https://quran.com/"
             frameborder="0"
@@ -177,7 +175,9 @@
           ></iframe>
         </div>
 
-        <div class="my-4 ratio ratio-1x1">
+        <div
+          class="my-4 ratio ratio-1x1 border border-4 border-secondary rounded"
+        >
           <iframe
             src="https://quranx.com/"
             frameborder="0"
@@ -196,11 +196,7 @@
             type="text"
             placeholder="Enter Text or Word Here"
           />
-          <button
-            class="btn border-dark"
-            onclick="mytextfunc()"
-            id="hadith"
-          >
+          <button class="btn border-dark" onclick="mytextfunc()" id="hadith">
             <svg
               stroke="currentColor"
               fill="currentColor"
@@ -219,7 +215,9 @@
       </div>
 
       <div class="container-sm">
-        <div class="my-4 ratio ratio-1x1">
+        <div
+          class="my-4 ratio ratio-1x1 border border-4 border-secondary rounded"
+        >
           <iframe
             src="https://sunnah.com/"
             frameborder="0"
@@ -227,12 +225,10 @@
           ></iframe>
         </div>
 
-        <div class="my-4 ratio ratio-1x1">
-          <iframe
-            src="https://isnad.io/"
-            frameborder="0"
-            id="isnad"
-          ></iframe>
+        <div
+          class="my-4 ratio ratio-1x1 border border-4 border-secondary rounded"
+        >
+          <iframe src="https://isnad.io/" frameborder="0" id="isnad"></iframe>
         </div>
       </div>
     </section>
@@ -263,7 +259,7 @@
     <hr />
 
     <!-- Footer -->
-    <footer class="page-footer font-small bg-secondary">
+    <footer class="page-footer font-small rounded" style="background-color:rgba(86, 46, 114, 0.4);">
       <!-- Footer Links -->
       <div class="container text-center text-md-left">
         <!-- Grid row -->
@@ -271,20 +267,36 @@
           <!-- Grid column -->
           <div class="col-md-3 mx-auto">
             <!-- Links -->
-            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+            <h5 class="fw-bold text-uppercase mt-3 mb-4 text-start">
+              Islamic Apps
+            </h5>
 
-            <ul class="list-unstyled">
+            <ul class="list-unstyled fw-bold text-uppercase mt-3 mb-4 text-start">
               <li>
-                <a href="#!">Very long link 1</a>
+                <a
+                class="text-decoration-none text-dark" href="https://theislam360.com" target="_blank">Islam 360</a>
               </li>
               <li>
-                <a href="#!">Very long link 2</a>
+                <a
+                class="text-decoration-none text-dark" href="https://islamoneapp.github.io" target="_blank"
+                  >Islam One</a
+                >
               </li>
               <li>
-                <a href="#!">Very long link 3</a>
+                <a
+                class="text-decoration-none text-dark"
+                  href="https://play.google.com/store/apps/details?id=com.greentech.muslimscholars&hl=en_IN&gl=US"
+                  target="_blank"
+                  >Muslim Scholars</a
+                >
               </li>
               <li>
-                <a href="#!">Very long link 4</a>
+                <a
+                class="text-decoration-none text-dark"
+                  href="https://play.google.com/store/apps/details?id=com.ishaatulhadith&hl=en_IN&gl=US"
+                  target="_blank"
+                  >IshaatulHadith</a
+                >
               </li>
             </ul>
           </div>
@@ -295,20 +307,22 @@
           <!-- Grid column -->
           <div class="col-md-3 mx-auto">
             <!-- Links -->
-            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+            <h5 class="fw-bold text-uppercase mt-3 mb-4 text-start">
+              Usefull Websites
+            </h5>
 
-            <ul class="list-unstyled">
+            <ul class="list-unstyled text-start fw-bold text-uppercase mt-3 mb-4">
               <li>
-                <a href="#!">Link 1</a>
+                <a class="text-decoration-none text-dark" href="https://quran.com" target="_blank">Quran.com</a>
               </li>
               <li>
-                <a href="#!">Link 2</a>
+                <a class="text-decoration-none text-dark" href="https://quranx.com" target="_blank">Quranx.com</a>
               </li>
               <li>
-                <a href="#!">Link 3</a>
+                <a class="text-decoration-none text-dark" href="https://sunnah.com" target="_blank">Sunnah.com</a>
               </li>
               <li>
-                <a href="#!">Link 4</a>
+                <a class="text-decoration-none text-dark" href="https://isnad.io" target="_blank">Isnad.io</a>
               </li>
             </ul>
           </div>
@@ -319,58 +333,28 @@
           <!-- Grid column -->
           <div class="col-md-3 mx-auto">
             <!-- Links -->
-            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+            <h5 class="fw-bold text-uppercase mt-3 mb-4 text-start">Usefull Tools</h5>
 
-            <ul class="list-unstyled">
+            <ul class="list-unstyled fw-bold text-uppercase mt-3 mb-4 text-start">
               <li>
-                <a href="#!">Link 1</a>
+                <a class="text-decoration-none text-dark" href="https://sites.google.com/view/sarfgenerator/home" target="_blank">Sarf Generator</a>
               </li>
               <li>
-                <a href="#!">Link 2</a>
+                <a class="text-decoration-none text-dark" href="https://www.quransarf.com" target="_blank">Sarf Generator</a>
               </li>
-              <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
-                <a href="#!">Link 4</a>
-              </li>
+              
             </ul>
           </div>
           <!-- Grid column -->
 
-          <hr class="clearfix w-100 d-md-none" />
-
-          <!-- Grid column -->
-          <div class="col-md-3 mx-auto">
-            <!-- Links -->
-            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!">Link 1</a>
-              </li>
-              <li>
-                <a href="#!">Link 2</a>
-              </li>
-              <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
-                <a href="#!">Link 4</a>
-              </li>
-            </ul>
-          </div>
-          <!-- Grid column -->
+          
         </div>
         <!-- Grid row -->
       </div>
       <!-- Footer Links -->
 
       <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">
-        © 2020 Copyright:
-        <a href="/"> MDBootstrap.com</a>
-      </div>
+
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
@@ -401,8 +385,8 @@
         page3.src = "https://sunnah.com/search?q=" + iptext.value + "";
         page4.src = "https://isnad.io/ahadith?query=" + iptext.value + "";
       }
-      </script>
-       <!-- script for search bar end -->
+    </script>
+    <!-- script for search bar end -->
     <script src="backtotop.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>

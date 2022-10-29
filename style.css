@@ -1,6 +1,6 @@
 
 nav{
-    background-color: rgba(86, 46, 114, 0.645);;
+    background-color: rgba(86, 46, 114, 0.645);
 }
 
 #quran, #hadith{
@@ -12,6 +12,12 @@ nav{
 }
 #hadith:hover{
     background-color: rgba(76, 0, 130, 0.8);
+}
+
+body{
+    background-color: #ebebeb;
+    background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 /* 
 body{
@@ -140,58 +146,8 @@ nav a:hover{
 }
 
 
-/* css for pdf.html */
-
-#pdf {
-    text-transform: capitalize;
-}
-
-.pdf-section h1{
-    text-align: center;
-    font-size: 20px;
-    font-weight: bolder;
-    padding-top: 20px;
-    text-decoration: underline 3px;
-    
-}
-.pdf-section h2{
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    padding-top: 20px;
-    text-decoration: underline 2px;
-    
-}
-
-.pdf-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 50px;
-}
-
-
-.pdf-items{
-    margin: 10px 10px 40px 10px;
-    /* padding: 10px 10px; */
-    font-size: 7px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: underline;
-    border-radius: 3px;
-    width: 120px;
-    height: 180px;
-}
-.pdf-items img{
-    width: 120px;
-    height: 150px;
-}
-
-.pdf-items:hover{
-    border: 3px solid green;
-    border-radius: 3px;
-}
+/* css for pdf.html start*/
+/* css for pdf.html end*/
 
 
 
