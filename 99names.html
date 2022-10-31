@@ -18,20 +18,83 @@
       rel="stylesheet"
     />
     <style>
-      .quranic,
-      .trans,
-      .meaning,
-      .no,
-      .explain {
+      /* table td{
         font-family: "Noto Naskh Arabic";
-        font-size: 2vw;
-      }
-      .explain {
+        font-weight: bold;
+        font-size: 25px;
+      } */
+      /* .explain {
         border: 2px solid black;
-      }
-      #table {
-        padding: 40px 0px;
-      }
+      } */
+      body{
+	margin:0;
+	padding:20px;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+ margin-top: 20px;
+}
+.table tbody tr{
+  background-color: rgba(209, 249, 232, 0.366);
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid rgb(79, 75, 75);
+  text-align: center;
+  font-family: "Noto Naskh Arabic";
+        font-weight: bold;
+        font-size: 18px;
+
+}
+
+.table th{
+	background-color: rgba(99, 99, 194, 0.656);
+	color:#ffffff;
+}
+
+/* .table tbody tr:nth-child(even){
+	background-color: #f5f5f5;
+} */
+
+/*responsive*/
+
+@media(max-width: 500px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+
     </style>
     <title>Courses | Sirat Al Mustaqeem</title>
   </head>
@@ -130,592 +193,592 @@
 
     <!-- Navbar End -->
 
-    <section>
-      <div class="table-responsive" id="table">
-        <table class="table border border-dark border-4 table align-middle-sm">
+    <section class="container">
+      <div class="table-responsive">
+        <table id="table" class="table">
           <thead>
             <tr class="content">
-              <th class="no">No.</th>
-              <th class="name quranic">Name</th>
-              <th class="trans">Transliteration</th>
-              <th class="meaning">Meaning</th>
-              <th class="explain">Explanation</th>
+              <th class="No :">No.</th>
+              <th class="Name :">Name</th>
+              <th class="Transliteration :">Transliteration</th>
+              <th class="Meaning :">Meaning</th>
+              <th class="Explanation :">Explanation</th>
             </tr>
           </thead>
           <tbody>
             <tr class="content">
-              <td class="no">1</td>
-              <td class="name quranic">الرّحمٰنُ</td>
-              <td class="trans">Ar-Rahmaan</td>
-              <td class="meaning">The Beneficent</td>
-              <td class="explain">
+              <td data-label="No :">1</td>
+              <td data-label="Name :">الرّحمٰنُ</td>
+              <td data-label="Transliteration :">Ar-Rahmaan</td>
+              <td data-label="Meaning :">The Beneficent</td>
+              <td data-label="Explanation :">
                 He who wills goodness and mercy for all His creatures
               </td>
             </tr>
             <tr class="content">
-              <td class="no">2</td>
-              <td class="name quranic">الرَّحِيمُ</td>
-              <td class="trans">Ar-Raheem</td>
-              <td class="meaning">The Merciful</td>
-              <td class="explain">He who acts with extreme kindness</td>
+              <td data-label="No :">2</td>
+              <td data-label="Name :">الرَّحِيمُ</td>
+              <td data-label="Transliteration :">Ar-Raheem</td>
+              <td data-label="Meaning :">The Merciful</td>
+              <td data-label="Explanation :">He who acts with extreme kindness</td>
             </tr>
             <tr class="content">
-              <td class="no">3</td>
-              <td class="name quranic">الْمَلِكُ</td>
-              <td class="trans">Al-Malik</td>
-              <td class="meaning">The Eternal Lord</td>
-              <td class="explain">
+              <td data-label="No :">3</td>
+              <td data-label="Name :">الْمَلِكُ</td>
+              <td data-label="Transliteration :">Al-Malik</td>
+              <td data-label="Meaning :">The Eternal Lord</td>
+              <td data-label="Explanation :">
                 The Sovereign Lord, The One with the complete Dominion, the One
                 Whose Dominion is clear from imperfection
               </td>
             </tr>
             <tr class="content">
-              <td class="no">4</td>
-              <td class="name quranic">الْقُدُّوسُ</td>
-              <td class="trans">Al-Quddus</td>
-              <td class="meaning">The Most Sacred</td>
-              <td class="explain">
+              <td data-label="No :">4</td>
+              <td data-label="Name :">الْقُدُّوسُ</td>
+              <td data-label="Transliteration :">Al-Quddus</td>
+              <td data-label="Meaning :">The Most Sacred</td>
+              <td data-label="Explanation :">
                 The One who is pure from any imperfection and clear from
                 children and adversaries
               </td>
             </tr>
             <tr class="content">
-              <td class="no">5</td>
-              <td class="name quranic">السَّلاَمُ</td>
-              <td class="trans">As-Salam</td>
-              <td class="meaning">The Embodiment of Peace</td>
-              <td class="explain">
+              <td data-label="No :">5</td>
+              <td data-label="Name :">السَّلاَمُ</td>
+              <td data-label="Transliteration :">As-Salam</td>
+              <td data-label="Meaning :">The Embodiment of Peace</td>
+              <td data-label="Explanation :">
                 The One who is free from every imperfection.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">6</td>
-              <td class="name quranic">الْمُؤْمِنُ</td>
-              <td class="trans">Al-Mu’min</td>
-              <td class="meaning">The Infuser of Faith</td>
-              <td class="explain">
+              <td data-label="No :">6</td>
+              <td data-label="Name :">الْمُؤْمِنُ</td>
+              <td data-label="Transliteration :">Al-Mu’min</td>
+              <td data-label="Meaning :">The Infuser of Faith</td>
+              <td data-label="Explanation :">
                 The One who witnessed for Himself that no one is God but Him.
                 And He witnessed for His believers that they are truthful in
                 their belief that no one is God but Him
               </td>
             </tr>
             <tr class="content">
-              <td class="no">7</td>
-              <td class="name quranic">الْمُهَيْمِنُ</td>
-              <td class="trans">Al-Muhaymin</td>
-              <td class="meaning">The Preserver of Safety</td>
-              <td class="explain">
+              <td data-label="No :">7</td>
+              <td data-label="Name :">الْمُهَيْمِنُ</td>
+              <td data-label="Transliteration :">Al-Muhaymin</td>
+              <td data-label="Meaning :">The Preserver of Safety</td>
+              <td data-label="Explanation :">
                 The One who witnesses the saying and deeds of His creatures
               </td>
             </tr>
             <tr class="content">
-              <td class="no">8</td>
-              <td class="name quranic">الْعَزِيزُ</td>
-              <td class="trans">Al-Aziz</td>
-              <td class="meaning">The Mighty One</td>
-              <td class="explain">
+              <td data-label="No :">8</td>
+              <td data-label="Name :">الْعَزِيزُ</td>
+              <td data-label="Transliteration :">Al-Aziz</td>
+              <td data-label="Meaning :">The Mighty One</td>
+              <td data-label="Explanation :">
                 The Strong, The Defeater who is not defeated
               </td>
             </tr>
             <tr class="content">
-              <td class="no">9</td>
-              <td class="name quranic">الْجَبَّارُ</td>
-              <td class="trans">Al-Jabbar</td>
-              <td class="meaning">The Omnipotent One</td>
-              <td class="explain">
+              <td data-label="No :">9</td>
+              <td data-label="Name :">الْجَبَّارُ</td>
+              <td data-label="Transliteration :">Al-Jabbar</td>
+              <td data-label="Meaning :">The Omnipotent One</td>
+              <td data-label="Explanation :">
                 The One that nothing happens in His Dominion except that which
                 He willed
               </td>
             </tr>
             <tr class="content">
-              <td class="no">10</td>
-              <td class="name quranic">الْمُتَكَبِّرُ</td>
-              <td class="trans">Al-Mutakabbir</td>
-              <td class="meaning">The Dominant One</td>
-              <td class="explain">
+              <td data-label="No :">10</td>
+              <td data-label="Name :">الْمُتَكَبِّرُ</td>
+              <td data-label="Transliteration :">Al-Mutakabbir</td>
+              <td data-label="Meaning :">The Dominant One</td>
+              <td data-label="Explanation :">
                 The One who is clear from the attributes of the creatures and
                 from resembling them.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">11</td>
-              <td class="name quranic">الْخَالِقُ</td>
-              <td class="trans">Al-Khaaliq</td>
-              <td class="meaning">The Creator</td>
-              <td class="explain">
+              <td data-label="No :">11</td>
+              <td data-label="Name :">الْخَالِقُ</td>
+              <td data-label="Transliteration :">Al-Khaaliq</td>
+              <td data-label="Meaning :">The Creator</td>
+              <td data-label="Explanation :">
                 The One who brings everything from non-existence to existence
               </td>
             </tr>
             <tr class="content">
-              <td class="no">12</td>
-              <td class="name quranic">الْبَارِئُ</td>
-              <td class="trans">Al-Baari</td>
-              <td class="meaning">The Evolver</td>
-              <td class="explain">
+              <td data-label="No :">12</td>
+              <td data-label="Name :">الْبَارِئُ</td>
+              <td data-label="Transliteration :">Al-Baari</td>
+              <td data-label="Meaning :">The Evolver</td>
+              <td data-label="Explanation :">
                 The Maker, The Creator who has the Power to turn the entities.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">13</td>
-              <td class="name quranic">الْمُصَوِّرُ</td>
-              <td class="trans">Al-Musawwir</td>
-              <td class="meaning">The Flawless Shaper</td>
-              <td class="explain">
+              <td data-label="No :">13</td>
+              <td data-label="Name :">الْمُصَوِّرُ</td>
+              <td data-label="Transliteration :">Al-Musawwir</td>
+              <td data-label="Meaning :">The Flawless Shaper</td>
+              <td data-label="Explanation :">
                 The One who forms His creatures in different pictures.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">14</td>
-              <td class="name quranic">الْغَفَّارُ</td>
-              <td class="trans">Al-Ghaffaar</td>
-              <td class="meaning">The Great Forgiver</td>
-              <td class="explain">
+              <td data-label="No :">14</td>
+              <td data-label="Name :">الْغَفَّارُ</td>
+              <td data-label="Transliteration :">Al-Ghaffaar</td>
+              <td data-label="Meaning :">The Great Forgiver</td>
+              <td data-label="Explanation :">
                 The Forgiver, The One who forgives the sins of His slaves time
                 and time again.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">15</td>
-              <td class="name quranic">الْقَهَّارُ</td>
-              <td class="trans">Al-Qahhaar</td>
-              <td class="meaning">The All-Prevailing One</td>
-              <td class="explain">
+              <td data-label="No :">15</td>
+              <td data-label="Name :">الْقَهَّارُ</td>
+              <td data-label="Transliteration :">Al-Qahhaar</td>
+              <td data-label="Meaning :">The All-Prevailing One</td>
+              <td data-label="Explanation :">
                 The Dominant, The One who has the perfect Power and is not
                 unable over anything.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">16</td>
-              <td class="name quranic">الْوَهَّابُ</td>
-              <td class="trans">Al-Wahhab</td>
-              <td class="meaning">The Supreme Bestower</td>
-              <td class="explain">
+              <td data-label="No :">16</td>
+              <td data-label="Name :">الْوَهَّابُ</td>
+              <td data-label="Transliteration :">Al-Wahhab</td>
+              <td data-label="Meaning :">The Supreme Bestower</td>
+              <td data-label="Explanation :">
                 The One who is Generous in giving plenty without any return. He
                 is everything that benefits whether Halal or Haram.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">17</td>
-              <td class="name quranic">الرَّزَّاقُ</td>
-              <td class="trans">Ar-Razzaq</td>
-              <td class="meaning">The Total Provider</td>
-              <td class="explain">The Sustainer, The Provider.</td>
+              <td data-label="No :">17</td>
+              <td data-label="Name :">الرَّزَّاقُ</td>
+              <td data-label="Transliteration :">Ar-Razzaq</td>
+              <td data-label="Meaning :">The Total Provider</td>
+              <td data-label="Explanation :">The Sustainer, The Provider.</td>
             </tr>
             <tr class="content">
-              <td class="no">18</td>
-              <td class="name quranic">الْفَتَّاحُ</td>
-              <td class="trans">Al-Fattah</td>
-              <td class="meaning">The Supreme Solver</td>
-              <td class="explain">
+              <td data-label="No :">18</td>
+              <td data-label="Name :">الْفَتَّاحُ</td>
+              <td data-label="Transliteration :">Al-Fattah</td>
+              <td data-label="Meaning :">The Supreme Solver</td>
+              <td data-label="Explanation :">
                 The Opener, The Reliever, The Judge, The One who opens for His
                 slaves the closed worldly and religious matters.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">19</td>
-              <td class="name quranic">اَلْعَلِيْمُ</td>
-              <td class="trans">Al-Alim</td>
-              <td class="meaning">The All-Knowing One</td>
-              <td class="explain">
+              <td data-label="No :">19</td>
+              <td data-label="Name :">اَلْعَلِيْمُ</td>
+              <td data-label="Transliteration :">Al-Alim</td>
+              <td data-label="Meaning :">The All-Knowing One</td>
+              <td data-label="Explanation :">
                 The Knowledgeable; The One nothing is absent from His knowledge
               </td>
             </tr>
             <tr class="content">
-              <td class="no">20</td>
-              <td class="name quranic">الْقَابِضُ</td>
-              <td class="trans">Al-Qaabid</td>
-              <td class="meaning">The Restricting One</td>
-              <td class="explain">
+              <td data-label="No :">20</td>
+              <td data-label="Name :">الْقَابِضُ</td>
+              <td data-label="Transliteration :">Al-Qaabid</td>
+              <td data-label="Meaning :">The Restricting One</td>
+              <td data-label="Explanation :">
                 The Constrictor, The Withholder, The One who constricts the
                 sustenance by His wisdom and expands and widens it with His
                 Generosity and Mercy.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">21</td>
-              <td class="name quranic">الْبَاسِطُ</td>
-              <td class="trans">Al-Baasit</td>
-              <td class="meaning">The Extender</td>
-              <td class="explain">
+              <td data-label="No :">21</td>
+              <td data-label="Name :">الْبَاسِطُ</td>
+              <td data-label="Transliteration :">Al-Baasit</td>
+              <td data-label="Meaning :">The Extender</td>
+              <td data-label="Explanation :">
                 The Englarger, The One who constricts the sustenance by His
                 wisdom and expands and widens it with His Generosity and Mercy.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">22</td>
-              <td class="name quranic">الْخَافِضُ</td>
-              <td class="trans">Al-Khaafid</td>
-              <td class="meaning">The Reducer</td>
-              <td class="explain">
+              <td data-label="No :">22</td>
+              <td data-label="Name :">الْخَافِضُ</td>
+              <td data-label="Transliteration :">Al-Khaafid</td>
+              <td data-label="Meaning :">The Reducer</td>
+              <td data-label="Explanation :">
                 The Abaser, The One who lowers whoever He willed by His
                 Destruction and raises whoever He willed by His Endowment.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">23</td>
-              <td class="name quranic">الرَّافِعُ</td>
-              <td class="trans">Ar-Rafi</td>
-              <td class="meaning">The Elevating One</td>
-              <td class="explain">
+              <td data-label="No :">23</td>
+              <td data-label="Name :">الرَّافِعُ</td>
+              <td data-label="Transliteration :">Ar-Rafi</td>
+              <td data-label="Meaning :">The Elevating One</td>
+              <td data-label="Explanation :">
                 The Exalter, The Elevator, The One who lowers whoever He willed
                 by His Destruction and raises whoever He willed by His
                 Endowment.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">24</td>
-              <td class="name quranic">الْمُعِزُّ</td>
-              <td class="trans">Al-Mu’izz</td>
-              <td class="meaning">The Honourer-Bestower</td>
-              <td class="explain">
+              <td data-label="No :">24</td>
+              <td data-label="Name :">الْمُعِزُّ</td>
+              <td data-label="Transliteration :">Al-Mu’izz</td>
+              <td data-label="Meaning :">The Honourer-Bestower</td>
+              <td data-label="Explanation :">
                 He gives esteem to whoever He willed, hence there is no one to
                 degrade Him; And He degrades whoever He willed, hence there is
                 no one to give Him esteem.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">25</td>
-              <td class="name quranic">المُذِلُّ</td>
-              <td class="trans">Al-Muzil</td>
-              <td class="meaning">The Abaser</td>
-              <td class="explain">
+              <td data-label="No :">25</td>
+              <td data-label="Name :">المُذِلُّ</td>
+              <td data-label="Transliteration :">Al-Muzil</td>
+              <td data-label="Meaning :">The Abaser</td>
+              <td data-label="Explanation :">
                 The Dishonourer, The Humiliator, He gives esteem to whoever He
                 willed, hence there is no one to degrade Him; And He degrades
                 whoever He willed, hence there is no one to give Him esteem.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">26</td>
-              <td class="name quranic">السَّمِيعُ</td>
-              <td class="trans">As-Sami’</td>
-              <td class="meaning">The All-Hearer</td>
-              <td class="explain">
+              <td data-label="No :">26</td>
+              <td data-label="Name :">السَّمِيعُ</td>
+              <td data-label="Transliteration :">As-Sami’</td>
+              <td data-label="Meaning :">The All-Hearer</td>
+              <td data-label="Explanation :">
                 The Hearer, The One who Hears all things that are heard by His
                 Eternal Hearing without an ear, instrument or organ.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">27</td>
-              <td class="name quranic">الْبَصِيرُ</td>
-              <td class="trans">Al-Baseer</td>
-              <td class="meaning">The All-Seeing</td>
-              <td class="explain">
+              <td data-label="No :">27</td>
+              <td data-label="Name :">الْبَصِيرُ</td>
+              <td data-label="Transliteration :">Al-Baseer</td>
+              <td data-label="Meaning :">The All-Seeing</td>
+              <td data-label="Explanation :">
                 The All-Noticing, The One who Sees all things that are seen by
                 His Eternal Seeing without a pupil or any other instrument.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">28</td>
-              <td class="name quranic">الْحَكَمُ</td>
-              <td class="trans">Al-Hakam</td>
-              <td class="meaning">The Impartial Judge</td>
-              <td class="explain">
+              <td data-label="No :">28</td>
+              <td data-label="Name :">الْحَكَمُ</td>
+              <td data-label="Transliteration :">Al-Hakam</td>
+              <td data-label="Meaning :">The Impartial Judge</td>
+              <td data-label="Explanation :">
                 The Judge, He is the Ruler and His judgment is His Word.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">29</td>
-              <td class="name quranic">الْعَدْلُ</td>
-              <td class="trans">Al-Adl</td>
-              <td class="meaning">The Embodiment of Justice</td>
-              <td class="explain">
+              <td data-label="No :">29</td>
+              <td data-label="Name :">الْعَدْلُ</td>
+              <td data-label="Transliteration :">Al-Adl</td>
+              <td data-label="Meaning :">The Embodiment of Justice</td>
+              <td data-label="Explanation :">
                 The Just, The One who is entitled to do what He does.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">30</td>
-              <td class="name quranic">اللَّطِيفُ</td>
-              <td class="trans">Al-Lateef</td>
-              <td class="meaning">The Knower of Subtleties</td>
-              <td class="explain">
+              <td data-label="No :">30</td>
+              <td data-label="Name :">اللَّطِيفُ</td>
+              <td data-label="Transliteration :">Al-Lateef</td>
+              <td data-label="Meaning :">The Knower of Subtleties</td>
+              <td data-label="Explanation :">
                 The Subtle One, The Gracious, The One who is kind to His slaves
                 and endows upon them.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">31</td>
-              <td class="name quranic">الْخَبِيرُ</td>
-              <td class="trans">Al-Khabeer</td>
-              <td class="meaning">The All-Aware One</td>
-              <td class="explain">The One who knows the truth of things.</td>
+              <td data-label="No :">31</td>
+              <td data-label="Name :">الْخَبِيرُ</td>
+              <td data-label="Transliteration :">Al-Khabeer</td>
+              <td data-label="Meaning :">The All-Aware One</td>
+              <td data-label="Explanation :">The One who knows the truth of things.</td>
             </tr>
             <tr class="content">
-              <td class="no">32</td>
-              <td class="name quranic">الْحَلِيمُ</td>
-              <td class="trans">Al-Haleem</td>
-              <td class="meaning">The Clement One</td>
-              <td class="explain">
+              <td data-label="No :">32</td>
+              <td data-label="Name :">الْحَلِيمُ</td>
+              <td data-label="Transliteration :">Al-Haleem</td>
+              <td data-label="Meaning :">The Clement One</td>
+              <td data-label="Explanation :">
                 The Forebearing, The One who delays the punishment for those who
                 deserve it and then He might forgive them.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">33</td>
-              <td class="name quranic">الْعَظِيمُ</td>
-              <td class="trans">Al-Azeem</td>
-              <td class="meaning">The Magnificent One</td>
-              <td class="explain">
+              <td data-label="No :">33</td>
+              <td data-label="Name :">الْعَظِيمُ</td>
+              <td data-label="Transliteration :">Al-Azeem</td>
+              <td data-label="Meaning :">The Magnificent One</td>
+              <td data-label="Explanation :">
                 The Great One, The Mighty, The One deserving the attributes of
                 Exaltment, Glory, Extolement, and Purity from all imperfection.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">34</td>
-              <td class="name quranic">الْغَفُورُ</td>
-              <td class="trans">Al-Ghafoor</td>
-              <td class="meaning">The Great Forgiver</td>
-              <td class="explain">
+              <td data-label="No :">34</td>
+              <td data-label="Name :">الْغَفُورُ</td>
+              <td data-label="Transliteration :">Al-Ghafoor</td>
+              <td data-label="Meaning :">The Great Forgiver</td>
+              <td data-label="Explanation :">
                 The All-Forgiving, The Forgiving, The One who forgives a lot.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">35</td>
-              <td class="name quranic">الشَّكُورُ</td>
-              <td class="trans">Ash-Shakoor</td>
-              <td class="meaning">The Acknowledging One</td>
-              <td class="explain">
+              <td data-label="No :">35</td>
+              <td data-label="Name :">الشَّكُورُ</td>
+              <td data-label="Transliteration :">Ash-Shakoor</td>
+              <td data-label="Meaning :">The Acknowledging One</td>
+              <td data-label="Explanation :">
                 The Grateful, The Appreciative, The One who gives a lot of
                 reward for a little obedience.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">36</td>
-              <td class="name quranic">الْعَلِيُّ</td>
-              <td class="trans">Al-Aliyy</td>
-              <td class="meaning">The Sublime One</td>
-              <td class="explain">
+              <td data-label="No :">36</td>
+              <td data-label="Name :">الْعَلِيُّ</td>
+              <td data-label="Transliteration :">Al-Aliyy</td>
+              <td data-label="Meaning :">The Sublime One</td>
+              <td data-label="Explanation :">
                 The Most High, The One who is clear from the attributes of the
                 creatures.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">37</td>
-              <td class="name quranic">الْكَبِيرُ</td>
-              <td class="trans">Al-Kabeer</td>
-              <td class="meaning">The Great One</td>
-              <td class="explain">
+              <td data-label="No :">37</td>
+              <td data-label="Name :">الْكَبِيرُ</td>
+              <td data-label="Transliteration :">Al-Kabeer</td>
+              <td data-label="Meaning :">The Great One</td>
+              <td data-label="Explanation :">
                 The Most Great, The Great, The One who is greater than
                 everything in status.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">38</td>
-              <td class="name quranic">الْحَفِيظُ</td>
-              <td class="trans">Al-Hafiz</td>
-              <td class="meaning">The Guarding One</td>
-              <td class="explain">
+              <td data-label="No :">38</td>
+              <td data-label="Name :">الْحَفِيظُ</td>
+              <td data-label="Transliteration :">Al-Hafiz</td>
+              <td data-label="Meaning :">The Guarding One</td>
+              <td data-label="Explanation :">
                 The Preserver, The Protector, The One who protects whatever and
                 whoever He willed to protect.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">39</td>
-              <td class="name quranic">المُقيِت</td>
-              <td class="trans">Al-Muqeet</td>
-              <td class="meaning">The Sustaining One</td>
-              <td class="explain">
+              <td data-label="No :">39</td>
+              <td data-label="Name :">المُقيِت</td>
+              <td data-label="Transliteration :">Al-Muqeet</td>
+              <td data-label="Meaning :">The Sustaining One</td>
+              <td data-label="Explanation :">
                 The Maintainer, The Guardian, The Feeder, The One who has the
                 Power.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">40</td>
-              <td class="name quranic">الْحسِيبُ</td>
-              <td class="trans">Al-Haseeb</td>
-              <td class="meaning">The Reckoning One</td>
-              <td class="explain">
+              <td data-label="No :">40</td>
+              <td data-label="Name :">الْحسِيبُ</td>
+              <td data-label="Transliteration :">Al-Haseeb</td>
+              <td data-label="Meaning :">The Reckoning One</td>
+              <td data-label="Explanation :">
                 The Reckoner, The One who gives the satisfaction.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">41</td>
-              <td class="name quranic">الْجَلِيلُ</td>
-              <td class="trans">Al-Jaleel</td>
-              <td class="meaning">The Majestic One</td>
-              <td class="explain">
+              <td data-label="No :">41</td>
+              <td data-label="Name :">الْجَلِيلُ</td>
+              <td data-label="Transliteration :">Al-Jaleel</td>
+              <td data-label="Meaning :">The Majestic One</td>
+              <td data-label="Explanation :">
                 The Sublime One, The Beneficent, The One who is attributed with
                 greatness of Power and Glory of status.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">42</td>
-              <td class="name quranic">الْكَرِيمُ</td>
-              <td class="trans">Al-Kareem</td>
-              <td class="meaning">The Bountiful One</td>
-              <td class="explain">
+              <td data-label="No :">42</td>
+              <td data-label="Name :">الْكَرِيمُ</td>
+              <td data-label="Transliteration :">Al-Kareem</td>
+              <td data-label="Meaning :">The Bountiful One</td>
+              <td data-label="Explanation :">
                 The Generous One, The Gracious, The One who is attributed with
                 greatness of Power and Glory of status.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">43</td>
-              <td class="name quranic">الرَّقِيبُ</td>
-              <td class="trans">Ar-Raqeeb</td>
-              <td class="meaning">The Watchful One</td>
-              <td class="explain">
+              <td data-label="No :">43</td>
+              <td data-label="Name :">الرَّقِيبُ</td>
+              <td data-label="Transliteration :">Ar-Raqeeb</td>
+              <td data-label="Meaning :">The Watchful One</td>
+              <td data-label="Explanation :">
                 The Watcher, The One that nothing is absent from Him. Hence it’s
                 meaning is related to the attribute of Knowledge.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">44</td>
-              <td class="name quranic">الْمُجِيبُ</td>
-              <td class="trans">Al-Mujeeb</td>
-              <td class="meaning">The Responding One</td>
-              <td class="explain">
+              <td data-label="No :">44</td>
+              <td data-label="Name :">الْمُجِيبُ</td>
+              <td data-label="Transliteration :">Al-Mujeeb</td>
+              <td data-label="Meaning :">The Responding One</td>
+              <td data-label="Explanation :">
                 The Responsive, The Hearkener, The One who answers the one in
                 need if he asks Him and rescues the yearner if he calls upon
                 Him.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">45</td>
-              <td class="name quranic">الْوَاسِعُ</td>
-              <td class="trans">Al-Waasi’</td>
-              <td class="meaning">The All-Pervading One</td>
-              <td class="explain">
+              <td data-label="No :">45</td>
+              <td data-label="Name :">الْوَاسِعُ</td>
+              <td data-label="Transliteration :">Al-Waasi’</td>
+              <td data-label="Meaning :">The All-Pervading One</td>
+              <td data-label="Explanation :">
                 The Vast, The All-Embracing, The Knowledgeable.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">46</td>
-              <td class="name quranic">الْحَكِيمُ</td>
-              <td class="trans">Al-Hakeem</td>
-              <td class="meaning">The Wise One</td>
-              <td class="explain">
+              <td data-label="No :">46</td>
+              <td data-label="Name :">الْحَكِيمُ</td>
+              <td data-label="Transliteration :">Al-Hakeem</td>
+              <td data-label="Meaning :">The Wise One</td>
+              <td data-label="Explanation :">
                 The Wise, The Judge of Judges, The One who is correct in His
                 doings.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">47</td>
-              <td class="name quranic">الْوَدُودُ</td>
-              <td class="trans">Al-Wadud</td>
-              <td class="meaning">The Loving One</td>
-              <td class="explain">
+              <td data-label="No :">47</td>
+              <td data-label="Name :">الْوَدُودُ</td>
+              <td data-label="Transliteration :">Al-Wadud</td>
+              <td data-label="Meaning :">The Loving One</td>
+              <td data-label="Explanation :">
                 The One who loves His believing slaves and His believing slaves
                 love Him. His love to His slaves is His Will to be merciful to
                 them and praise them
               </td>
             </tr>
             <tr class="content">
-              <td class="no">48</td>
-              <td class="name quranic">الْمَجِيدُ</td>
-              <td class="trans">Al-Majeed</td>
-              <td class="meaning">The Glorious One</td>
-              <td class="explain">
+              <td data-label="No :">48</td>
+              <td data-label="Name :">الْمَجِيدُ</td>
+              <td data-label="Transliteration :">Al-Majeed</td>
+              <td data-label="Meaning :">The Glorious One</td>
+              <td data-label="Explanation :">
                 The Most Glorious One, The One who is with perfect Power, High
                 Status, Compassion, Generosity and Kindness.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">49</td>
-              <td class="name quranic">الْبَاعِثُ</td>
-              <td class="trans">Al-Ba’ith</td>
-              <td class="meaning">The Infuser of New Life</td>
-              <td class="explain">
+              <td data-label="No :">49</td>
+              <td data-label="Name :">الْبَاعِثُ</td>
+              <td data-label="Transliteration :">Al-Ba’ith</td>
+              <td data-label="Meaning :">The Infuser of New Life</td>
+              <td data-label="Explanation :">
                 The Resurrector, The Raiser (from death), The One who resurrects
                 His slaves after death for reward and/or punishment.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">50</td>
-              <td class="name quranic">الشَّهِيدُ</td>
-              <td class="trans">Ash-Shaheed</td>
-              <td class="meaning">The All Observing Witness</td>
-              <td class="explain">
+              <td data-label="No :">50</td>
+              <td data-label="Name :">الشَّهِيدُ</td>
+              <td data-label="Transliteration :">Ash-Shaheed</td>
+              <td data-label="Meaning :">The All Observing Witness</td>
+              <td data-label="Explanation :">
                 The Witness, The One who nothing is absent from Him.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">51</td>
-              <td class="name quranic">الْحَقُّ</td>
-              <td class="trans">Al-Haqq</td>
-              <td class="meaning">The Embodiment of Truth</td>
-              <td class="explain">
+              <td data-label="No :">51</td>
+              <td data-label="Name :">الْحَقُّ</td>
+              <td data-label="Transliteration :">Al-Haqq</td>
+              <td data-label="Meaning :">The Embodiment of Truth</td>
+              <td data-label="Explanation :">
                 The Truth, The True, The One who truly exists.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">52</td>
-              <td class="name quranic">الْوَكِيلُ</td>
-              <td class="trans">Al-Wakeel</td>
-              <td class="meaning">The Universal Trustee</td>
-              <td class="explain">
+              <td data-label="No :">52</td>
+              <td data-label="Name :">الْوَكِيلُ</td>
+              <td data-label="Transliteration :">Al-Wakeel</td>
+              <td data-label="Meaning :">The Universal Trustee</td>
+              <td data-label="Explanation :">
                 The Trustee, The One who gives the satisfaction and is relied
                 upon.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">53</td>
-              <td class="name quranic">الْقَوِيُّ</td>
-              <td class="trans">Al-Qawwiyy</td>
-              <td class="meaning">The Strong One</td>
-              <td class="explain">
+              <td data-label="No :">53</td>
+              <td data-label="Name :">الْقَوِيُّ</td>
+              <td data-label="Transliteration :">Al-Qawwiyy</td>
+              <td data-label="Meaning :">The Strong One</td>
+              <td data-label="Explanation :">
                 The Most Strong, The Strong, The One with the complete Power
               </td>
             </tr>
             <tr class="content">
-              <td class="no">54</td>
-              <td class="name quranic">الْمَتِينُ</td>
-              <td class="trans">Al-Mateen</td>
-              <td class="meaning">The Firm One</td>
-              <td class="explain">
+              <td data-label="No :">54</td>
+              <td data-label="Name :">الْمَتِينُ</td>
+              <td data-label="Transliteration :">Al-Mateen</td>
+              <td data-label="Meaning :">The Firm One</td>
+              <td data-label="Explanation :">
                 The One with extreme Power which is un-interrupted and He does
                 not get tired.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">55</td>
-              <td class="name quranic">الْوَلِيُّ</td>
-              <td class="trans">Al-Waliyy</td>
-              <td class="meaning">The Protecting Associate</td>
-              <td class="explain">The Protecting Friend, The Supporter.</td>
+              <td data-label="No :">55</td>
+              <td data-label="Name :">الْوَلِيُّ</td>
+              <td data-label="Transliteration :">Al-Waliyy</td>
+              <td data-label="Meaning :">The Protecting Associate</td>
+              <td data-label="Explanation :">The Protecting Friend, The Supporter.</td>
             </tr>
             <tr class="content">
-              <td class="no">56</td>
-              <td class="name quranic">الْحَمِيدُ</td>
-              <td class="trans">Al-Hameed</td>
-              <td class="meaning">The Sole-Laudable One</td>
-              <td class="explain">
+              <td data-label="No :">56</td>
+              <td data-label="Name :">الْحَمِيدُ</td>
+              <td data-label="Transliteration :">Al-Hameed</td>
+              <td data-label="Meaning :">The Sole-Laudable One</td>
+              <td data-label="Explanation :">
                 The Praiseworthy, The praised One who deserves to be praised.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">57</td>
-              <td class="name quranic">الْمُحْصِي</td>
-              <td class="trans">Al-Muhsee</td>
-              <td class="meaning">The All-Enumerating One</td>
-              <td class="explain">
+              <td data-label="No :">57</td>
+              <td data-label="Name :">الْمُحْصِي</td>
+              <td data-label="Transliteration :">Al-Muhsee</td>
+              <td data-label="Meaning :">The All-Enumerating One</td>
+              <td data-label="Explanation :">
                 The Counter, The Reckoner, The One who the count of things are
                 known to him.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">58</td>
-              <td class="name quranic">الْمُبْدِئُ</td>
-              <td class="trans">Al-Mubdi</td>
-              <td class="meaning">The Originator</td>
-              <td class="explain">
+              <td data-label="No :">58</td>
+              <td data-label="Name :">الْمُبْدِئُ</td>
+              <td data-label="Transliteration :">Al-Mubdi</td>
+              <td data-label="Meaning :">The Originator</td>
+              <td data-label="Explanation :">
                 The One who started the human being. That is, He created him.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">59</td>
-              <td class="name quranic">الْمُعِيدُ</td>
-              <td class="trans">Al-Mueed</td>
-              <td class="meaning">The Restorer</td>
-              <td class="explain">
+              <td data-label="No :">59</td>
+              <td data-label="Name :">الْمُعِيدُ</td>
+              <td data-label="Transliteration :">Al-Mueed</td>
+              <td data-label="Meaning :">The Restorer</td>
+              <td data-label="Explanation :">
                 The Reproducer, The One who brings back the creatures after
                 death
               </td>
             </tr>
             <tr class="content">
-              <td class="no">60</td>
-              <td class="name quranic">الْمُحْيِي</td>
-              <td class="trans">Al-Muhyi</td>
-              <td class="meaning">The Maintainer of life</td>
-              <td class="explain">
+              <td data-label="No :">60</td>
+              <td data-label="Name :">الْمُحْيِي</td>
+              <td data-label="Transliteration :">Al-Muhyi</td>
+              <td data-label="Meaning :">The Maintainer of life</td>
+              <td data-label="Explanation :">
                 The Restorer, The Giver of Life, The One who took out a living
                 human from semen that does not have a soul. He gives life by
                 giving the souls back to the worn out bodies on the resurrection
@@ -723,140 +786,140 @@
               </td>
             </tr>
             <tr class="content">
-              <td class="no">61</td>
-              <td class="name quranic">اَلْمُمِيتُ</td>
-              <td class="trans">Al-Mumeet</td>
-              <td class="meaning">The Inflictor of Death</td>
-              <td class="explain">
+              <td data-label="No :">61</td>
+              <td data-label="Name :">اَلْمُمِيتُ</td>
+              <td data-label="Transliteration :">Al-Mumeet</td>
+              <td data-label="Meaning :">The Inflictor of Death</td>
+              <td data-label="Explanation :">
                 The Creator of Death, The Destroyer, The One who renders the
                 living dead.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">62</td>
-              <td class="name quranic">الْحَيُّ</td>
-              <td class="trans">Al-Hayyu</td>
-              <td class="meaning">The Eternally Living One</td>
-              <td class="explain">
+              <td data-label="No :">62</td>
+              <td data-label="Name :">الْحَيُّ</td>
+              <td data-label="Transliteration :">Al-Hayyu</td>
+              <td data-label="Meaning :">The Eternally Living One</td>
+              <td data-label="Explanation :">
                 The Alive, The One attributed with a life that is unlike our
                 life and is not that of a combination of soul, flesh or blood.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">63</td>
-              <td class="name quranic">الْقَيُّومُ</td>
-              <td class="trans">Al-Qayyoom</td>
-              <td class="meaning">The Self-Subsisting One</td>
-              <td class="explain">The One who remains and does not end.</td>
+              <td data-label="No :">63</td>
+              <td data-label="Name :">الْقَيُّومُ</td>
+              <td data-label="Transliteration :">Al-Qayyoom</td>
+              <td data-label="Meaning :">The Self-Subsisting One</td>
+              <td data-label="Explanation :">The One who remains and does not end.</td>
             </tr>
             <tr class="content">
-              <td class="no">64</td>
-              <td class="name quranic">الْوَاجِدُ</td>
-              <td class="trans">Al-Waajid</td>
-              <td class="meaning">The Pointing One</td>
-              <td class="explain">
+              <td data-label="No :">64</td>
+              <td data-label="Name :">الْوَاجِدُ</td>
+              <td data-label="Transliteration :">Al-Waajid</td>
+              <td data-label="Meaning :">The Pointing One</td>
+              <td data-label="Explanation :">
                 The Perceiver, The Finder, The Rich who is never poor. Al-Wajd
                 is Richness.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">65</td>
-              <td class="name quranic">الْمَاجِدُ</td>
-              <td class="trans">Al-Maajid</td>
-              <td class="meaning">The All-Noble One</td>
-              <td class="explain">The Glorious, He who is Most Glorious.</td>
+              <td data-label="No :">65</td>
+              <td data-label="Name :">الْمَاجِدُ</td>
+              <td data-label="Transliteration :">Al-Maajid</td>
+              <td data-label="Meaning :">The All-Noble One</td>
+              <td data-label="Explanation :">The Glorious, He who is Most Glorious.</td>
             </tr>
             <tr class="content">
-              <td class="no">66</td>
-              <td class="name quranic">الْواحِدُ</td>
-              <td class="trans">Al-Waahid</td>
-              <td class="meaning">The Only One</td>
-              <td class="explain">
+              <td data-label="No :">66</td>
+              <td data-label="Name :">الْواحِدُ</td>
+              <td data-label="Transliteration :">Al-Waahid</td>
+              <td data-label="Meaning :">The Only One</td>
+              <td data-label="Explanation :">
                 The Unique, The One, The One without a partner
               </td>
             </tr>
             <tr class="content">
-              <td class="no">67</td>
-              <td class="name quranic">اَلاَحَدُ</td>
-              <td class="trans">Al-Ahad</td>
-              <td class="meaning">The Sole One</td>
-              <td class="explain">The One</td>
+              <td data-label="No :">67</td>
+              <td data-label="Name :">اَلاَحَدُ</td>
+              <td data-label="Transliteration :">Al-Ahad</td>
+              <td data-label="Meaning :">The Sole One</td>
+              <td data-label="Explanation :">The One</td>
             </tr>
             <tr class="content">
-              <td class="no">68</td>
-              <td class="name quranic">الصَّمَدُ</td>
-              <td class="trans">As-Samad</td>
-              <td class="meaning">The Supreme Provider</td>
-              <td class="explain">
+              <td data-label="No :">68</td>
+              <td data-label="Name :">الصَّمَدُ</td>
+              <td data-label="Transliteration :">As-Samad</td>
+              <td data-label="Meaning :">The Supreme Provider</td>
+              <td data-label="Explanation :">
                 The Eternal, The Independent, The Master who is relied upon in
                 matters and reverted to in ones needs.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">69</td>
-              <td class="name quranic">الْقَادِرُ</td>
-              <td class="trans">Al-Qaadir</td>
-              <td class="meaning">The Omnipotent One</td>
-              <td class="explain">
+              <td data-label="No :">69</td>
+              <td data-label="Name :">الْقَادِرُ</td>
+              <td data-label="Transliteration :">Al-Qaadir</td>
+              <td data-label="Meaning :">The Omnipotent One</td>
+              <td data-label="Explanation :">
                 The Able, The Capable, The One attributed with Power.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">70</td>
-              <td class="name quranic">الْمُقْتَدِرُ</td>
-              <td class="trans">Al-Muqtadir</td>
-              <td class="meaning">The All Authoritative One</td>
-              <td class="explain">
+              <td data-label="No :">70</td>
+              <td data-label="Name :">الْمُقْتَدِرُ</td>
+              <td data-label="Transliteration :">Al-Muqtadir</td>
+              <td data-label="Meaning :">The All Authoritative One</td>
+              <td data-label="Explanation :">
                 The Powerful, The Dominant, The One with the perfect Power that
                 nothing is withheld from Him.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">71</td>
-              <td class="name quranic">الْمُقَدِّمُ</td>
-              <td class="trans">Al-Muqaddim</td>
-              <td class="meaning">The Expediting One</td>
-              <td class="explain">
+              <td data-label="No :">71</td>
+              <td data-label="Name :">الْمُقَدِّمُ</td>
+              <td data-label="Transliteration :">Al-Muqaddim</td>
+              <td data-label="Meaning :">The Expediting One</td>
+              <td data-label="Explanation :">
                 The Expediter, The Promoter, The One who puts things in their
                 right places. He makes ahead what He wills and delays what He
                 wills.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">72</td>
-              <td class="name quranic">الْمُؤَخِّرُ</td>
-              <td class="trans">Al-Mu’akhkhir</td>
-              <td class="meaning">The Procrastinator</td>
-              <td class="explain">
+              <td data-label="No :">72</td>
+              <td data-label="Name :">الْمُؤَخِّرُ</td>
+              <td data-label="Transliteration :">Al-Mu’akhkhir</td>
+              <td data-label="Meaning :">The Procrastinator</td>
+              <td data-label="Explanation :">
                 The Delayer, the Retarder, The One who puts things in their
                 right places. He makes ahead what He wills and delays what He
                 wills.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">73</td>
-              <td class="name quranic">الأوَّلُ</td>
-              <td class="trans">Al-Awwal</td>
-              <td class="meaning">The Very First</td>
-              <td class="explain">
+              <td data-label="No :">73</td>
+              <td data-label="Name :">الأوَّلُ</td>
+              <td data-label="Transliteration :">Al-Awwal</td>
+              <td data-label="Meaning :">The Very First</td>
+              <td data-label="Explanation :">
                 The First, The One whose Existence is without a beginning.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">74</td>
-              <td class="name quranic">الآخِرُ</td>
-              <td class="trans">Al-Akhir</td>
-              <td class="meaning">The Infinite Last One</td>
-              <td class="explain">
+              <td data-label="No :">74</td>
+              <td data-label="Name :">الآخِرُ</td>
+              <td data-label="Transliteration :">Al-Akhir</td>
+              <td data-label="Meaning :">The Infinite Last One</td>
+              <td data-label="Explanation :">
                 The Last, The One whose Existence is without an end.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">75</td>
-              <td class="name quranic">الظَّاهِرُ</td>
-              <td class="trans">Az-Zaahir</td>
-              <td class="meaning">The Perceptible</td>
-              <td class="explain">
+              <td data-label="No :">75</td>
+              <td data-label="Name :">الظَّاهِرُ</td>
+              <td data-label="Transliteration :">Az-Zaahir</td>
+              <td data-label="Meaning :">The Perceptible</td>
+              <td data-label="Explanation :">
                 The Manifest, The One that nothing is above Him and nothing is
                 underneath Him, hence He exists without a place. He, The
                 Exalted, His Existence is obvious by proofs and He is clear from
@@ -864,11 +927,11 @@
               </td>
             </tr>
             <tr class="content">
-              <td class="no">76</td>
-              <td class="name quranic">الْبَاطِنُ</td>
-              <td class="trans">Al-Baatin</td>
-              <td class="meaning">The Imperceptible</td>
-              <td class="explain">
+              <td data-label="No :">76</td>
+              <td data-label="Name :">الْبَاطِنُ</td>
+              <td data-label="Transliteration :">Al-Baatin</td>
+              <td data-label="Meaning :">The Imperceptible</td>
+              <td data-label="Explanation :">
                 The Hidden, The One that nothing is above Him and nothing is
                 underneath Him, hence He exists without a place. He, The
                 Exalted, His Existence is obvious by proofs and He is clear from
@@ -876,30 +939,30 @@
               </td>
             </tr>
             <tr class="content">
-              <td class="no">77</td>
-              <td class="name quranic">الْوَالِي</td>
-              <td class="trans">Al-Waali</td>
-              <td class="meaning">The Holder of Supreme Authority</td>
-              <td class="explain">
+              <td data-label="No :">77</td>
+              <td data-label="Name :">الْوَالِي</td>
+              <td data-label="Transliteration :">Al-Waali</td>
+              <td data-label="Meaning :">The Holder of Supreme Authority</td>
+              <td data-label="Explanation :">
                 The Governor, The One who owns things and manages them.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">78</td>
-              <td class="name quranic">الْمُتَعَالِي</td>
-              <td class="trans">Al-Muta’aali</td>
-              <td class="meaning">The Extremely Exalted One</td>
-              <td class="explain">
+              <td data-label="No :">78</td>
+              <td data-label="Name :">الْمُتَعَالِي</td>
+              <td data-label="Transliteration :">Al-Muta’aali</td>
+              <td data-label="Meaning :">The Extremely Exalted One</td>
+              <td data-label="Explanation :">
                 The Most Exalted, The High Exalted, The One who is clear from
                 the attributes of the creation.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">79</td>
-              <td class="name quranic">الْبَرُّ</td>
-              <td class="trans">Al-Barr</td>
-              <td class="meaning">The Fountain-Head of Truth</td>
-              <td class="explain">
+              <td data-label="No :">79</td>
+              <td data-label="Name :">الْبَرُّ</td>
+              <td data-label="Transliteration :">Al-Barr</td>
+              <td data-label="Meaning :">The Fountain-Head of Truth</td>
+              <td data-label="Explanation :">
                 The Source of All Goodness, The Righteous, The One who is kind
                 to His creatures, who covered them with His sustenance and
                 specified whoever He willed among them by His support,
@@ -907,142 +970,142 @@
               </td>
             </tr>
             <tr class="content">
-              <td class="no">80</td>
-              <td class="name quranic">التَّوَابُ</td>
-              <td class="trans">At-Tawwaab</td>
-              <td class="meaning">The Ever-Acceptor of Repentance</td>
-              <td class="explain">
+              <td data-label="No :">80</td>
+              <td data-label="Name :">التَّوَابُ</td>
+              <td data-label="Transliteration :">At-Tawwaab</td>
+              <td data-label="Meaning :">The Ever-Acceptor of Repentance</td>
+              <td data-label="Explanation :">
                 The Relenting, The One who grants repentance to whoever He
                 willed among His creatures and accepts his repentance.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">81</td>
-              <td class="name quranic">الْمُنْتَقِمُ</td>
-              <td class="trans">Al-Muntaqim</td>
-              <td class="meaning">The Retaliator</td>
-              <td class="explain">
+              <td data-label="No :">81</td>
+              <td data-label="Name :">الْمُنْتَقِمُ</td>
+              <td data-label="Transliteration :">Al-Muntaqim</td>
+              <td data-label="Meaning :">The Retaliator</td>
+              <td data-label="Explanation :">
                 The Avenger, The One who victoriously prevails over His enemies
                 and punishes them for their sins. It may mean the One who
                 destroys them.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">82</td>
-              <td class="name quranic">العَفُوُّ</td>
-              <td class="trans">Al-Afuwwu</td>
-              <td class="meaning">The Supreme Pardoner</td>
-              <td class="explain">
+              <td data-label="No :">82</td>
+              <td data-label="Name :">العَفُوُّ</td>
+              <td data-label="Transliteration :">Al-Afuwwu</td>
+              <td data-label="Meaning :">The Supreme Pardoner</td>
+              <td data-label="Explanation :">
                 The Forgiver, The One with wide forgiveness.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">83</td>
-              <td class="name quranic">الرَّؤُوفُ</td>
-              <td class="trans">Ar-Ra’oof</td>
-              <td class="meaning">The Benign One</td>
-              <td class="explain">
+              <td data-label="No :">83</td>
+              <td data-label="Name :">الرَّؤُوفُ</td>
+              <td data-label="Transliteration :">Ar-Ra’oof</td>
+              <td data-label="Meaning :">The Benign One</td>
+              <td data-label="Explanation :">
                 The Compassionate, The One with extreme Mercy. The Mercy of
                 Allah is His will to endow upon whoever He willed among His
                 creatures.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">84</td>
-              <td class="name quranic">مَالِكُ الْمُلْكِ</td>
-              <td class="trans">Maalik-ul-Mulk</td>
-              <td class="meaning">The Eternal Possessor of Sovereignty</td>
-              <td class="explain">
+              <td data-label="No :">84</td>
+              <td data-label="Name :">مَالِكُ الْمُلْكِ</td>
+              <td data-label="Transliteration :">Maalik-ul-Mulk</td>
+              <td data-label="Meaning :">The Eternal Possessor of Sovereignty</td>
+              <td data-label="Explanation :">
                 The One who controls the Dominion and gives dominion to whoever
                 He willed.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">85</td>
-              <td class="name quranic">ذُوالْجَلاَلِ وَالإكْرَامِ</td>
-              <td class="trans">Zul-Jalaali-wal-Ikram</td>
-              <td class="meaning">The Possessor of Majesty and Honour</td>
-              <td class="explain">
+              <td data-label="No :">85</td>
+              <td data-label="Name :">ذُوالْجَلاَلِ وَالإكْرَامِ</td>
+              <td data-label="Transliteration :">Zul-Jalaali-wal-Ikram</td>
+              <td data-label="Meaning :">The Possessor of Majesty and Honour</td>
+              <td data-label="Explanation :">
                 The Lord of Majesty and Bounty, The One who deserves to be
                 Exalted and not denied.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">86</td>
-              <td class="name quranic">الْمُقْسِطُ</td>
-              <td class="trans">Al-Muqsit</td>
-              <td class="meaning">The Just One</td>
-              <td class="explain">
+              <td data-label="No :">86</td>
+              <td data-label="Name :">الْمُقْسِطُ</td>
+              <td data-label="Transliteration :">Al-Muqsit</td>
+              <td data-label="Meaning :">The Just One</td>
+              <td data-label="Explanation :">
                 The Equitable, The One who is Just in His judgment.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">87</td>
-              <td class="name quranic">الْجَامِعُ</td>
-              <td class="trans">Al-Jaami’u</td>
-              <td class="meaning">The Assembler of Scattered Creations</td>
-              <td class="explain">
+              <td data-label="No :">87</td>
+              <td data-label="Name :">الْجَامِعُ</td>
+              <td data-label="Transliteration :">Al-Jaami’u</td>
+              <td data-label="Meaning :">The Assembler of Scattered Creations</td>
+              <td data-label="Explanation :">
                 The Gatherer, The One who gathers the creatures on a day that
                 there is no doubt about, that is the Day of Judgment.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">88</td>
-              <td class="name quranic">الْغَنِيُّ</td>
-              <td class="trans">Al-Ghaniyyu</td>
-              <td class="meaning">The Self-Sufficient One</td>
-              <td class="explain">The One who does not need the creation.</td>
+              <td data-label="No :">88</td>
+              <td data-label="Name :">الْغَنِيُّ</td>
+              <td data-label="Transliteration :">Al-Ghaniyyu</td>
+              <td data-label="Meaning :">The Self-Sufficient One</td>
+              <td data-label="Explanation :">The One who does not need the creation.</td>
             </tr>
             <tr class="content">
-              <td class="no">89</td>
-              <td class="name quranic">الْمُغْنِي</td>
-              <td class="trans">Al-Mughniyyu</td>
-              <td class="meaning">The Bestower of Sufficiency</td>
-              <td class="explain">
+              <td data-label="No :">89</td>
+              <td data-label="Name :">الْمُغْنِي</td>
+              <td data-label="Transliteration :">Al-Mughniyyu</td>
+              <td data-label="Meaning :">The Bestower of Sufficiency</td>
+              <td data-label="Explanation :">
                 The Enricher, The One who satisfies the necessities of the
                 creatures.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">90</td>
-              <td class="name quranic">اَلْمَانِعُ</td>
-              <td class="trans">Al-Maani’oo</td>
-              <td class="meaning">The Preventer</td>
-              <td class="explain">The Withholder.</td>
+              <td data-label="No :">90</td>
+              <td data-label="Name :">اَلْمَانِعُ</td>
+              <td data-label="Transliteration :">Al-Maani’oo</td>
+              <td data-label="Meaning :">The Preventer</td>
+              <td data-label="Explanation :">The Withholder.</td>
             </tr>
             <tr class="content">
-              <td class="no">91</td>
-              <td class="name quranic">الضَّارَّ</td>
-              <td class="trans">Ad-Daarr</td>
-              <td class="meaning">The Distressor</td>
-              <td class="explain">
+              <td data-label="No :">91</td>
+              <td data-label="Name :">الضَّارَّ</td>
+              <td data-label="Transliteration :">Ad-Daarr</td>
+              <td data-label="Meaning :">The Distressor</td>
+              <td data-label="Explanation :">
                 The One who makes harm reach to whoever He willed and benefit to
                 whoever He willed.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">92</td>
-              <td class="name quranic">النَّافِعُ</td>
-              <td class="trans">An-Naafi’oo</td>
-              <td class="meaning">The Bestower of Benefits</td>
-              <td class="explain">
+              <td data-label="No :">92</td>
+              <td data-label="Name :">النَّافِعُ</td>
+              <td data-label="Transliteration :">An-Naafi’oo</td>
+              <td data-label="Meaning :">The Bestower of Benefits</td>
+              <td data-label="Explanation :">
                 The Propitious, The One who makes harm reach to whoever He
                 willed and benefit to whoever He willed.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">93</td>
-              <td class="name quranic">النُّورُ</td>
-              <td class="trans">An-Noor</td>
-              <td class="meaning">The Prime Light</td>
-              <td class="explain">The Light, The One who guides.</td>
+              <td data-label="No :">93</td>
+              <td data-label="Name :">النُّورُ</td>
+              <td data-label="Transliteration :">An-Noor</td>
+              <td data-label="Meaning :">The Prime Light</td>
+              <td data-label="Explanation :">The Light, The One who guides.</td>
             </tr>
             <tr class="content">
-              <td class="no">94</td>
-              <td class="name quranic">الْهَادِي</td>
-              <td class="trans">Al-Haadi</td>
-              <td class="meaning">The Provider of Guidance</td>
-              <td class="explain">
+              <td data-label="No :">94</td>
+              <td data-label="Name :">الْهَادِي</td>
+              <td data-label="Transliteration :">Al-Haadi</td>
+              <td data-label="Meaning :">The Provider of Guidance</td>
+              <td data-label="Explanation :">
                 The Guide, The One whom with His Guidance His believers were
                 guided, and with His Guidance the living beings have been guided
                 to what is beneficial for them and protected from what is
@@ -1050,49 +1113,49 @@
               </td>
             </tr>
             <tr class="content">
-              <td class="no">95</td>
-              <td class="name quranic">الْبَدِيعُ</td>
-              <td class="trans">Al-Badi’oo</td>
-              <td class="meaning">The Unique One</td>
-              <td class="explain">
+              <td data-label="No :">95</td>
+              <td data-label="Name :">الْبَدِيعُ</td>
+              <td data-label="Transliteration :">Al-Badi’oo</td>
+              <td data-label="Meaning :">The Unique One</td>
+              <td data-label="Explanation :">
                 The Incomparable, The One who created the creation and formed it
                 without any preceding example.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">96</td>
-              <td class="name quranic">اَلْبَاقِي</td>
-              <td class="trans">Al-Baaqi</td>
-              <td class="meaning">The Ever Surviving One</td>
-              <td class="explain">
+              <td data-label="No :">96</td>
+              <td data-label="Name :">اَلْبَاقِي</td>
+              <td data-label="Transliteration :">Al-Baaqi</td>
+              <td data-label="Meaning :">The Ever Surviving One</td>
+              <td data-label="Explanation :">
                 The Everlasting, The One that the state of non-existence is
                 impossible for Him.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">97</td>
-              <td class="name quranic">الْوَارِثُ</td>
-              <td class="trans">Al-Waaris</td>
-              <td class="meaning">The Eternal Inheritor</td>
-              <td class="explain">
+              <td data-label="No :">97</td>
+              <td data-label="Name :">الْوَارِثُ</td>
+              <td data-label="Transliteration :">Al-Waaris</td>
+              <td data-label="Meaning :">The Eternal Inheritor</td>
+              <td data-label="Explanation :">
                 The Heir, The One whose Existence remains.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">98</td>
-              <td class="name quranic">الرَّشِيدُ</td>
-              <td class="trans">Ar-Rasheed</td>
-              <td class="meaning">The Guide to Path of Rectitude</td>
-              <td class="explain">
+              <td data-label="No :">98</td>
+              <td data-label="Name :">الرَّشِيدُ</td>
+              <td data-label="Transliteration :">Ar-Rasheed</td>
+              <td data-label="Meaning :">The Guide to Path of Rectitude</td>
+              <td data-label="Explanation :">
                 The Guide to the Right Path, The One who guides.
               </td>
             </tr>
             <tr class="content">
-              <td class="no">99</td>
-              <td class="name quranic">الصَّبُورُ</td>
-              <td class="trans">As-Saboor</td>
-              <td class="meaning">The Extensively Enduring One</td>
-              <td class="explain">
+              <td data-label="No :">99</td>
+              <td data-label="Name :">الصَّبُورُ</td>
+              <td data-label="Transliteration :">As-Saboor</td>
+              <td data-label="Meaning :">The Extensively Enduring One</td>
+              <td data-label="Explanation :">
                 The Patient, The One who does not quickly punish the sinners.
               </td>
             </tr>
