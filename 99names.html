@@ -38,20 +38,29 @@
 .table{
 	width: 100%;
 	border-collapse: collapse;
+  border-radius: 8px;
  margin-top: 20px;
 }
+.table tr{
+  border: 4px solid rgb(79, 75, 75);
+  border-radius: 8px;
+}
 .table tbody tr{
-  background-color: rgba(209, 249, 232, 0.366);
+  background-color: rgba(244, 242, 234, 0.4);
 }
 
 .table td,.table th{
   padding:12px 15px;
   border:1px solid rgb(79, 75, 75);
   text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  
+}
+#arabic{
   font-family: "Noto Naskh Arabic";
-        font-weight: bold;
-        font-size: 18px;
-
+font-weight: normal;
+font-size: 30px;
 }
 
 .table th{
@@ -208,7 +217,7 @@
           <tbody>
             <tr class="content">
               <td data-label="No :">1</td>
-              <td data-label="Name :">الرّحمٰنُ</td>
+              <td id="arabic" data-label="Name :">الرّحمٰنُ</td>
               <td data-label="Transliteration :">Ar-Rahmaan</td>
               <td data-label="Meaning :">The Beneficent</td>
               <td data-label="Explanation :">
@@ -217,14 +226,14 @@
             </tr>
             <tr class="content">
               <td data-label="No :">2</td>
-              <td data-label="Name :">الرَّحِيمُ</td>
+              <td id="arabic" data-label="Name :">الرَّحِيمُ</td>
               <td data-label="Transliteration :">Ar-Raheem</td>
               <td data-label="Meaning :">The Merciful</td>
               <td data-label="Explanation :">He who acts with extreme kindness</td>
             </tr>
             <tr class="content">
               <td data-label="No :">3</td>
-              <td data-label="Name :">الْمَلِكُ</td>
+              <td id="arabic" data-label="Name :">الْمَلِكُ</td>
               <td data-label="Transliteration :">Al-Malik</td>
               <td data-label="Meaning :">The Eternal Lord</td>
               <td data-label="Explanation :">
@@ -234,7 +243,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">4</td>
-              <td data-label="Name :">الْقُدُّوسُ</td>
+              <td id="arabic" data-label="Name :">الْقُدُّوسُ</td>
               <td data-label="Transliteration :">Al-Quddus</td>
               <td data-label="Meaning :">The Most Sacred</td>
               <td data-label="Explanation :">
@@ -244,7 +253,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">5</td>
-              <td data-label="Name :">السَّلاَمُ</td>
+              <td id="arabic" data-label="Name :">السَّلاَمُ</td>
               <td data-label="Transliteration :">As-Salam</td>
               <td data-label="Meaning :">The Embodiment of Peace</td>
               <td data-label="Explanation :">
@@ -253,7 +262,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">6</td>
-              <td data-label="Name :">الْمُؤْمِنُ</td>
+              <td id="arabic" data-label="Name :">الْمُؤْمِنُ</td>
               <td data-label="Transliteration :">Al-Mu’min</td>
               <td data-label="Meaning :">The Infuser of Faith</td>
               <td data-label="Explanation :">
@@ -264,7 +273,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">7</td>
-              <td data-label="Name :">الْمُهَيْمِنُ</td>
+              <td id="arabic" data-label="Name :">الْمُهَيْمِنُ</td>
               <td data-label="Transliteration :">Al-Muhaymin</td>
               <td data-label="Meaning :">The Preserver of Safety</td>
               <td data-label="Explanation :">
@@ -273,7 +282,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">8</td>
-              <td data-label="Name :">الْعَزِيزُ</td>
+              <td id="arabic" data-label="Name :">الْعَزِيزُ</td>
               <td data-label="Transliteration :">Al-Aziz</td>
               <td data-label="Meaning :">The Mighty One</td>
               <td data-label="Explanation :">
@@ -282,7 +291,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">9</td>
-              <td data-label="Name :">الْجَبَّارُ</td>
+              <td id="arabic" data-label="Name :">الْجَبَّارُ</td>
               <td data-label="Transliteration :">Al-Jabbar</td>
               <td data-label="Meaning :">The Omnipotent One</td>
               <td data-label="Explanation :">
@@ -292,7 +301,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">10</td>
-              <td data-label="Name :">الْمُتَكَبِّرُ</td>
+              <td id="arabic" data-label="Name :">الْمُتَكَبِّرُ</td>
               <td data-label="Transliteration :">Al-Mutakabbir</td>
               <td data-label="Meaning :">The Dominant One</td>
               <td data-label="Explanation :">
@@ -302,7 +311,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">11</td>
-              <td data-label="Name :">الْخَالِقُ</td>
+              <td id="arabic" data-label="Name :">الْخَالِقُ</td>
               <td data-label="Transliteration :">Al-Khaaliq</td>
               <td data-label="Meaning :">The Creator</td>
               <td data-label="Explanation :">
@@ -311,7 +320,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">12</td>
-              <td data-label="Name :">الْبَارِئُ</td>
+              <td id="arabic" data-label="Name :">الْبَارِئُ</td>
               <td data-label="Transliteration :">Al-Baari</td>
               <td data-label="Meaning :">The Evolver</td>
               <td data-label="Explanation :">
@@ -320,7 +329,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">13</td>
-              <td data-label="Name :">الْمُصَوِّرُ</td>
+              <td id="arabic" data-label="Name :">الْمُصَوِّرُ</td>
               <td data-label="Transliteration :">Al-Musawwir</td>
               <td data-label="Meaning :">The Flawless Shaper</td>
               <td data-label="Explanation :">
@@ -329,7 +338,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">14</td>
-              <td data-label="Name :">الْغَفَّارُ</td>
+              <td id="arabic" data-label="Name :">الْغَفَّارُ</td>
               <td data-label="Transliteration :">Al-Ghaffaar</td>
               <td data-label="Meaning :">The Great Forgiver</td>
               <td data-label="Explanation :">
@@ -339,7 +348,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">15</td>
-              <td data-label="Name :">الْقَهَّارُ</td>
+              <td id="arabic" data-label="Name :">الْقَهَّارُ</td>
               <td data-label="Transliteration :">Al-Qahhaar</td>
               <td data-label="Meaning :">The All-Prevailing One</td>
               <td data-label="Explanation :">
@@ -349,7 +358,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">16</td>
-              <td data-label="Name :">الْوَهَّابُ</td>
+              <td id="arabic" data-label="Name :">الْوَهَّابُ</td>
               <td data-label="Transliteration :">Al-Wahhab</td>
               <td data-label="Meaning :">The Supreme Bestower</td>
               <td data-label="Explanation :">
@@ -359,14 +368,14 @@
             </tr>
             <tr class="content">
               <td data-label="No :">17</td>
-              <td data-label="Name :">الرَّزَّاقُ</td>
+              <td id="arabic" data-label="Name :">الرَّزَّاقُ</td>
               <td data-label="Transliteration :">Ar-Razzaq</td>
               <td data-label="Meaning :">The Total Provider</td>
               <td data-label="Explanation :">The Sustainer, The Provider.</td>
             </tr>
             <tr class="content">
               <td data-label="No :">18</td>
-              <td data-label="Name :">الْفَتَّاحُ</td>
+              <td id="arabic" data-label="Name :">الْفَتَّاحُ</td>
               <td data-label="Transliteration :">Al-Fattah</td>
               <td data-label="Meaning :">The Supreme Solver</td>
               <td data-label="Explanation :">
@@ -376,7 +385,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">19</td>
-              <td data-label="Name :">اَلْعَلِيْمُ</td>
+              <td id="arabic" data-label="Name :">اَلْعَلِيْمُ</td>
               <td data-label="Transliteration :">Al-Alim</td>
               <td data-label="Meaning :">The All-Knowing One</td>
               <td data-label="Explanation :">
@@ -385,7 +394,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">20</td>
-              <td data-label="Name :">الْقَابِضُ</td>
+              <td id="arabic" data-label="Name :">الْقَابِضُ</td>
               <td data-label="Transliteration :">Al-Qaabid</td>
               <td data-label="Meaning :">The Restricting One</td>
               <td data-label="Explanation :">
@@ -396,7 +405,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">21</td>
-              <td data-label="Name :">الْبَاسِطُ</td>
+              <td id="arabic" data-label="Name :">الْبَاسِطُ</td>
               <td data-label="Transliteration :">Al-Baasit</td>
               <td data-label="Meaning :">The Extender</td>
               <td data-label="Explanation :">
@@ -406,7 +415,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">22</td>
-              <td data-label="Name :">الْخَافِضُ</td>
+              <td id="arabic" data-label="Name :">الْخَافِضُ</td>
               <td data-label="Transliteration :">Al-Khaafid</td>
               <td data-label="Meaning :">The Reducer</td>
               <td data-label="Explanation :">
@@ -416,7 +425,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">23</td>
-              <td data-label="Name :">الرَّافِعُ</td>
+              <td id="arabic" data-label="Name :">الرَّافِعُ</td>
               <td data-label="Transliteration :">Ar-Rafi</td>
               <td data-label="Meaning :">The Elevating One</td>
               <td data-label="Explanation :">
@@ -427,7 +436,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">24</td>
-              <td data-label="Name :">الْمُعِزُّ</td>
+              <td id="arabic" data-label="Name :">الْمُعِزُّ</td>
               <td data-label="Transliteration :">Al-Mu’izz</td>
               <td data-label="Meaning :">The Honourer-Bestower</td>
               <td data-label="Explanation :">
@@ -438,7 +447,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">25</td>
-              <td data-label="Name :">المُذِلُّ</td>
+              <td id="arabic" data-label="Name :">المُذِلُّ</td>
               <td data-label="Transliteration :">Al-Muzil</td>
               <td data-label="Meaning :">The Abaser</td>
               <td data-label="Explanation :">
@@ -449,7 +458,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">26</td>
-              <td data-label="Name :">السَّمِيعُ</td>
+              <td id="arabic" data-label="Name :">السَّمِيعُ</td>
               <td data-label="Transliteration :">As-Sami’</td>
               <td data-label="Meaning :">The All-Hearer</td>
               <td data-label="Explanation :">
@@ -459,7 +468,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">27</td>
-              <td data-label="Name :">الْبَصِيرُ</td>
+              <td id="arabic" data-label="Name :">الْبَصِيرُ</td>
               <td data-label="Transliteration :">Al-Baseer</td>
               <td data-label="Meaning :">The All-Seeing</td>
               <td data-label="Explanation :">
@@ -469,7 +478,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">28</td>
-              <td data-label="Name :">الْحَكَمُ</td>
+              <td id="arabic" data-label="Name :">الْحَكَمُ</td>
               <td data-label="Transliteration :">Al-Hakam</td>
               <td data-label="Meaning :">The Impartial Judge</td>
               <td data-label="Explanation :">
@@ -478,7 +487,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">29</td>
-              <td data-label="Name :">الْعَدْلُ</td>
+              <td id="arabic" data-label="Name :">الْعَدْلُ</td>
               <td data-label="Transliteration :">Al-Adl</td>
               <td data-label="Meaning :">The Embodiment of Justice</td>
               <td data-label="Explanation :">
@@ -487,7 +496,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">30</td>
-              <td data-label="Name :">اللَّطِيفُ</td>
+              <td id="arabic" data-label="Name :">اللَّطِيفُ</td>
               <td data-label="Transliteration :">Al-Lateef</td>
               <td data-label="Meaning :">The Knower of Subtleties</td>
               <td data-label="Explanation :">
@@ -497,14 +506,14 @@
             </tr>
             <tr class="content">
               <td data-label="No :">31</td>
-              <td data-label="Name :">الْخَبِيرُ</td>
+              <td id="arabic" data-label="Name :">الْخَبِيرُ</td>
               <td data-label="Transliteration :">Al-Khabeer</td>
               <td data-label="Meaning :">The All-Aware One</td>
               <td data-label="Explanation :">The One who knows the truth of things.</td>
             </tr>
             <tr class="content">
               <td data-label="No :">32</td>
-              <td data-label="Name :">الْحَلِيمُ</td>
+              <td id="arabic" data-label="Name :">الْحَلِيمُ</td>
               <td data-label="Transliteration :">Al-Haleem</td>
               <td data-label="Meaning :">The Clement One</td>
               <td data-label="Explanation :">
@@ -514,7 +523,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">33</td>
-              <td data-label="Name :">الْعَظِيمُ</td>
+              <td id="arabic" data-label="Name :">الْعَظِيمُ</td>
               <td data-label="Transliteration :">Al-Azeem</td>
               <td data-label="Meaning :">The Magnificent One</td>
               <td data-label="Explanation :">
@@ -524,7 +533,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">34</td>
-              <td data-label="Name :">الْغَفُورُ</td>
+              <td id="arabic" data-label="Name :">الْغَفُورُ</td>
               <td data-label="Transliteration :">Al-Ghafoor</td>
               <td data-label="Meaning :">The Great Forgiver</td>
               <td data-label="Explanation :">
@@ -533,7 +542,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">35</td>
-              <td data-label="Name :">الشَّكُورُ</td>
+              <td id="arabic" data-label="Name :">الشَّكُورُ</td>
               <td data-label="Transliteration :">Ash-Shakoor</td>
               <td data-label="Meaning :">The Acknowledging One</td>
               <td data-label="Explanation :">
@@ -543,7 +552,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">36</td>
-              <td data-label="Name :">الْعَلِيُّ</td>
+              <td id="arabic" data-label="Name :">الْعَلِيُّ</td>
               <td data-label="Transliteration :">Al-Aliyy</td>
               <td data-label="Meaning :">The Sublime One</td>
               <td data-label="Explanation :">
@@ -553,7 +562,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">37</td>
-              <td data-label="Name :">الْكَبِيرُ</td>
+              <td id="arabic" data-label="Name :">الْكَبِيرُ</td>
               <td data-label="Transliteration :">Al-Kabeer</td>
               <td data-label="Meaning :">The Great One</td>
               <td data-label="Explanation :">
@@ -563,7 +572,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">38</td>
-              <td data-label="Name :">الْحَفِيظُ</td>
+              <td id="arabic" data-label="Name :">الْحَفِيظُ</td>
               <td data-label="Transliteration :">Al-Hafiz</td>
               <td data-label="Meaning :">The Guarding One</td>
               <td data-label="Explanation :">
@@ -573,7 +582,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">39</td>
-              <td data-label="Name :">المُقيِت</td>
+              <td id="arabic" data-label="Name :">المُقيِت</td>
               <td data-label="Transliteration :">Al-Muqeet</td>
               <td data-label="Meaning :">The Sustaining One</td>
               <td data-label="Explanation :">
@@ -583,7 +592,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">40</td>
-              <td data-label="Name :">الْحسِيبُ</td>
+              <td id="arabic" data-label="Name :">الْحسِيبُ</td>
               <td data-label="Transliteration :">Al-Haseeb</td>
               <td data-label="Meaning :">The Reckoning One</td>
               <td data-label="Explanation :">
@@ -592,7 +601,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">41</td>
-              <td data-label="Name :">الْجَلِيلُ</td>
+              <td id="arabic" data-label="Name :">الْجَلِيلُ</td>
               <td data-label="Transliteration :">Al-Jaleel</td>
               <td data-label="Meaning :">The Majestic One</td>
               <td data-label="Explanation :">
@@ -602,7 +611,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">42</td>
-              <td data-label="Name :">الْكَرِيمُ</td>
+              <td id="arabic" data-label="Name :">الْكَرِيمُ</td>
               <td data-label="Transliteration :">Al-Kareem</td>
               <td data-label="Meaning :">The Bountiful One</td>
               <td data-label="Explanation :">
@@ -612,7 +621,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">43</td>
-              <td data-label="Name :">الرَّقِيبُ</td>
+              <td id="arabic" data-label="Name :">الرَّقِيبُ</td>
               <td data-label="Transliteration :">Ar-Raqeeb</td>
               <td data-label="Meaning :">The Watchful One</td>
               <td data-label="Explanation :">
@@ -622,7 +631,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">44</td>
-              <td data-label="Name :">الْمُجِيبُ</td>
+              <td id="arabic" data-label="Name :">الْمُجِيبُ</td>
               <td data-label="Transliteration :">Al-Mujeeb</td>
               <td data-label="Meaning :">The Responding One</td>
               <td data-label="Explanation :">
@@ -633,7 +642,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">45</td>
-              <td data-label="Name :">الْوَاسِعُ</td>
+              <td id="arabic" data-label="Name :">الْوَاسِعُ</td>
               <td data-label="Transliteration :">Al-Waasi’</td>
               <td data-label="Meaning :">The All-Pervading One</td>
               <td data-label="Explanation :">
@@ -642,7 +651,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">46</td>
-              <td data-label="Name :">الْحَكِيمُ</td>
+              <td id="arabic" data-label="Name :">الْحَكِيمُ</td>
               <td data-label="Transliteration :">Al-Hakeem</td>
               <td data-label="Meaning :">The Wise One</td>
               <td data-label="Explanation :">
@@ -652,7 +661,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">47</td>
-              <td data-label="Name :">الْوَدُودُ</td>
+              <td id="arabic" data-label="Name :">الْوَدُودُ</td>
               <td data-label="Transliteration :">Al-Wadud</td>
               <td data-label="Meaning :">The Loving One</td>
               <td data-label="Explanation :">
@@ -663,7 +672,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">48</td>
-              <td data-label="Name :">الْمَجِيدُ</td>
+              <td id="arabic" data-label="Name :">الْمَجِيدُ</td>
               <td data-label="Transliteration :">Al-Majeed</td>
               <td data-label="Meaning :">The Glorious One</td>
               <td data-label="Explanation :">
@@ -673,7 +682,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">49</td>
-              <td data-label="Name :">الْبَاعِثُ</td>
+              <td id="arabic" data-label="Name :">الْبَاعِثُ</td>
               <td data-label="Transliteration :">Al-Ba’ith</td>
               <td data-label="Meaning :">The Infuser of New Life</td>
               <td data-label="Explanation :">
@@ -683,7 +692,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">50</td>
-              <td data-label="Name :">الشَّهِيدُ</td>
+              <td id="arabic" data-label="Name :">الشَّهِيدُ</td>
               <td data-label="Transliteration :">Ash-Shaheed</td>
               <td data-label="Meaning :">The All Observing Witness</td>
               <td data-label="Explanation :">
@@ -692,7 +701,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">51</td>
-              <td data-label="Name :">الْحَقُّ</td>
+              <td id="arabic" data-label="Name :">الْحَقُّ</td>
               <td data-label="Transliteration :">Al-Haqq</td>
               <td data-label="Meaning :">The Embodiment of Truth</td>
               <td data-label="Explanation :">
@@ -701,7 +710,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">52</td>
-              <td data-label="Name :">الْوَكِيلُ</td>
+              <td id="arabic" data-label="Name :">الْوَكِيلُ</td>
               <td data-label="Transliteration :">Al-Wakeel</td>
               <td data-label="Meaning :">The Universal Trustee</td>
               <td data-label="Explanation :">
@@ -711,7 +720,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">53</td>
-              <td data-label="Name :">الْقَوِيُّ</td>
+              <td id="arabic" data-label="Name :">الْقَوِيُّ</td>
               <td data-label="Transliteration :">Al-Qawwiyy</td>
               <td data-label="Meaning :">The Strong One</td>
               <td data-label="Explanation :">
@@ -720,7 +729,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">54</td>
-              <td data-label="Name :">الْمَتِينُ</td>
+              <td id="arabic" data-label="Name :">الْمَتِينُ</td>
               <td data-label="Transliteration :">Al-Mateen</td>
               <td data-label="Meaning :">The Firm One</td>
               <td data-label="Explanation :">
@@ -730,14 +739,14 @@
             </tr>
             <tr class="content">
               <td data-label="No :">55</td>
-              <td data-label="Name :">الْوَلِيُّ</td>
+              <td id="arabic" data-label="Name :">الْوَلِيُّ</td>
               <td data-label="Transliteration :">Al-Waliyy</td>
               <td data-label="Meaning :">The Protecting Associate</td>
               <td data-label="Explanation :">The Protecting Friend, The Supporter.</td>
             </tr>
             <tr class="content">
               <td data-label="No :">56</td>
-              <td data-label="Name :">الْحَمِيدُ</td>
+              <td id="arabic" data-label="Name :">الْحَمِيدُ</td>
               <td data-label="Transliteration :">Al-Hameed</td>
               <td data-label="Meaning :">The Sole-Laudable One</td>
               <td data-label="Explanation :">
@@ -746,7 +755,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">57</td>
-              <td data-label="Name :">الْمُحْصِي</td>
+              <td id="arabic" data-label="Name :">الْمُحْصِي</td>
               <td data-label="Transliteration :">Al-Muhsee</td>
               <td data-label="Meaning :">The All-Enumerating One</td>
               <td data-label="Explanation :">
@@ -756,7 +765,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">58</td>
-              <td data-label="Name :">الْمُبْدِئُ</td>
+              <td id="arabic" data-label="Name :">الْمُبْدِئُ</td>
               <td data-label="Transliteration :">Al-Mubdi</td>
               <td data-label="Meaning :">The Originator</td>
               <td data-label="Explanation :">
@@ -765,7 +774,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">59</td>
-              <td data-label="Name :">الْمُعِيدُ</td>
+              <td id="arabic" data-label="Name :">الْمُعِيدُ</td>
               <td data-label="Transliteration :">Al-Mueed</td>
               <td data-label="Meaning :">The Restorer</td>
               <td data-label="Explanation :">
@@ -775,7 +784,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">60</td>
-              <td data-label="Name :">الْمُحْيِي</td>
+              <td id="arabic" data-label="Name :">الْمُحْيِي</td>
               <td data-label="Transliteration :">Al-Muhyi</td>
               <td data-label="Meaning :">The Maintainer of life</td>
               <td data-label="Explanation :">
@@ -787,7 +796,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">61</td>
-              <td data-label="Name :">اَلْمُمِيتُ</td>
+              <td id="arabic" data-label="Name :">اَلْمُمِيتُ</td>
               <td data-label="Transliteration :">Al-Mumeet</td>
               <td data-label="Meaning :">The Inflictor of Death</td>
               <td data-label="Explanation :">
@@ -797,7 +806,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">62</td>
-              <td data-label="Name :">الْحَيُّ</td>
+              <td id="arabic" data-label="Name :">الْحَيُّ</td>
               <td data-label="Transliteration :">Al-Hayyu</td>
               <td data-label="Meaning :">The Eternally Living One</td>
               <td data-label="Explanation :">
@@ -807,14 +816,14 @@
             </tr>
             <tr class="content">
               <td data-label="No :">63</td>
-              <td data-label="Name :">الْقَيُّومُ</td>
+              <td id="arabic" data-label="Name :">الْقَيُّومُ</td>
               <td data-label="Transliteration :">Al-Qayyoom</td>
               <td data-label="Meaning :">The Self-Subsisting One</td>
               <td data-label="Explanation :">The One who remains and does not end.</td>
             </tr>
             <tr class="content">
               <td data-label="No :">64</td>
-              <td data-label="Name :">الْوَاجِدُ</td>
+              <td id="arabic" data-label="Name :">الْوَاجِدُ</td>
               <td data-label="Transliteration :">Al-Waajid</td>
               <td data-label="Meaning :">The Pointing One</td>
               <td data-label="Explanation :">
@@ -824,14 +833,14 @@
             </tr>
             <tr class="content">
               <td data-label="No :">65</td>
-              <td data-label="Name :">الْمَاجِدُ</td>
+              <td id="arabic" data-label="Name :">الْمَاجِدُ</td>
               <td data-label="Transliteration :">Al-Maajid</td>
               <td data-label="Meaning :">The All-Noble One</td>
               <td data-label="Explanation :">The Glorious, He who is Most Glorious.</td>
             </tr>
             <tr class="content">
               <td data-label="No :">66</td>
-              <td data-label="Name :">الْواحِدُ</td>
+              <td id="arabic" data-label="Name :">الْواحِدُ</td>
               <td data-label="Transliteration :">Al-Waahid</td>
               <td data-label="Meaning :">The Only One</td>
               <td data-label="Explanation :">
@@ -840,14 +849,14 @@
             </tr>
             <tr class="content">
               <td data-label="No :">67</td>
-              <td data-label="Name :">اَلاَحَدُ</td>
+              <td id="arabic" data-label="Name :">اَلاَحَدُ</td>
               <td data-label="Transliteration :">Al-Ahad</td>
               <td data-label="Meaning :">The Sole One</td>
               <td data-label="Explanation :">The One</td>
             </tr>
             <tr class="content">
               <td data-label="No :">68</td>
-              <td data-label="Name :">الصَّمَدُ</td>
+              <td id="arabic" data-label="Name :">الصَّمَدُ</td>
               <td data-label="Transliteration :">As-Samad</td>
               <td data-label="Meaning :">The Supreme Provider</td>
               <td data-label="Explanation :">
@@ -857,7 +866,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">69</td>
-              <td data-label="Name :">الْقَادِرُ</td>
+              <td id="arabic" data-label="Name :">الْقَادِرُ</td>
               <td data-label="Transliteration :">Al-Qaadir</td>
               <td data-label="Meaning :">The Omnipotent One</td>
               <td data-label="Explanation :">
@@ -866,7 +875,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">70</td>
-              <td data-label="Name :">الْمُقْتَدِرُ</td>
+              <td id="arabic" data-label="Name :">الْمُقْتَدِرُ</td>
               <td data-label="Transliteration :">Al-Muqtadir</td>
               <td data-label="Meaning :">The All Authoritative One</td>
               <td data-label="Explanation :">
@@ -876,7 +885,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">71</td>
-              <td data-label="Name :">الْمُقَدِّمُ</td>
+              <td id="arabic" data-label="Name :">الْمُقَدِّمُ</td>
               <td data-label="Transliteration :">Al-Muqaddim</td>
               <td data-label="Meaning :">The Expediting One</td>
               <td data-label="Explanation :">
@@ -887,7 +896,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">72</td>
-              <td data-label="Name :">الْمُؤَخِّرُ</td>
+              <td id="arabic" data-label="Name :">الْمُؤَخِّرُ</td>
               <td data-label="Transliteration :">Al-Mu’akhkhir</td>
               <td data-label="Meaning :">The Procrastinator</td>
               <td data-label="Explanation :">
@@ -898,7 +907,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">73</td>
-              <td data-label="Name :">الأوَّلُ</td>
+              <td id="arabic" data-label="Name :">الأوَّلُ</td>
               <td data-label="Transliteration :">Al-Awwal</td>
               <td data-label="Meaning :">The Very First</td>
               <td data-label="Explanation :">
@@ -907,7 +916,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">74</td>
-              <td data-label="Name :">الآخِرُ</td>
+              <td id="arabic" data-label="Name :">الآخِرُ</td>
               <td data-label="Transliteration :">Al-Akhir</td>
               <td data-label="Meaning :">The Infinite Last One</td>
               <td data-label="Explanation :">
@@ -916,7 +925,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">75</td>
-              <td data-label="Name :">الظَّاهِرُ</td>
+              <td id="arabic" data-label="Name :">الظَّاهِرُ</td>
               <td data-label="Transliteration :">Az-Zaahir</td>
               <td data-label="Meaning :">The Perceptible</td>
               <td data-label="Explanation :">
@@ -928,7 +937,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">76</td>
-              <td data-label="Name :">الْبَاطِنُ</td>
+              <td id="arabic" data-label="Name :">الْبَاطِنُ</td>
               <td data-label="Transliteration :">Al-Baatin</td>
               <td data-label="Meaning :">The Imperceptible</td>
               <td data-label="Explanation :">
@@ -940,7 +949,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">77</td>
-              <td data-label="Name :">الْوَالِي</td>
+              <td id="arabic" data-label="Name :">الْوَالِي</td>
               <td data-label="Transliteration :">Al-Waali</td>
               <td data-label="Meaning :">The Holder of Supreme Authority</td>
               <td data-label="Explanation :">
@@ -949,7 +958,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">78</td>
-              <td data-label="Name :">الْمُتَعَالِي</td>
+              <td id="arabic" data-label="Name :">الْمُتَعَالِي</td>
               <td data-label="Transliteration :">Al-Muta’aali</td>
               <td data-label="Meaning :">The Extremely Exalted One</td>
               <td data-label="Explanation :">
@@ -959,7 +968,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">79</td>
-              <td data-label="Name :">الْبَرُّ</td>
+              <td id="arabic" data-label="Name :">الْبَرُّ</td>
               <td data-label="Transliteration :">Al-Barr</td>
               <td data-label="Meaning :">The Fountain-Head of Truth</td>
               <td data-label="Explanation :">
@@ -971,7 +980,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">80</td>
-              <td data-label="Name :">التَّوَابُ</td>
+              <td id="arabic" data-label="Name :">التَّوَابُ</td>
               <td data-label="Transliteration :">At-Tawwaab</td>
               <td data-label="Meaning :">The Ever-Acceptor of Repentance</td>
               <td data-label="Explanation :">
@@ -981,7 +990,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">81</td>
-              <td data-label="Name :">الْمُنْتَقِمُ</td>
+              <td id="arabic" data-label="Name :">الْمُنْتَقِمُ</td>
               <td data-label="Transliteration :">Al-Muntaqim</td>
               <td data-label="Meaning :">The Retaliator</td>
               <td data-label="Explanation :">
@@ -992,7 +1001,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">82</td>
-              <td data-label="Name :">العَفُوُّ</td>
+              <td id="arabic" data-label="Name :">العَفُوُّ</td>
               <td data-label="Transliteration :">Al-Afuwwu</td>
               <td data-label="Meaning :">The Supreme Pardoner</td>
               <td data-label="Explanation :">
@@ -1001,7 +1010,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">83</td>
-              <td data-label="Name :">الرَّؤُوفُ</td>
+              <td id="arabic" data-label="Name :">الرَّؤُوفُ</td>
               <td data-label="Transliteration :">Ar-Ra’oof</td>
               <td data-label="Meaning :">The Benign One</td>
               <td data-label="Explanation :">
@@ -1012,7 +1021,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">84</td>
-              <td data-label="Name :">مَالِكُ الْمُلْكِ</td>
+              <td id="arabic" data-label="Name :">مَالِكُ الْمُلْكِ</td>
               <td data-label="Transliteration :">Maalik-ul-Mulk</td>
               <td data-label="Meaning :">The Eternal Possessor of Sovereignty</td>
               <td data-label="Explanation :">
@@ -1022,7 +1031,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">85</td>
-              <td data-label="Name :">ذُوالْجَلاَلِ وَالإكْرَامِ</td>
+              <td id="arabic" data-label="Name :">ذُوالْجَلاَلِ وَالإكْرَامِ</td>
               <td data-label="Transliteration :">Zul-Jalaali-wal-Ikram</td>
               <td data-label="Meaning :">The Possessor of Majesty and Honour</td>
               <td data-label="Explanation :">
@@ -1032,7 +1041,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">86</td>
-              <td data-label="Name :">الْمُقْسِطُ</td>
+              <td id="arabic" data-label="Name :">الْمُقْسِطُ</td>
               <td data-label="Transliteration :">Al-Muqsit</td>
               <td data-label="Meaning :">The Just One</td>
               <td data-label="Explanation :">
@@ -1041,7 +1050,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">87</td>
-              <td data-label="Name :">الْجَامِعُ</td>
+              <td id="arabic" data-label="Name :">الْجَامِعُ</td>
               <td data-label="Transliteration :">Al-Jaami’u</td>
               <td data-label="Meaning :">The Assembler of Scattered Creations</td>
               <td data-label="Explanation :">
@@ -1051,14 +1060,14 @@
             </tr>
             <tr class="content">
               <td data-label="No :">88</td>
-              <td data-label="Name :">الْغَنِيُّ</td>
+              <td id="arabic" data-label="Name :">الْغَنِيُّ</td>
               <td data-label="Transliteration :">Al-Ghaniyyu</td>
               <td data-label="Meaning :">The Self-Sufficient One</td>
               <td data-label="Explanation :">The One who does not need the creation.</td>
             </tr>
             <tr class="content">
               <td data-label="No :">89</td>
-              <td data-label="Name :">الْمُغْنِي</td>
+              <td id="arabic" data-label="Name :">الْمُغْنِي</td>
               <td data-label="Transliteration :">Al-Mughniyyu</td>
               <td data-label="Meaning :">The Bestower of Sufficiency</td>
               <td data-label="Explanation :">
@@ -1068,14 +1077,14 @@
             </tr>
             <tr class="content">
               <td data-label="No :">90</td>
-              <td data-label="Name :">اَلْمَانِعُ</td>
+              <td id="arabic" data-label="Name :">اَلْمَانِعُ</td>
               <td data-label="Transliteration :">Al-Maani’oo</td>
               <td data-label="Meaning :">The Preventer</td>
               <td data-label="Explanation :">The Withholder.</td>
             </tr>
             <tr class="content">
               <td data-label="No :">91</td>
-              <td data-label="Name :">الضَّارَّ</td>
+              <td id="arabic" data-label="Name :">الضَّارَّ</td>
               <td data-label="Transliteration :">Ad-Daarr</td>
               <td data-label="Meaning :">The Distressor</td>
               <td data-label="Explanation :">
@@ -1085,7 +1094,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">92</td>
-              <td data-label="Name :">النَّافِعُ</td>
+              <td id="arabic" data-label="Name :">النَّافِعُ</td>
               <td data-label="Transliteration :">An-Naafi’oo</td>
               <td data-label="Meaning :">The Bestower of Benefits</td>
               <td data-label="Explanation :">
@@ -1095,14 +1104,14 @@
             </tr>
             <tr class="content">
               <td data-label="No :">93</td>
-              <td data-label="Name :">النُّورُ</td>
+              <td id="arabic" data-label="Name :">النُّورُ</td>
               <td data-label="Transliteration :">An-Noor</td>
               <td data-label="Meaning :">The Prime Light</td>
               <td data-label="Explanation :">The Light, The One who guides.</td>
             </tr>
             <tr class="content">
               <td data-label="No :">94</td>
-              <td data-label="Name :">الْهَادِي</td>
+              <td id="arabic" data-label="Name :">الْهَادِي</td>
               <td data-label="Transliteration :">Al-Haadi</td>
               <td data-label="Meaning :">The Provider of Guidance</td>
               <td data-label="Explanation :">
@@ -1114,7 +1123,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">95</td>
-              <td data-label="Name :">الْبَدِيعُ</td>
+              <td id="arabic" data-label="Name :">الْبَدِيعُ</td>
               <td data-label="Transliteration :">Al-Badi’oo</td>
               <td data-label="Meaning :">The Unique One</td>
               <td data-label="Explanation :">
@@ -1124,7 +1133,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">96</td>
-              <td data-label="Name :">اَلْبَاقِي</td>
+              <td id="arabic" data-label="Name :">اَلْبَاقِي</td>
               <td data-label="Transliteration :">Al-Baaqi</td>
               <td data-label="Meaning :">The Ever Surviving One</td>
               <td data-label="Explanation :">
@@ -1134,7 +1143,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">97</td>
-              <td data-label="Name :">الْوَارِثُ</td>
+              <td id="arabic" data-label="Name :">الْوَارِثُ</td>
               <td data-label="Transliteration :">Al-Waaris</td>
               <td data-label="Meaning :">The Eternal Inheritor</td>
               <td data-label="Explanation :">
@@ -1143,7 +1152,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">98</td>
-              <td data-label="Name :">الرَّشِيدُ</td>
+              <td id="arabic" data-label="Name :">الرَّشِيدُ</td>
               <td data-label="Transliteration :">Ar-Rasheed</td>
               <td data-label="Meaning :">The Guide to Path of Rectitude</td>
               <td data-label="Explanation :">
@@ -1152,7 +1161,7 @@
             </tr>
             <tr class="content">
               <td data-label="No :">99</td>
-              <td data-label="Name :">الصَّبُورُ</td>
+              <td id="arabic" data-label="Name :">الصَّبُورُ</td>
               <td data-label="Transliteration :">As-Saboor</td>
               <td data-label="Meaning :">The Extensively Enduring One</td>
               <td data-label="Explanation :">
