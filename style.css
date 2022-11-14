@@ -172,3 +172,142 @@ nav a:hover{
     background-color: rgba(78, 184, 222,0.8); /* Add a dark-grey background on hover */
   }
   /* scroll back to top css end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Place the navbar at the bottom of the page, and make it stick */
+/* .nav__bar {
+    display: flex;
+    justify-content: center;
+} */
+
+/* Style the links inside the navigation bar */
+.nav__bar a {
+    color: #040303;
+    text-align: start;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 10px;
+    margin: 0px 4px;
+  }
+  
+  /* Change the color of links on hover */
+  .ho__ver ul li a:hover {
+    background-color: rgba(163, 151, 243, 0.622);
+    color: rgb(0, 0, 0);
+  }
+  
+  #icon1, #icon2, #icon3, #icon4, #icon5{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  
+  .nav__bar a i{
+      padding: 2px;
+      margin: 0px 4px;
+  }
+  
+  
+  
+
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.77);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-top: 15px;
+  
+    cursor: pointer;
+    background-color: rgba(172, 156, 229, 0.4);
+    color: rgb(13, 13, 13);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .openbtn {
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(172, 156, 229, 0.4);
+    color: rgb(13, 13, 13);
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .openbtn:hover, .sidebar .closebtn:hover {
+    background-color: rgba(172, 156, 229, 0.8);
+    color: rgb(255, 255, 255);
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  
+  
+  .sbdd, .sbdd a{
+    font-size: 14px;
+  
+  }
+  .sbdd a:hover{
+  font-size: 15px;
+  color: black;
+  background-color: rgba(186, 119, 234, 0.63);
+  font-weight: bold;
+  }
+  
+  .p_title{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
