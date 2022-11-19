@@ -39,30 +39,6 @@ referrerpolicy="no-referrer"
 <!-- font awesome end -->
 
     <link rel="stylesheet" href="style.css" />
-    
-    <style>
-      /* scrollbar css start */
-      /* width */
-      ::-webkit-scrollbar {
-        width: 15px;
-      }
-
-      /* Track */
-      ::-webkit-scrollbar-track {
-        background: #413f3f;
-      }
-
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: rgb(72, 151, 117);
-      }
-
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-        background: rgb(97, 95, 154);
-      }
-      /* scrollbar css end */
-    </style>
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_package_v0.16/apple-touch-icon.png" />
@@ -77,16 +53,13 @@ referrerpolicy="no-referrer"
     <title>Home | Sirat Al Mustaqeem</title>
   </head>
   <body>
-    <header class="navbar navbar-expand navbar-dark bg-dark">
+    <header class="navbar fixed-top navbar-expand navbar-dark bg-dark">
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">
+          <i class="fa-solid fa-angles-right"></i>
+        </button>
+      </div>
       <h2 class="mx-auto p_title" style="font-family: Noto Naskh Arabic">اِهۡدِنَا الصِّرَاطَ الۡمُسۡتَقِيۡمَۙ</h2>
-    </header>
-
-    <div id="main">
-      <button class="openbtn" onclick="openNav()">
-        <i class="fa-solid fa-angles-right"></i>
-      </button>
-    </div>
-
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         ><i class="fa-solid fa-angles-left"></i
@@ -155,7 +128,7 @@ referrerpolicy="no-referrer"
             >
             Usefull Websites
           </a>
-
+  
           <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
             <a
             class="text-decoration-none text-dark"
@@ -207,7 +180,7 @@ referrerpolicy="no-referrer"
           >
             Usefull Tools
           </a>
-
+  
           <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
             <a
               class="text-decoration-none text-dark"
@@ -250,7 +223,7 @@ referrerpolicy="no-referrer"
           >
             Islamic Apps
           </a>
-
+  
           <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
             a
           </div>
@@ -274,11 +247,14 @@ referrerpolicy="no-referrer"
         </div> -->
       </div>
       
-      
-
-
+    </header>
+    
+    
+    
+    
+    
     <nav
-      class="navbar fixed-bottom navbar-expand justify-content-center navbar-dark bg-dark nav__bar"
+    class="navbar fixed-bottom navbar-expand justify-content-center navbar-dark bg-dark nav__bar"
     >
       <div class="flex flex-direction-row ho__ver">
         <ul class="navbar-nav mr-auto">
