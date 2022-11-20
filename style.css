@@ -1,150 +1,407 @@
-
-nav{
-    background-color: rgba(86, 46, 114, 0.645);
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+
+body {
+  /* margin: 0px;
+  padding: 0px; */
+  background-color: #ebebeb;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+}
+
+nav {
+	width: 100%;
+	height: 6.7vh;
+	background: #22262a;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* font-family: "Source Sans Pro"; */
+	position: fixed;
+	font-size: 2.8vh;
+	padding: 0 5vh 0 1vh;
+	transition: 0.3s all;
+	z-index: 10;
+}
+nav.hide {
+	transform: translateY(-6.7vh);
+}
+.openbtn {
+  color: #fff;
+	object-fit: contain;
+	width: 5vh;
+	height: 5vh;
+  cursor: pointer;
+}
+
+nav > p {
+	display: none;
+}
+
+nav > ul {
+	display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+nav > ul > li {
+	list-style: none;
+	cursor: default;
+}
+
+nav > ul > li > a {
+	text-decoration: none;
+	color: #fff;
+	margin-left: 3vh;
+	opacity: 0.7;
+	transition: 0.3s all;
+  cursor: pointer;
+}
+
+nav > ul > li:first-of-type > a {
+	margin-left: 0;
+}
+
+nav > ul > li > a:hover {
+	opacity: 1;
+	color: #00aaff;
+}
+
+/* nav > ul > li > a.active {
+	opacity: 1;
+	background: hsl(210, 100%, 60%);
+	padding: 1vh 2vh;
+	color: #000;
+	font-weight: bold;
+	border-radius: 1vh;
+	border-bottom: 0.4vh solid hsl(210, 60%, 45%);
+} */
+
+@media screen and (max-width: 768px) {
+	nav {
+		font-size: 3.8vw;
+		height: 15vw;
+		padding: 0 5vw 0 1vw;
+	}
+
+	nav.hide {
+		height: 0;
+		transform: none;
+	}
+
+	.openbtn,
+	nav.hide > p {
+		transition: 0.3s all;
+		transform: translateY(-10vw);
+	}
+
+	.openbtn{
+    color: #fff;
+		width: 8vw;
+		height: 8vw;
+	}
+
+	nav > p {
+		display: initial;
+		color: #fff;
+		cursor: default;
+	}
+
+	nav > ul {
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		background: #22262a;
+		justify-content: space-evenly;
+		height: 15vw;
+		align-items: center;
+	}
+
+	nav > ul > li > a {
+		margin: 0;
+	}
+
+	nav > ul > li > a.active {
+		border-radius: 2vw;
+		padding: 1.5vw 3vw;
+	}
+}
+
+
+
+
+.drop_up_btn {
+  /* background-color: #3498DB; */
+  /* color: white;
+  border: none; */
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+}
+
+.drop_up {
+  /* position: relative;
+  display: inline-block; */
+  float: right;
+  overflow: hidden;
+}
+
+.drop_up_content {
+  /* display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  bottom: 50px;
+  z-index: 1; */
+
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.drop_up_content a {
+  /* color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; */
+
+  float: none;
+  color: black;
+  padding: 12px 18px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+
+.drop_up:hover .drop_up_content {
+  display: block;
+}
+
+.drop_up_content a:hover{
+  background-color: #ddd;
+}
+
+
+
+
+
+
+
+.drop_down_btn {
+  /* background-color: #3498DB; */
+  color: white;
+  border: none;
+  margin: 0;
+}
+
+.drop_down {
+  position: relative;
+  display: inline-block;
+}
+
+.drop_down_content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+.drop_down_content a {
+  color: black;
+  padding: 12px 18px;
+  text-decoration: none;
+  display: block;
+}
+
+.drop_down:hover .drop_down_content {
+  display: block;
+}
+.drop_down_content a:hover{
+  background-color: #ddd;
+}
+
+.icon_label{
+  display: block;
+  /* margin-left: 3vh; */
+}
+.iconlabel{
+  display: inline;
+  margin-left: 0.5vh;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.77);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 16px;
+  margin-left: 50px;
+  margin-top: 6px;
+
+  cursor: pointer;
+  color: #fff;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 10px;
+}
+
+.openbtn:hover, .sidebar .closebtn:hover {
+  background-color: #fff;
+  color: #000000;
+  border-radius: 10%;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+.sbdd, .sbdd a{
+  font-size: 14px;
+
+}
+.sbdd a:hover{
+font-size: 15px;
+color: black;
+background-color: #ddd;
+font-weight: bold;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
 
 #quran, #hadith{
-    background-color: rgba(76, 0, 130, 0.4);
-    color: white;
+  background-color: rgba(76, 0, 130, 0.4);
+  color: white;
 }
 #quran:hover{
-    background-color: rgba(76, 0, 130, 0.8);
+  background-color: rgba(76, 0, 130, 0.8);
 }
 #hadith:hover{
-    background-color: rgba(76, 0, 130, 0.8);
-}
-
-body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #ebebeb;
-    background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-}
-/* 
-body{
-    background-color: lightgray;
-}
-#logo{
-    height: 60px;
-    width: 60px;
-    border-radius: 5px;
+  background-color: rgba(76, 0, 130, 0.8);
 }
 
 
-
-
-
-#topheader{
-    border-radius: 42px;
-   
-} */
-/* #toplogo{
-    
-    border-radius: 10px;
-    background-color: rgba(151, 246, 154, 0.87);
-    
-    
-}
-#toplogo a span{
-    font-weight: bolder;
-}
-nav a{
-    padding: 4px 4px 4px 4px;
-    border-radius: 10px;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-
-}
-nav a:hover{
-    background-color: skyblue;
-}
-
-#home-title{
-    text-decoration: underline 4px black;
-    
-} */
-
-/* css for responsive-iframe start */
-
-/* .page-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.page-box iframe{
-    margin: 5px 5px;
-    padding: 5px 5px;
-    border: 2px solid black;
-    border-radius: 3px;
-}
-.page-box iframe:hover{
-    border: 4px solid green;
-    border-radius: 3px;
-}
-
-#qurancom, #quranxcom, #sunnah, #hadithenc{
-    width: 400px;
-    height: 600px;
-} */
-
-
-    /* css for responsive-iframe end */
-
-
-/* div p{
-    color: black;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 4px 4px 4px 4px;
-} */
 
 
 #playlistlink a{
-    text-decoration: underline;
-    padding: 4px;
-    border-radius: 10px;
+  text-decoration: underline;
+  padding: 4px;
+  border-radius: 10px;
 }
 #playlistlink a:hover{
-    background-color: lightgreen;
+  background-color: lightgreen;
 }
 
 
 /* css for courses.html */
 
 .course-section h1{
-    text-align: center;
-    font-size: 25px;
-    font-weight: bolder;
-    padding-top: 20px;
-    text-decoration: underline 3px;
-    
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  padding-top: 20px;
+  text-decoration: underline 3px;
+  
 }
 
 .course-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .items{
-    margin: 10px 10px;
-    /* padding: 10px 10px; */
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: capitalize;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 3px;
-    background-color: #9f0d00;
-    width: 150px;
+  margin: 10px 10px;
+  /* padding: 10px 10px; */
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: #9f0d00;
+  width: 150px;
 }
 
 .items:hover{
-    border: 4px solid green;
-    border-radius: 3px;
+  border: 4px solid green;
+  border-radius: 3px;
 }
 
 
@@ -155,161 +412,32 @@ nav a:hover{
 
 /* scroll back to top css start */
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: rgba(78, 184, 222, 0.4); /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    /* padding: 8px; Some padding */
-    border-radius: 10px; /* Rounded corners */
-    /* font-size: 18px; Increase font size */
-  }
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(78, 184, 222, 0.4); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  /* padding: 8px; Some padding */
+  border-radius: 10px; /* Rounded corners */
+  /* font-size: 18px; Increase font size */
+}
 
-  #myBtn:hover {
-    background-color: rgba(78, 184, 222,0.8); /* Add a dark-grey background on hover */
-  }
-  /* scroll back to top css end */
-
-
+#myBtn:hover {
+  background-color: rgba(78, 184, 222,0.8); /* Add a dark-grey background on hover */
+}
+/* scroll back to top css end */
 
 
 
+/* ====================================================================================== */
 
-
-
-
-
-
-
-
-
-
-
-  /* Place the navbar at the bottom of the page, and make it stick */
-/* .nav__bar {
+  /* #icon1, #icon2, #icon3, #icon4, #icon5{
     display: flex;
     justify-content: center;
+    align-items: center;
 } */
-
-/* Style the links inside the navigation bar */
-.nav__bar a {
-    color: #040303;
-    text-align: start;
-    padding: 8px 8px;
-    text-decoration: none;
-    font-size: 14px;
-    border-radius: 10px;
-    margin: 0px 4px;
-  }
-  
-  /* Change the color of links on hover */
-  .ho__ver ul li a:hover {
-    background-color: rgba(163, 151, 243, 0.622);
-    color: rgb(0, 0, 0);
-  }
-  
-  #icon1, #icon2, #icon3, #icon4, #icon5{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  
-  
-  .nav__bar a i{
-      padding: 2px;
-      margin: 0px 4px;
-  }
-  
-  
-  
-
-  
-  .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(17, 17, 17, 0.77);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #000000;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 16px;
-    margin-left: 50px;
-    margin-top: 15px;
-  
-    cursor: pointer;
-    background-color: rgba(172, 156, 229, 0.4);
-    color: rgb(13, 13, 13);
-    padding: 8px 12px;
-    border: none;
-    border-radius: 10px;
-  }
-  
-  .openbtn {
-    font-size: 16px;
-    cursor: pointer;
-    background-color: rgba(172, 156, 229, 0.4);
-    color: rgb(13, 13, 13);
-    padding: 8px 12px;
-    border: none;
-    border-radius: 10px;
-  }
-  
-  .openbtn:hover, .sidebar .closebtn:hover {
-    background-color: rgba(172, 156, 229, 0.8);
-    color: rgb(255, 255, 255);
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
-  
-  
-  .sbdd, .sbdd a{
-    font-size: 14px;
-  
-  }
-  .sbdd a:hover{
-  font-size: 15px;
-  color: black;
-  background-color: rgba(186, 119, 234, 0.63);
-  font-weight: bold;
-  }
-  
-  .p_title{
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
