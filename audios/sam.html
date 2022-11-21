@@ -4,122 +4,321 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap css -->
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <!-- bootstrap css end -->
+    <!-- font awesome -->
     <link
-      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome end -->
+
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto Naskh Arabic"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="audiostyles.css" />
-    <link rel="stylesheet" href="../style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <!-- google fonts end -->
 
-    <script
-      src="https://kit.fontawesome.com/a062562745.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Sirat Al Mustaqeem Audio | Sirat Al Mustaqeem</title>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../img/favicon_package_v0.16/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicon_package_v0.16/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon_package_v0.16/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../img/favicon_package_v0.16/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../img/favicon_package_v0.16/safari-pinned-tab.svg"
+      color="#000000"
+    />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon end -->
+
+    <link rel="stylesheet" href="audiostyles.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Hidayah | Sirat Al Mustaqeem</title>
   </head>
-  <body class="p-3 m-0 border-0 bd-example">
-    <!-- Navbar Start -->
+  <body>
+    <header>
+      <nav>
+        <!-- <a href="#"><img src="img/sirat_al_mustaqeem.jpg" alt="logo" /></a> -->
+        <div id="main">
+          <a class="openbtn" onclick="openNav()">
+            <i class="fa-solid fa-angles-right"></i>
+          </a>
+        </div>
+        <p style="font-family: Noto Naskh Arabic">
+          Sirat Al Mustaqeem (Audios)
+        </p>
 
-    <nav class="navbar navbar-expand-lg rounded">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-          <img
-            src="../img/sirat_al_mustaqeem.jpg"
-            alt="Bootstrap"
-            width="75"
-            height="75"
-            class="rounded"
-          />
-          <span class="text-white font-weight-bold">Sirat Al Mustaqeem</span>
-        </a>
-        <button
-          class="navbar-toggler bg-white"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            ><i class="fa-solid fa-angles-left"></i
+          ></a>
+          <div class="dropdown sbdd mb-2">
+            <a
+              class="btn btn-secondary dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+            >
+              Islamic Apps
+            </a>
+
+            <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
+              <a
+                class="text-decoration-none text-dark"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Islam 360"
+                href="https://theislam360.com"
+                target="_blank"
+                >Islam 360</a
+              >
+              <a
+                class="text-decoration-none text-dark"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Islam One"
+                href="https://islamoneapp.github.io"
+                target="_blank"
+                >Islam One</a
+              >
+              <a
+                class="text-decoration-none text-dark"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Muslim Scholars"
+                href="https://play.google.com/store/apps/details?id=com.greentech.muslimscholars&hl=en_IN&gl=US"
+                target="_blank"
+                >Muslim Scholars</a
+              >
+              <a
+                class="text-decoration-none text-dark"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="IshaatulHadith"
+                href="https://play.google.com/store/apps/details?id=com.ishaatulhadith&hl=en_IN&gl=US"
+                target="_blank"
+                >IshaatulHadith</a
+              >
+            </div>
+          </div>
+          <div class="dropdown sbdd mb-2">
+            <a
+              class="btn btn-secondary dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+            >
+              Usefull Websites
+            </a>
+
+            <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
+              <a
+                class="text-decoration-none text-dark"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Quran.com"
+                href="https://quran.com"
+                target="_blank"
+                >Quran.com</a
+              >
+              <a
+                class="text-decoration-none text-dark"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Quranx.com"
+                href="https://quranx.com"
+                target="_blank"
+                >Quranx.com</a
+              >
+              <a
+                class="text-decoration-none text-dark"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Sunnah.com"
+                href="https://sunnah.com"
+                target="_blank"
+                >Sunnah.com</a
+              >
+              <a
+                class="text-decoration-none text-dark"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Isnad.io"
+                href="https://isnad.io"
+                target="_blank"
+                >Isnad.io</a
+              >
+            </div>
+          </div>
+          <div class="dropdown sbdd mb-2">
+            <a
+              class="btn btn-secondary dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+            >
+              Usefull Tools
+            </a>
+
+            <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
+              <a
+                class="text-decoration-none text-dark"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Sarf Generator"
+                href="https://sites.google.com/view/sarfgenerator/home"
+                target="_blank"
+                >Sarf Generator 1</a
+              >
+              <a
+                class="text-decoration-none text-dark"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Sarf Generator"
+                href="https://www.quransarf.com"
+                target="_blank"
+                >Sarf Generator 2</a
+              >
+              <a
+                class="text-decoration-none text-dark"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Masjid E Nabavi VR"
+                href="https://vr.qurancomplex.gov.sa/msq/"
+                target="_blank"
+                >Masjid E Nabavi VR</a
+              >
+            </div>
+          </div>
+          <!-- <div class="dropdown sbdd mb-2">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
           aria-expanded="false"
-          aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item px-2 mx-2">
-              <a
-                class="nav-link align-center active text-white"
-                aria-current="page"
-                href="../index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item px-2 mx-2">
-              <a class="nav-link align-center text-white" href="../pdf.html"
-                >PDF</a
-              >
-            </li>
-            <li class="nav-item px-2 mx-2">
-              <a class="nav-link align-center text-white" href="../series.html"
-                >Video</a
-              >
-            </li>
-            <li class="nav-item px-2 mx-2">
-              <a class="nav-link align-center text-white" href="../course.html"
-                >Courses</a
-              >
-            </li>
-            <li class="nav-item px-2 mx-2">
-              <a class="nav-link align-center text-white" href="../99names.html"
-                >99 NAMES OF ALLAH</a
-              >
-            <li class="nav-item px-2 mx-2 text-white dropdown">
-              <a
-                class="nav-link align-center text-white dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Audio
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="../audios/sam.html"
-                    >Sirat Al Mustaqeem</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../audios/abb.html"
-                    >Ali Baag Bijapur</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../audios/abh.html"
-                    >Ali Baag Hospest</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../audios/tqw.html"
-                    >Taqwa (Only For Ladies)</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
+          Islamic Apps
+        </a>
+
+        <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
+          a
         </div>
       </div>
-    </nav>
+      <div class="dropdown sbdd mb-2">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >
+          Islamic Apps
+        </a>
+        
+        <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
+          a
+        </div>
+      </div> -->
+        </div>
 
-    <!-- Navbar End -->
+        <ul>
+          <li class="drop_up" id="dd1">
+            <a class="dropup_btn" id="ddb1"
+              ><i class="fa-solid fa-headphones"></i>
+              <span class="iconlabel" id="iconlabel1">Audio</span></a
+            >
+            <div class="drop_up_content" id="ddc1">
+              <a href="abb.html"
+                ><i class="fa-solid fa-circle-play"></i>Ali Baag Bijapur</a
+              >
+              <a href="abh.html"
+                ><i class="fa-solid fa-circle-play"></i>Ali Baag Hospet</a
+              >
+              <a href="sam.html"
+                ><i class="fa-solid fa-circle-play"></i>Sirat Al Mustaqeem</a
+              >
+              <a href="tqw.html"
+                ><i class="fa-solid fa-circle-play"></i>Taqwa (only for
+                ladies)</a
+              >
+            </div>
+          </li>
+          <li class="drop_up" id="dd2">
+            <a class="dropup_btn" id="ddb2"
+              ><i class="fa-brands fa-youtube"></i
+              ><span class="iconlabel" id="iconlabel2">Video</span></a
+            >
+            <div class="drop_up_content" id="ddc2">
+              <a href="#"><i class="fa-brands fa-youtube"></i>Islamic Videos</a>
+              <a href="../series.html"
+                ><i class="fa-solid fa-clapperboard"></i>Islamic Series</a
+              >
+              <a href="../course.html"
+                ><i class="fa-solid fa-graduation-cap"></i>Islamic Courses</a
+              >
+            </div>
+          </li>
+          <li>
+            <a href="../index.html"
+              ><i class="fa-solid fa-house-chimney" id="icon3"></i
+              ><span class="iconlabel" id="iconlabel3">Home</span></a
+            >
+          </li>
+          <li>
+            <a href="../pdf.html"
+              ><i class="fa-solid fa-book"></i
+              ><span class="iconlabel" id="iconlabel4">Books</span></a
+            >
+          </li>
+          <li>
+            <a href="../99names.html"
+              ><i class="fa-solid fa-heart"></i
+              ><span class="iconlabel" id="iconlabel5">99</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+    <br />
 
     <section>
       <h1>Audio Clips</h1>
@@ -204,115 +403,26 @@
 
     <!-- scroll back to top button -->
 
-    <hr />
-    <!-- Footer -->
-    <footer class="page-footer font-small rounded" style="background-color:rgba(86, 46, 114, 0.4);">
-      <!-- Footer Links -->
-      <div class="container text-center text-md-left">
-        <!-- Grid row -->
-        <div class="row">
-          <!-- Grid column -->
-          <div class="col-md-3 mx-auto">
-            <!-- Links -->
-            <h5 class="fw-bold text-uppercase mt-3 mb-4 text-start">
-              Islamic Apps
-            </h5>
-<!-- class="text-decoration-none text-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="Islam 360" href="https://theislam360.com" target="_blank">Islam 360 -->
-            <ul class="list-unstyled fw-bold text-uppercase mt-3 mb-4 text-start">
-              <li>
-                <a
-                class="text-decoration-none text-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="Islam 360" href="https://theislam360.com" target="_blank">Islam 360</a>
-              </li>
-              <li>
-                <a
-                class="text-decoration-none text-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="Islam One" href="https://islamoneapp.github.io" target="_blank"
-                  >Islam One</a
-                >
-              </li>
-              <li>
-                <a
-                class="text-decoration-none text-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="Muslim Scholars"
-                  href="https://play.google.com/store/apps/details?id=com.greentech.muslimscholars&hl=en_IN&gl=US"
-                  target="_blank"
-                  >Muslim Scholars</a
-                >
-              </li>
-              <li>
-                <a
-                class="text-decoration-none text-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="IshaatulHadith"
-                  href="https://play.google.com/store/apps/details?id=com.ishaatulhadith&hl=en_IN&gl=US"
-                  target="_blank"
-                  >IshaatulHadith</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!-- Grid column -->
+    <script src="sam.js"></script>
+    <script src="../main.js"></script>
+    <!-- bootstrap script -->
 
-          <hr class="clearfix w-100 d-md-none" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
 
-          <!-- Grid column -->
-          <div class="col-md-3 mx-auto">
-            <!-- Links -->
-            <h5 class="fw-bold text-uppercase mt-3 mb-4 text-start">
-              Usefull Websites
-            </h5>
+    <!-- bootstrap script end -->
 
-            <ul class="list-unstyled text-start fw-bold text-uppercase mt-3 mb-4">
-              <li>
-                <a class="text-decoration-none text-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="Quran.com" href="https://quran.com" target="_blank">Quran.com</a>
-              </li>
-              <li>
-                <a class="text-decoration-none text-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="Quranx.com" href="https://quranx.com" target="_blank">Quranx.com</a>
-              </li>
-              <li>
-                <a class="text-decoration-none text-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="Sunnah.com" href="https://sunnah.com" target="_blank">Sunnah.com</a>
-              </li>
-              <li>
-                <a class="text-decoration-none text-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="Isnad.io" href="https://isnad.io" target="_blank">Isnad.io</a>
-              </li>
-            </ul>
-          </div>
-          <!-- Grid column -->
-
-          <hr class="clearfix w-100 d-md-none" />
-
-          <!-- Grid column -->
-          <div class="col-md-3 mx-auto">
-            <!-- Links -->
-            <h5 class="fw-bold text-uppercase mt-3 mb-4 text-start">Usefull Tools</h5>
-
-            <ul class="list-unstyled fw-bold text-uppercase mt-3 mb-4 text-start">
-              <li>
-                <a class="text-decoration-none text-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="Sarf Generator" href="https://sites.google.com/view/sarfgenerator/home" target="_blank">Sarf Generator</a>
-              </li>
-              <li>
-                <a class="text-decoration-none text-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="Sarf Generator" href="https://www.quransarf.com" target="_blank">Sarf Generator</a>
-              </li>
-              <li>
-                <a class="text-decoration-none text-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="Masjid E Nabavi VR" href="https://vr.qurancomplex.gov.sa/msq/" target="_blank">Masjid E Nabavi VR</a>
-              </li>
-              
-            </ul>
-          </div>
-          <!-- Grid column -->
-
-          
-        </div>
-        <!-- Grid row -->
-      </div>
-      <!-- Footer Links -->
-
-      <!-- Copyright -->
-
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
-
-
-    <script src="app.js"></script>
-
-    <script src="../backtotop.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a062562745.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

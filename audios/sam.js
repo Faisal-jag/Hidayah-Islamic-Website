@@ -37,7 +37,7 @@ function createTrackItem(index,name,duration){
     },
     {
       name:"S1A2 Kufr Bit-Taghut",
-      file:"https://docs.google.com/uc?export=download&id=10B1XHLwUSHdy_ZDqWg1Za3R5T3SO0Z2g",
+      file:"https://docs.google.com/uc?export=download&id=100PXNHp98CrHagJSizMizXDuy6L2DuzX",
       duration:"07:04"
     },
     {
@@ -50,16 +50,16 @@ function createTrackItem(index,name,duration){
       file:"https://docs.google.com/uc?export=download&id=109k9Ut0t7HsQAxpCpqkU761tk3LFtNzt",
       duration:"05:28"
     },
-    // {
-    //   name:"S1A5 Namaz Me Topi Sawal?",
-    //   file:"https://docs.google.com/uc?export=download&id=10B1XHLwUSHdy_ZDqWg1Za3R5T3SO0Z2g",
-    //   duration:"04:07"
-    // },
-    // {
-    //   name:"S1A6 kaza e umari sawal?",
-    //   file:"https://docs.google.com/uc?export=download&id=10BqbgPiEDSb0YoNoor2-91CCfINFY3CR",
-    //   duration:"09:43"
-    // },
+     {
+       name:"S1A5 Namaz Me Topi Sawal?",
+       file:"https://docs.google.com/uc?export=download&id=10B1XHLwUSHdy_ZDqWg1Za3R5T3SO0Z2g",
+       duration:"04:07"
+     },
+     {
+       name:"S1A6 kaza e umari sawal?",
+       file:"https://docs.google.com/uc?export=download&id=10BqbgPiEDSb0YoNoor2-91CCfINFY3CR",
+       duration:"09:43"
+     },
     {
       name:"S1A7",
       file:"https://docs.google.com/uc?export=download&id=10BrqIwGuJApySFriln_aOUQA4bbHqxMX",
@@ -220,11 +220,11 @@ function createTrackItem(index,name,duration){
       file:"https://docs.google.com/uc?export=download&id=12GXG0ff3RaCWuHF4XVcBYgzC4IjbaE2Q",
       duration:"14:02"
     },
-    // {
-    //   name:"S7A2 Dumm Karna Sawal",
-    //   file:"https://docs.google.com/uc?export=download&id=12SacL1880y1yueIn7j3IoxNqX4V3_kdr",
-    //   duration:"05:05"
-    // },
+     {
+       name:"S7A2 Dumm Karna Sawal",
+       file:"https://docs.google.com/uc?export=download&id=12SacL1880y1yueIn7j3IoxNqX4V3_kdr",
+       duration:"05:05"
+     },
     
     {
       name:"Shafa'at Series - Part 1",

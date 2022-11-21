@@ -1,421 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap css -->
 
-   <!-- bootstrap css -->
-   <link
-   rel="stylesheet"
-   href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-   crossorigin="anonymous"
- />
 
- <link
-   href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-   rel="stylesheet"
- />
- <link
-   href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
-   rel="stylesheet"
- />
- <!-- bootstrap css end -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+/>
 
+<!-- bootstrap css end -->
  <!-- font awesome -->
- <link
-   rel="stylesheet"
-   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-   integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-   crossorigin="anonymous"
-   referrerpolicy="no-referrer"
- />
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+<!-- font awesome end -->
 
- <link
-   href="https://fonts.googleapis.com/css?family=Noto Naskh Arabic"
-   rel="stylesheet"
- />
- <!-- font awesome end -->
+<!-- google fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Noto Naskh Arabic"
+rel="stylesheet"
+/>
+<!-- google fonts end -->
 
- <link rel="stylesheet" href="style.css" />
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon_package_v0.16/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon_package_v0.16/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon_package_v0.16/favicon-16x16.png" />
+<link rel="manifest" href="img/favicon_package_v0.16/site.webmanifest" />
+<link rel="mask-icon" href="img/favicon_package_v0.16/safari-pinned-tab.svg" color="#000000" />
+<meta name="msapplication-TileColor" content="#2d89ef" />
+<meta name="theme-color" content="#ffffff" />
+<!-- favicon end -->
 
-    <!-- favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicon_package_v0.16/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon_package_v0.16/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon_package_v0.16/favicon-16x16.png"
-    />
-    <link rel="manifest" href="img/favicon_package_v0.16/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="img/favicon_package_v0.16/safari-pinned-tab.svg"
-      color="#000000"
-    />
-    <meta name="msapplication-TileColor" content="#2d89ef" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- favicon end -->
+  <link rel="stylesheet" href="style.css">
+  <title>bottom navbar</title>
+  <style>
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .table tr {
+      border: 4px solid rgb(79, 75, 75);
+      border-radius: 8px;
+    }
+    .table tbody tr {
+      background-color: rgba(244, 242, 234, 0.4);
+    }
 
-    <style>
-      .table {
-        width: 100%;
-        border-collapse: collapse;
-        border-radius: 8px;
-        margin-top: 20px;
-      }
-      .table tr {
-        border: 4px solid rgb(79, 75, 75);
-        border-radius: 8px;
-      }
-      .table tbody tr {
-        background-color: rgba(244, 242, 234, 0.4);
-      }
+    .table td,
+    .table th {
+      padding: 12px 15px;
+      border: 1px solid rgb(79, 75, 75);
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    #arabic {
+      font-family: "Noto Naskh Arabic";
+      font-weight: normal;
+      font-size: 30px;
+    }
 
-      .table td,
-      .table th {
-        padding: 12px 15px;
-        border: 1px solid rgb(79, 75, 75);
-        text-align: center;
-        font-weight: bold;
-        font-size: 16px;
-      }
-      #arabic {
-        font-family: "Noto Naskh Arabic";
-        font-weight: normal;
-        font-size: 30px;
-      }
+    .table th {
+      background-color: rgba(99, 99, 194, 0.656);
+      color: #ffffff;
+    }
 
-      .table th {
-        background-color: rgba(99, 99, 194, 0.656);
-        color: #ffffff;
-      }
-
-      /* .table tbody tr:nth-child(even){
-	background-color: #f5f5f5;
+    /* .table tbody tr:nth-child(even){
+background-color: #f5f5f5;
 } */
 
-      /*responsive*/
+    /*responsive*/
 
-      @media (max-width: 500px) {
-        .table thead {
-          display: none;
-        }
-
-        .table,
-        .table tbody,
-        .table tr,
-        .table td {
-          display: block;
-          width: 100%;
-        }
-        .table tr {
-          margin-bottom: 15px;
-        }
-        .table td {
-          text-align: right;
-          padding-left: 50%;
-          text-align: right;
-          position: relative;
-        }
-        .table td::before {
-          content: attr(data-label);
-          position: absolute;
-          left: 0;
-          width: 50%;
-          padding-left: 15px;
-          font-size: 15px;
-          font-weight: bold;
-          text-align: left;
-        }
+    @media (max-width: 500px) {
+      .table thead {
+        display: none;
       }
-    </style>
+
+      .table,
+      .table tbody,
+      .table tr,
+      .table td {
+        display: block;
+        width: 100%;
+      }
+      .table tr {
+        margin-bottom: 15px;
+      }
+      .table td {
+        text-align: right;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+      }
+      .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <nav>
+    <!-- <a href="#"><img src="img/sirat_al_mustaqeem.jpg" alt="logo" /></a> -->
+    <div id="main">
+      <a class="openbtn" onclick="openNav()">
+        <i class="fa-solid fa-angles-right"></i>
+      </a>
+    </div>
+    <p style="font-family: Noto Naskh Arabic">اِهۡدِنَا الصِّرَاطَ الۡمُسۡتَقِيۡمَۙ</p>
     
-    <title>HIDAYAH</title>
-  </head>
-  <body>
- <!-- Navbar Start -->
- <header class="navbar fixed-top navbar-expand navbar-dark bg-dark">
-  <div id="main">
-    <button class="openbtn" onclick="openNav()">
-      <i class="fa-solid fa-angles-right"></i>
-    </button>
-  </div>
-  <h2 class="mx-auto p_title" style="font-family: Noto Naskh Arabic">اِهۡدِنَا الصِّرَاطَ الۡمُسۡتَقِيۡمَۙ</h2>
-  <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-    ><i class="fa-solid fa-angles-left"></i
-      ></a>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+      ><i class="fa-solid fa-angles-left"></i
+        ></a>
+        <div class="dropdown sbdd mb-2">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
+        >
+          Islamic Apps
+        </a>
+        
+        <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
+          <a
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Islam 360"
+            href="https://theislam360.com"
+            target="_blank"
+            >Islam 360</a
+          >
+          <a
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Islam One"
+            href="https://islamoneapp.github.io"
+            target="_blank"
+            >Islam One</a
+            >
+            <a
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Muslim Scholars"
+            href="https://play.google.com/store/apps/details?id=com.greentech.muslimscholars&hl=en_IN&gl=US"
+            target="_blank"
+            >Muslim Scholars</a
+          >
+          <a
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="IshaatulHadith"
+            href="https://play.google.com/store/apps/details?id=com.ishaatulhadith&hl=en_IN&gl=US"
+            target="_blank"
+            >IshaatulHadith</a
+          >
+        </div>
+      </div>
       <div class="dropdown sbdd mb-2">
-      <a
-        class="btn btn-secondary dropdown-toggle"
-        href="#"
-        role="button"
-        id="dropdownMenuLink"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        Islamic Apps
-      </a>
-      
-      <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
         <a
-          class="text-decoration-none text-dark"
-          data-bs-toggle="tooltip"
-          data-bs-placement="right"
-          title="Islam 360"
-          href="https://theislam360.com"
-          target="_blank"
-          >Islam 360</a
-        >
-        <a
-          class="text-decoration-none text-dark"
-          data-bs-toggle="tooltip"
-          data-bs-placement="right"
-          title="Islam One"
-          href="https://islamoneapp.github.io"
-          target="_blank"
-          >Islam One</a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
           >
+          Usefull Websites
+        </a>
+
+        <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
+          <a
+          class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Quran.com"
+            href="https://quran.com"
+            target="_blank"
+            >Quran.com</a
+            >
           <a
           class="text-decoration-none text-dark"
           data-bs-toggle="tooltip"
           data-bs-placement="right"
-          title="Muslim Scholars"
-          href="https://play.google.com/store/apps/details?id=com.greentech.muslimscholars&hl=en_IN&gl=US"
-          target="_blank"
-          >Muslim Scholars</a
-        >
-        <a
-          class="text-decoration-none text-dark"
-          data-bs-toggle="tooltip"
-          data-bs-placement="right"
-          title="IshaatulHadith"
-          href="https://play.google.com/store/apps/details?id=com.ishaatulhadith&hl=en_IN&gl=US"
-          target="_blank"
-          >IshaatulHadith</a
-        >
-      </div>
-    </div>
-    <div class="dropdown sbdd mb-2">
-      <a
-        class="btn btn-secondary dropdown-toggle"
-        href="#"
-        role="button"
-        id="dropdownMenuLink"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-        >
-        Usefull Websites
-      </a>
-
-      <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
-        <a
-        class="text-decoration-none text-dark"
-          data-bs-toggle="tooltip"
-          data-bs-placement="right"
-          title="Quran.com"
-          href="https://quran.com"
-          target="_blank"
-          >Quran.com</a
-          >
-        <a
-        class="text-decoration-none text-dark"
-        data-bs-toggle="tooltip"
-        data-bs-placement="right"
-          title="Quranx.com"
-          href="https://quranx.com"
-          target="_blank"
-          >Quranx.com</a
-          >
-        <a
-        class="text-decoration-none text-dark"
-        data-bs-toggle="tooltip"
-        data-bs-placement="right"
-          title="Sunnah.com"
-          href="https://sunnah.com"
-          target="_blank"
-          >Sunnah.com</a
-          >
+            title="Quranx.com"
+            href="https://quranx.com"
+            target="_blank"
+            >Quranx.com</a
+            >
           <a
           class="text-decoration-none text-dark"
           data-bs-toggle="tooltip"
           data-bs-placement="right"
-          title="Isnad.io"
-          href="https://isnad.io"
-          target="_blank"
-          >Isnad.io</a
-        >
-      </div>
-    </div>
-    <div class="dropdown sbdd mb-2">
-      <a
-        class="btn btn-secondary dropdown-toggle"
-        href="#"
-        role="button"
-        id="dropdownMenuLink"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        Usefull Tools
-      </a>
-
-      <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
-        <a
-          class="text-decoration-none text-dark"
-          data-bs-toggle="tooltip"
-          data-bs-placement="right"
-          title="Sarf Generator"
-          href="https://sites.google.com/view/sarfgenerator/home"
-          target="_blank"
-          >Sarf Generator 1</a
-          >
-          <a
-          class="text-decoration-none text-dark"
-          data-bs-toggle="tooltip"
-          data-bs-placement="right"
-          title="Sarf Generator"
-          href="https://www.quransarf.com"
-          target="_blank"
-          >Sarf Generator 2</a
-          >
-        <a
-          class="text-decoration-none text-dark"
-          data-bs-toggle="tooltip"
-          data-bs-placement="right"
-          title="Masjid E Nabavi VR"
-          href="https://vr.qurancomplex.gov.sa/msq/"
-          target="_blank"
-          >Masjid E Nabavi VR</a
-          >
-      </div>
-    </div>
-    <!-- <div class="dropdown sbdd mb-2">
-      <a
-        class="btn btn-secondary dropdown-toggle"
-        href="#"
-        role="button"
-        id="dropdownMenuLink"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        Islamic Apps
-      </a>
-
-      <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
-        a
-      </div>
-    </div>
-    <div class="dropdown sbdd mb-2">
-      <a
-        class="btn btn-secondary dropdown-toggle"
-        href="#"
-        role="button"
-        id="dropdownMenuLink"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-        >
-        Islamic Apps
-      </a>
-      
-      <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
-        a
-      </div>
-    </div> -->
-  </div>
-  
-</header>
-
-  
-
-<nav
-  class="navbar fixed-bottom navbar-expand justify-content-center navbar-dark bg-dark nav__bar"
->
-  <div class="flex flex-direction-row ho__ver">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropup">
-        <a
-          class="nav-link dropdown-toggle text-center"
-          id="dropdown10"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="true"
-          ><i class="fa-solid fa-headphones" id="icon1"></i>Audio</a
-        >
-        <div class="dropdown-menu" aria-labelledby="dropdown10">
-          <a class="dropdown-item" href="audios/abb.html"
-            ><i class="fa-solid fa-circle-play"></i>Ali Baag Bijapur</a
-          >
-          <a class="dropdown-item" href="audios/abh.html"
-            ><i class="fa-solid fa-circle-play"></i>Ali Baag Hospet</a
-          >
-          <a class="dropdown-item" href="audios/sam.html"
-            ><i class="fa-solid fa-circle-play"></i>Sirat Al Mustaqeem</a
-          >
-          <a class="dropdown-item" href="audios/tqw.html"
-            ><i class="fa-solid fa-circle-play"></i>Taqwa (only for
-            ladies)</a
+            title="Sunnah.com"
+            href="https://sunnah.com"
+            target="_blank"
+            >Sunnah.com</a
+            >
+            <a
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Isnad.io"
+            href="https://isnad.io"
+            target="_blank"
+            >Isnad.io</a
           >
         </div>
-      </li>
-      <li class="nav-item dropup">
+      </div>
+      <div class="dropdown sbdd mb-2">
         <a
-          class="nav-link dropdown-toggle text-center"
-          id="dropdown10"
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
+        >
+          Usefull Tools
+        </a>
+
+        <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
+          <a
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Sarf Generator"
+            href="https://sites.google.com/view/sarfgenerator/home"
+            target="_blank"
+            >Sarf Generator 1</a
+            >
+            <a
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Sarf Generator"
+            href="https://www.quransarf.com"
+            target="_blank"
+            >Sarf Generator 2</a
+            >
+          <a
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Masjid E Nabavi VR"
+            href="https://vr.qurancomplex.gov.sa/msq/"
+            target="_blank"
+            >Masjid E Nabavi VR</a
+            >
+        </div>
+      </div>
+      <!-- <div class="dropdown sbdd mb-2">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
           data-toggle="dropdown"
           aria-haspopup="true"
-          aria-expanded="true"
-          ><i class="fa-brands fa-youtube" id="icon2"></i>Videos</a
+          aria-expanded="false"
         >
-        <div class="dropdown-menu" aria-labelledby="dropdown10">
-          <a class="dropdown-item" href="#"
-            ><i class="fa-brands fa-youtube"></i>Islamic Videos</a
+          Islamic Apps
+        </a>
+
+        <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
+          a
+        </div>
+      </div>
+      <div class="dropdown sbdd mb-2">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
           >
-          <a class="dropdown-item" href="series.html"
-            ><i class="fa-solid fa-clapperboard"></i>Islamic Series</a
-          >
-          <a class="dropdown-item" href="course.html"
-            ><i class="fa-solid fa-graduation-cap"></i>Islamic Courses</a
-          >
+          Islamic Apps
+        </a>
+        
+        <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
+          a
+        </div>
+      </div> -->
+    </div>
+    
+
+    <ul>
+      <li class="drop_up" id="dd1">
+        <a class="dropup_btn" id="ddb1"><i class="fa-solid fa-headphones"></i> <span class="iconlabel" id="iconlabel1">Audio</span></a>
+        <div class="drop_up_content" id="ddc1">
+          <a href="audios/abb.html"><i class="fa-solid fa-circle-play"></i>Ali Baag Bijapur</a>
+          <a href="audios/abh.html"><i class="fa-solid fa-circle-play"></i>Ali Baag Hospet</a>
+          <a href="audios/sam.html"><i class="fa-solid fa-circle-play"></i>Sirat Al Mustaqeem</a>
+          <a href="audios/tqw.html"><i class="fa-solid fa-circle-play"></i>Taqwa (only for
+            ladies)</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link text-center" href="index.html"
-          ><i class="fa-solid fa-house-chimney" id="icon3"></i>Home</a
-        >
+      <li class="drop_up" id="dd2">
+        <a class="dropup_btn" id="ddb2"><i class="fa-brands fa-youtube"></i><span class="iconlabel" id="iconlabel2">Video</span></a>
+        <div class="drop_up_content" id="ddc2">
+          <a href="#"><i class="fa-brands fa-youtube"></i>Islamic Videos</a>
+          <a href="series.html"><i class="fa-solid fa-clapperboard"></i>Islamic Series</a>
+          <a href="course.html"><i class="fa-solid fa-graduation-cap"></i>Islamic Courses</a>
+        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link text-center" href="pdf.html"
-          ><i class="fa-solid fa-book" id="icon4"></i>Books</a
-        >
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-center" href="99names.html"
-          ><i class="fa-solid fa-heart" id="icon5"></i>99</a
-        >
-      </li>
+      <li><a href="index.html"><i class="fa-solid fa-house-chimney" id="icon3"></i><span class="iconlabel" id="iconlabel3">Home</span></a></li>
+      <li><a href="pdf.html"><i class="fa-solid fa-book"></i><span class="iconlabel" id="iconlabel4">Books</span></a></li>
+      <li><a href="99names.html"><i class="fa-solid fa-heart"></i><span class="iconlabel" id="iconlabel5">99</span></a></li>
     </ul>
-  </div>
-</nav>
-
-<!-- Navbar End -->
-
+  </nav>
+  </header>
+  <br>
+  <br>
+ 
 <section class="container">
   <div class="table-responsive">
     <table id="table" class="table">
@@ -1433,6 +1354,8 @@
 <hr />
 
 
+
+
     <!-- scroll back to top button -->
     <!-- Back to top button -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">
@@ -1455,29 +1378,14 @@
     </button>
 
     <!-- scroll back to top button -->
+  
+<script src="./main.js"></script>
 
-    <hr />
+<!-- bootstrap script -->
 
-    <!-- bootstrap script -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <!-- bootstrap script end -->
-    <script src="sidebar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 
-    <script src="backtotop.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+<!-- bootstrap script end -->
+</body>
 </html>

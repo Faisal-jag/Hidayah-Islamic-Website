@@ -1,692 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap css -->
 
-   <!-- bootstrap css -->
-   <link
-   rel="stylesheet"
-   href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-   crossorigin="anonymous"
- />
 
- <link
-   href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-   rel="stylesheet"
- />
- <link
-   href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
-   rel="stylesheet"
- />
- <!-- bootstrap css end -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+/>
 
+<!-- bootstrap css end -->
  <!-- font awesome -->
- <link
-   rel="stylesheet"
-   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-   integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-   crossorigin="anonymous"
-   referrerpolicy="no-referrer"
- />
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+<!-- font awesome end -->
 
- <link
-   href="https://fonts.googleapis.com/css?family=Noto Naskh Arabic"
-   rel="stylesheet"
- />
- <!-- font awesome end -->
+<!-- google fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Noto Naskh Arabic"
+rel="stylesheet"
+/>
+<!-- google fonts end -->
 
- <link rel="stylesheet" href="style.css" />
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon_package_v0.16/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon_package_v0.16/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon_package_v0.16/favicon-16x16.png" />
+<link rel="manifest" href="img/favicon_package_v0.16/site.webmanifest" />
+<link rel="mask-icon" href="img/favicon_package_v0.16/safari-pinned-tab.svg" color="#000000" />
+<meta name="msapplication-TileColor" content="#2d89ef" />
+<meta name="theme-color" content="#ffffff" />
+<!-- favicon end -->
 
-    <!-- favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicon_package_v0.16/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon_package_v0.16/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon_package_v0.16/favicon-16x16.png"
-    />
-    <link rel="manifest" href="img/favicon_package_v0.16/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="img/favicon_package_v0.16/safari-pinned-tab.svg"
-      color="#000000"
-    />
-    <meta name="msapplication-TileColor" content="#2d89ef" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- favicon end -->
-    <title>HIDAYAH</title>
-  </head>
-  <body>
-    <!-- Navbar Start -->
-    <header class="navbar fixed-top navbar-expand navbar-dark bg-dark">
-      <div id="main">
-        <button class="openbtn" onclick="openNav()">
-          <i class="fa-solid fa-angles-right"></i>
-        </button>
-      </div>
-      <h2 class="mx-auto p_title" style="font-family: Noto Naskh Arabic">اِهۡدِنَا الصِّرَاطَ الۡمُسۡتَقِيۡمَۙ</h2>
-      <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        ><i class="fa-solid fa-angles-left"></i
-          ></a>
-          <div class="dropdown sbdd mb-2">
-          <a
-            class="btn btn-secondary dropdown-toggle"
-            href="#"
-            role="button"
-            id="dropdownMenuLink"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Islamic Apps
-          </a>
-          
-          <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
-            <a
-              class="text-decoration-none text-dark"
-              data-bs-toggle="tooltip"
-              data-bs-placement="right"
-              title="Islam 360"
-              href="https://theislam360.com"
-              target="_blank"
-              >Islam 360</a
-            >
-            <a
-              class="text-decoration-none text-dark"
-              data-bs-toggle="tooltip"
-              data-bs-placement="right"
-              title="Islam One"
-              href="https://islamoneapp.github.io"
-              target="_blank"
-              >Islam One</a
-              >
-              <a
-              class="text-decoration-none text-dark"
-              data-bs-toggle="tooltip"
-              data-bs-placement="right"
-              title="Muslim Scholars"
-              href="https://play.google.com/store/apps/details?id=com.greentech.muslimscholars&hl=en_IN&gl=US"
-              target="_blank"
-              >Muslim Scholars</a
-            >
-            <a
-              class="text-decoration-none text-dark"
-              data-bs-toggle="tooltip"
-              data-bs-placement="right"
-              title="IshaatulHadith"
-              href="https://play.google.com/store/apps/details?id=com.ishaatulhadith&hl=en_IN&gl=US"
-              target="_blank"
-              >IshaatulHadith</a
-            >
-          </div>
-        </div>
-        <div class="dropdown sbdd mb-2">
-          <a
-            class="btn btn-secondary dropdown-toggle"
-            href="#"
-            role="button"
-            id="dropdownMenuLink"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            >
-            Usefull Websites
-          </a>
-  
-          <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
-            <a
-            class="text-decoration-none text-dark"
-              data-bs-toggle="tooltip"
-              data-bs-placement="right"
-              title="Quran.com"
-              href="https://quran.com"
-              target="_blank"
-              >Quran.com</a
-              >
-            <a
-            class="text-decoration-none text-dark"
-            data-bs-toggle="tooltip"
-            data-bs-placement="right"
-              title="Quranx.com"
-              href="https://quranx.com"
-              target="_blank"
-              >Quranx.com</a
-              >
-            <a
-            class="text-decoration-none text-dark"
-            data-bs-toggle="tooltip"
-            data-bs-placement="right"
-              title="Sunnah.com"
-              href="https://sunnah.com"
-              target="_blank"
-              >Sunnah.com</a
-              >
-              <a
-              class="text-decoration-none text-dark"
-              data-bs-toggle="tooltip"
-              data-bs-placement="right"
-              title="Isnad.io"
-              href="https://isnad.io"
-              target="_blank"
-              >Isnad.io</a
-            >
-          </div>
-        </div>
-        <div class="dropdown sbdd mb-2">
-          <a
-            class="btn btn-secondary dropdown-toggle"
-            href="#"
-            role="button"
-            id="dropdownMenuLink"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Usefull Tools
-          </a>
-  
-          <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
-            <a
-              class="text-decoration-none text-dark"
-              data-bs-toggle="tooltip"
-              data-bs-placement="right"
-              title="Sarf Generator"
-              href="https://sites.google.com/view/sarfgenerator/home"
-              target="_blank"
-              >Sarf Generator 1</a
-              >
-              <a
-              class="text-decoration-none text-dark"
-              data-bs-toggle="tooltip"
-              data-bs-placement="right"
-              title="Sarf Generator"
-              href="https://www.quransarf.com"
-              target="_blank"
-              >Sarf Generator 2</a
-              >
-            <a
-              class="text-decoration-none text-dark"
-              data-bs-toggle="tooltip"
-              data-bs-placement="right"
-              title="Masjid E Nabavi VR"
-              href="https://vr.qurancomplex.gov.sa/msq/"
-              target="_blank"
-              >Masjid E Nabavi VR</a
-              >
-          </div>
-        </div>
-        <!-- <div class="dropdown sbdd mb-2">
-          <a
-            class="btn btn-secondary dropdown-toggle"
-            href="#"
-            role="button"
-            id="dropdownMenuLink"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Islamic Apps
-          </a>
-  
-          <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
-            a
-          </div>
-        </div>
-        <div class="dropdown sbdd mb-2">
-          <a
-            class="btn btn-secondary dropdown-toggle"
-            href="#"
-            role="button"
-            id="dropdownMenuLink"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            >
-            Islamic Apps
-          </a>
-          
-          <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
-            a
-          </div>
-        </div> -->
-      </div>
-      
-    </header>
+  <link rel="stylesheet" href="style.css">
+  <title>bottom navbar</title>
+</head>
+<body>
+  <header>
+  <nav>
+    <!-- <a href="#"><img src="img/sirat_al_mustaqeem.jpg" alt="logo" /></a> -->
+    <div id="main">
+      <a class="openbtn" onclick="openNav()">
+        <i class="fa-solid fa-angles-right"></i>
+      </a>
+    </div>
+    <p style="font-family: Noto Naskh Arabic">اِهۡدِنَا الصِّرَاطَ الۡمُسۡتَقِيۡمَۙ</p>
     
-      
-      
-
-    <nav
-      class="navbar fixed-bottom navbar-expand justify-content-center navbar-dark bg-dark nav__bar"
-    >
-      <div class="flex flex-direction-row ho__ver">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropup">
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+      ><i class="fa-solid fa-angles-left"></i
+        ></a>
+        <div class="dropdown sbdd mb-2">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
+        >
+          Islamic Apps
+        </a>
+        
+        <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
+          <a
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Islam 360"
+            href="https://theislam360.com"
+            target="_blank"
+            >Islam 360</a
+          >
+          <a
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Islam One"
+            href="https://islamoneapp.github.io"
+            target="_blank"
+            >Islam One</a
+            >
             <a
-              class="nav-link dropdown-toggle text-center"
-              id="dropdown10"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="true"
-              ><i class="fa-solid fa-headphones" id="icon1"></i>Audio</a
-            >
-            <div class="dropdown-menu" aria-labelledby="dropdown10">
-              <a class="dropdown-item" href="audios/abb.html"
-                ><i class="fa-solid fa-circle-play"></i>Ali Baag Bijapur</a
-              >
-              <a class="dropdown-item" href="audios/abh.html"
-                ><i class="fa-solid fa-circle-play"></i>Ali Baag Hospet</a
-              >
-              <a class="dropdown-item" href="audios/sam.html"
-                ><i class="fa-solid fa-circle-play"></i>Sirat Al Mustaqeem</a
-              >
-              <a class="dropdown-item" href="audios/tqw.html"
-                ><i class="fa-solid fa-circle-play"></i>Taqwa (only for
-                ladies)</a
-              >
-            </div>
-          </li>
-          <li class="nav-item dropup">
-            <a
-              class="nav-link dropdown-toggle text-center"
-              id="dropdown10"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="true"
-              ><i class="fa-brands fa-youtube" id="icon2"></i>Videos</a
-            >
-            <div class="dropdown-menu" aria-labelledby="dropdown10">
-              <a class="dropdown-item" href="#"
-                ><i class="fa-brands fa-youtube"></i>Islamic Videos</a
-              >
-              <a class="dropdown-item" href="series.html"
-                ><i class="fa-solid fa-clapperboard"></i>Islamic Series</a
-              >
-              <a class="dropdown-item" href="course.html"
-                ><i class="fa-solid fa-graduation-cap"></i>Islamic Courses</a
-              >
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-center" href="index.html"
-              ><i class="fa-solid fa-house-chimney" id="icon3"></i>Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-center" href="pdf.html"
-              ><i class="fa-solid fa-book" id="icon4"></i>Books</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-center" href="99names.html"
-              ><i class="fa-solid fa-heart" id="icon5"></i>99</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Navbar End -->
-
-    <section class="container">
-      <h1>Al-Quran Tafseer PDF In Urdu</h1>
-      <div class="row">
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/10Wzy1lBcUdt5gf-F5hOKETKcpL9NGrFL"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/ibn-kathir.jpg"
-                alt="Tafseer Ibn-E-Kathir"
-              />Tafseer Ibn-E-Kathir</a
-            >
-          </div>
-        </div>
-
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/1CylLhPZJ5LU_G2YqCb4jhLQFjZ8WCK-W"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/misbah-ul-munir-ibn kathir.jpg"
-                alt="Al-Misbah-Al-Munir Tehzeeb-wa-Tehqiq - Tafseer Ibn-e-Kaseer"
-              />Al-Misbah-Al-Munir Tehzeeb-wa-Tehqiq - Tafseer Ibn-e-Kaseer</a
-            >
-          </div>
-        </div>
-
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/12FpXuyXUHBZSsNPG77r423MWgyKqRYMK"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/tafheem-ul-quran (1).jpg"
-                alt="Tafheem ul Quran"
-              />Tafheem ul Quran</a
-            >
-          </div>
-        </div>
-
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://docs.google.com/uc?export=download&id=1F422Xr5lQmFTcwnE1t6-rGe9buwfsn7Q"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/ahsan ul qalam.jpeg"
-                alt="Tafseer Ahsan ul Kalaam Arabic Urdu English"
-              />Tafseer Ahsan ul Kalaam Arabic Urdu English</a
-            >
-          </div>
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Muslim Scholars"
+            href="https://play.google.com/store/apps/details?id=com.greentech.muslimscholars&hl=en_IN&gl=US"
+            target="_blank"
+            >Muslim Scholars</a
+          >
+          <a
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="IshaatulHadith"
+            href="https://play.google.com/store/apps/details?id=com.ishaatulhadith&hl=en_IN&gl=US"
+            target="_blank"
+            >IshaatulHadith</a
+          >
         </div>
       </div>
+      <div class="dropdown sbdd mb-2">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
+          >
+          Usefull Websites
+        </a>
 
-      <hr />
-
-      <h1>Ahadith Books PDF In English & Urdu</h1>
-      <div class="row">
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/10t6Dcu-z8Vig4uIeuiEzAXF7P5t_oY0a?usp=sharing"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/bukhari-eng.jpg"
-                alt="sahih bukhari - English"
-              />Sahih Bukhari - English</a
+        <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
+          <a
+          class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Quran.com"
+            href="https://quran.com"
+            target="_blank"
+            >Quran.com</a
             >
-          </div>
+          <a
+          class="text-decoration-none text-dark"
+          data-bs-toggle="tooltip"
+          data-bs-placement="right"
+            title="Quranx.com"
+            href="https://quranx.com"
+            target="_blank"
+            >Quranx.com</a
+            >
+          <a
+          class="text-decoration-none text-dark"
+          data-bs-toggle="tooltip"
+          data-bs-placement="right"
+            title="Sunnah.com"
+            href="https://sunnah.com"
+            target="_blank"
+            >Sunnah.com</a
+            >
+            <a
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Isnad.io"
+            href="https://isnad.io"
+            target="_blank"
+            >Isnad.io</a
+          >
         </div>
+      </div>
+      <div class="dropdown sbdd mb-2">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
+        >
+          Usefull Tools
+        </a>
 
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/1-CzGTctmiJwtF7VhmvCeWtcDAuGTvoXC?usp=sharing"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/bukhari-urdu.jpg"
-                alt="Sahih Bukhari - Urdu"
-              />Sahih Bukhari - Urdu</a
+        <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
+          <a
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Sarf Generator"
+            href="https://sites.google.com/view/sarfgenerator/home"
+            target="_blank"
+            >Sarf Generator 1</a
             >
-          </div>
+            <a
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Sarf Generator"
+            href="https://www.quransarf.com"
+            target="_blank"
+            >Sarf Generator 2</a
+            >
+          <a
+            class="text-decoration-none text-dark"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            title="Masjid E Nabavi VR"
+            href="https://vr.qurancomplex.gov.sa/msq/"
+            target="_blank"
+            >Masjid E Nabavi VR</a
+            >
         </div>
+      </div>
+      <!-- <div class="dropdown sbdd mb-2">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Islamic Apps
+        </a>
 
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/116bVp5kyP-OWv1Wr8pBqwgrkm_fBnE6V?usp=sharing"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/muslim-eng.jpg"
-                alt="Sahih Muslim - English"
-              />Sahih Muslim - English</a
-            >
-          </div>
+        <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
+          a
         </div>
+      </div>
+      <div class="dropdown sbdd mb-2">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >
+          Islamic Apps
+        </a>
+        
+        <div class="dropdown-menu sbdd" aria-labelledby="dropdownMenuLink">
+          a
+        </div>
+      </div> -->
+    </div>
+    
 
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/11C21bKIalSCwiyHMpu77Wn0ovwrxQTG1?usp=sharing"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/muslim-urdu.png"
-                alt="Sahih Muslim - Urdu"
-              />Sahih Muslim - Urdu</a
-            >
-          </div>
+    <ul>
+      <li class="drop_up" id="dd1">
+        <a class="dropup_btn" id="ddb1"><i class="fa-solid fa-headphones"></i> <span class="iconlabel" id="iconlabel1">Audio</span></a>
+        <div class="drop_up_content" id="ddc1">
+          <a href="audios/abb.html"><i class="fa-solid fa-circle-play"></i>Ali Baag Bijapur</a>
+          <a href="audios/abh.html"><i class="fa-solid fa-circle-play"></i>Ali Baag Hospet</a>
+          <a href="audios/sam.html"><i class="fa-solid fa-circle-play"></i>Sirat Al Mustaqeem</a>
+          <a href="audios/tqw.html"><i class="fa-solid fa-circle-play"></i>Taqwa (only for
+            ladies)</a>
+        </div>
+      </li>
+      <li class="drop_up" id="dd2">
+        <a class="dropup_btn" id="ddb2"><i class="fa-brands fa-youtube"></i><span class="iconlabel" id="iconlabel2">Video</span></a>
+        <div class="drop_up_content" id="ddc2">
+          <a href="#"><i class="fa-brands fa-youtube"></i>Islamic Videos</a>
+          <a href="series.html"><i class="fa-solid fa-clapperboard"></i>Islamic Series</a>
+          <a href="course.html"><i class="fa-solid fa-graduation-cap"></i>Islamic Courses</a>
+        </div>
+      </li>
+      <li><a href="index.html"><i class="fa-solid fa-house-chimney" id="icon3"></i><span class="iconlabel" id="iconlabel3">Home</span></a></li>
+      <li><a href="pdf.html"><i class="fa-solid fa-book"></i><span class="iconlabel" id="iconlabel4">Books</span></a></li>
+      <li><a href="99names.html"><i class="fa-solid fa-heart"></i><span class="iconlabel" id="iconlabel5">99</span></a></li>
+    </ul>
+  </nav>
+  </header>
+  <br>
+  <br>
+ 
+  <section class="container">
+    <h1>Al-Quran Tafseer PDF In Urdu</h1>
+    <div class="row">
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/10Wzy1lBcUdt5gf-F5hOKETKcpL9NGrFL"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/ibn-kathir.jpg"
+              alt="Tafseer Ibn-E-Kathir"
+            />Tafseer Ibn-E-Kathir</a
+          >
         </div>
       </div>
 
-      <hr />
-
-      <div class="row">
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/1-Rj9T744fKDq7ngXMnaAd88NzuBUPQli?usp=sharing"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/tirmidhi-english.jpg"
-                alt="Tirmidhi - English"
-              />Tirmidhi - English</a
-            >
-          </div>
-        </div>
-
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/1-_gO-WlyAiYmwl4_VLJBxiNC1s7XfiUT?usp=sharing"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/tirmidhi-urdu.png"
-                alt="Tirmidhi - Urdu"
-              />Tirmidhi - Urdu</a
-            >
-          </div>
-        </div>
-
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/1-zc46j63U_Txi1fBxRQI4wfZTMBU_-Kg?usp=sharing"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/nasai-eng.jpg"
-                alt="Nasai - English"
-              />Nasai - English</a
-            >
-          </div>
-        </div>
-
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/102OpKZJbpiyPTEFM1tW6--sItDTzc-Xa?usp=sharing"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/nasai-urdu.jpg"
-                alt="Nasai - Urdu"
-              />Nasai - Urdu</a
-            >
-          </div>
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/1CylLhPZJ5LU_G2YqCb4jhLQFjZ8WCK-W"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/misbah-ul-munir-ibn kathir.jpg"
+              alt="Al-Misbah-Al-Munir Tehzeeb-wa-Tehqiq - Tafseer Ibn-e-Kaseer"
+            />Al-Misbah-Al-Munir Tehzeeb-wa-Tehqiq - Tafseer Ibn-e-Kaseer</a
+          >
         </div>
       </div>
-      <hr />
 
-      <div class="row">
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/1-eWOp5tS797VSuvCGcKFoupotxHDIfHg?usp=sharing"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/dawood-eng.jpg"
-                alt="Abu Dawood - English"
-              />Abu Dawood - English</a
-            >
-          </div>
-        </div>
-
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/1-k4UJnauWmTbZA58QM0jy8Y_D2tVBVUB?usp=sharing"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/dawood-urdu.jpg"
-                alt="Abu Dawood - Urdu"
-              />Abu Dawood - Urdu</a
-            >
-          </div>
-        </div>
-
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/1-tftZwS5m1uxNSclNzK0WIFnEc53RidM?usp=sharing"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/ibnmaja-eng.jpg"
-                alt="Ibn Maja - English"
-              />Ibn Maja - English</a
-            >
-          </div>
-        </div>
-
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/1-uR3k1DIqLmvKXggEvtW4IKfoG7Ve8hI?usp=sharing"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/ibnmaja-urdu.jpg"
-                alt="Ibn Maja - Urdu"
-              />Ibn Maja - Urdu</a
-            >
-          </div>
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/12FpXuyXUHBZSsNPG77r423MWgyKqRYMK"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/tafheem-ul-quran (1).jpg"
+              alt="Tafheem ul Quran"
+            />Tafheem ul Quran</a
+          >
         </div>
       </div>
-      <hr />
 
-      <div class="row">
-        <h1>Biography (Seerat un Nabi ﷺ) Books PDF In English & Urdu</h1>
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/file/d/13NRzMCOHTW7sw5aalW4DtbC5YmDWsl1L/view?usp=drivesdk"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/arm-eng.jpg"
-                alt="Ar-Raheeq Al-makhtum - English (The Sealed Nectar)"
-              />Ar-Raheeq Al-makhtum - English (The Sealed Nectar)</a
-            >
-          </div>
-        </div>
-
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/file/d/13FS80VTuzpfBnyBtnGvJle3hFIROZig3/view?usp=drivesdk"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/arm-rurdu.jpg"
-                alt="Ar-Raheeq Al-makhtum - Roman Urdu"
-              />Ar-Raheeq Al-makhtum - Roman Urdu</a
-            >
-          </div>
-        </div>
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/file/d/13NRzMCOHTW7sw5aalW4DtbC5YmDWsl1L/view?usp=drivesdk"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/arm-eng.jpg"
-                alt="Ar-Raheeq Al-makhtum - English (The Sealed Nectar)"
-              />Ar-Raheeq Al-makhtum - English (The Sealed Nectar)</a
-            >
-          </div>
-        </div>
-
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/file/d/13FS80VTuzpfBnyBtnGvJle3hFIROZig3/view?usp=drivesdk"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/arm-rurdu.jpg"
-                alt="Ar-Raheeq Al-makhtum - Roman Urdu"
-              />Ar-Raheeq Al-makhtum - Roman Urdu</a
-            >
-          </div>
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://docs.google.com/uc?export=download&id=1F422Xr5lQmFTcwnE1t6-rGe9buwfsn7Q"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/ahsan ul qalam.jpeg"
+              alt="Tafseer Ahsan ul Kalaam Arabic Urdu English"
+            />Tafseer Ahsan ul Kalaam Arabic Urdu English</a
+          >
         </div>
       </div>
-      <hr />
+    </div>
 
-      <div class="row">
-        <h1>Salat (Namaz)</h1>
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/11NP4_mFeTOvfCEJQSU1X2InF2KkTk5qe"
-            >
-              <img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/ssn-eng.jpg"
-                alt="Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In English)"
-              />
-              Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In Roman
-              English)</a
-            >
-          </div>
-        </div>
+    <hr />
 
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/11UdZEHNEfb94Hsj2UFZjWVeNhS03Wwxz"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/ssn-rurdu.jpg"
-                alt="Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In Roman Urdu)"
-              />Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In
-              Roman Urdu)</a
-            >
-          </div>
-        </div>
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/11NP4_mFeTOvfCEJQSU1X2InF2KkTk5qe"
-            >
-              <img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/ssn-eng.jpg"
-                alt="Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In English)"
-              />
-              Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In Roman
-              English)</a
-            >
-          </div>
-        </div>
-
-        <div class="col-sm px-2 py-2 mx-2 my-2">
-          <div class="border rounded">
-            <a
-              href="https://drive.google.com/drive/folders/11UdZEHNEfb94Hsj2UFZjWVeNhS03Wwxz"
-              ><img
-                class="img-fluid img-thumbnail float-left"
-                src="img/books_cover/ssn-rurdu.jpg"
-                alt="Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In Roman Urdu)"
-              />Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In
-              Roman Urdu)</a
-            >
-          </div>
+    <h1>Ahadith Books PDF In English & Urdu</h1>
+    <div class="row">
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/10t6Dcu-z8Vig4uIeuiEzAXF7P5t_oY0a?usp=sharing"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/bukhari-eng.jpg"
+              alt="sahih bukhari - English"
+            />Sahih Bukhari - English</a
+          >
         </div>
       </div>
-      <hr />
-    </section>
 
-    <br />
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/1-CzGTctmiJwtF7VhmvCeWtcDAuGTvoXC?usp=sharing"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/bukhari-urdu.jpg"
+              alt="Sahih Bukhari - Urdu"
+            />Sahih Bukhari - Urdu</a
+          >
+        </div>
+      </div>
+
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/116bVp5kyP-OWv1Wr8pBqwgrkm_fBnE6V?usp=sharing"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/muslim-eng.jpg"
+              alt="Sahih Muslim - English"
+            />Sahih Muslim - English</a
+          >
+        </div>
+      </div>
+
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/11C21bKIalSCwiyHMpu77Wn0ovwrxQTG1?usp=sharing"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/muslim-urdu.png"
+              alt="Sahih Muslim - Urdu"
+            />Sahih Muslim - Urdu</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/1-Rj9T744fKDq7ngXMnaAd88NzuBUPQli?usp=sharing"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/tirmidhi-english.jpg"
+              alt="Tirmidhi - English"
+            />Tirmidhi - English</a
+          >
+        </div>
+      </div>
+
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/1-_gO-WlyAiYmwl4_VLJBxiNC1s7XfiUT?usp=sharing"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/tirmidhi-urdu.png"
+              alt="Tirmidhi - Urdu"
+            />Tirmidhi - Urdu</a
+          >
+        </div>
+      </div>
+
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/1-zc46j63U_Txi1fBxRQI4wfZTMBU_-Kg?usp=sharing"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/nasai-eng.jpg"
+              alt="Nasai - English"
+            />Nasai - English</a
+          >
+        </div>
+      </div>
+
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/102OpKZJbpiyPTEFM1tW6--sItDTzc-Xa?usp=sharing"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/nasai-urdu.jpg"
+              alt="Nasai - Urdu"
+            />Nasai - Urdu</a
+          >
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <div class="row">
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/1-eWOp5tS797VSuvCGcKFoupotxHDIfHg?usp=sharing"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/dawood-eng.jpg"
+              alt="Abu Dawood - English"
+            />Abu Dawood - English</a
+          >
+        </div>
+      </div>
+
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/1-k4UJnauWmTbZA58QM0jy8Y_D2tVBVUB?usp=sharing"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/dawood-urdu.jpg"
+              alt="Abu Dawood - Urdu"
+            />Abu Dawood - Urdu</a
+          >
+        </div>
+      </div>
+
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/1-tftZwS5m1uxNSclNzK0WIFnEc53RidM?usp=sharing"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/ibnmaja-eng.jpg"
+              alt="Ibn Maja - English"
+            />Ibn Maja - English</a
+          >
+        </div>
+      </div>
+
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/1-uR3k1DIqLmvKXggEvtW4IKfoG7Ve8hI?usp=sharing"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/ibnmaja-urdu.jpg"
+              alt="Ibn Maja - Urdu"
+            />Ibn Maja - Urdu</a
+          >
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <div class="row">
+      <h1>Biography (Seerat un Nabi ﷺ) Books PDF In English & Urdu</h1>
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/file/d/13NRzMCOHTW7sw5aalW4DtbC5YmDWsl1L/view?usp=drivesdk"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/arm-eng.jpg"
+              alt="Ar-Raheeq Al-makhtum - English (The Sealed Nectar)"
+            />Ar-Raheeq Al-makhtum - English (The Sealed Nectar)</a
+          >
+        </div>
+      </div>
+
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/file/d/13FS80VTuzpfBnyBtnGvJle3hFIROZig3/view?usp=drivesdk"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/arm-rurdu.jpg"
+              alt="Ar-Raheeq Al-makhtum - Roman Urdu"
+            />Ar-Raheeq Al-makhtum - Roman Urdu</a
+          >
+        </div>
+      </div>
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/file/d/13NRzMCOHTW7sw5aalW4DtbC5YmDWsl1L/view?usp=drivesdk"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/arm-eng.jpg"
+              alt="Ar-Raheeq Al-makhtum - English (The Sealed Nectar)"
+            />Ar-Raheeq Al-makhtum - English (The Sealed Nectar)</a
+          >
+        </div>
+      </div>
+
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/file/d/13FS80VTuzpfBnyBtnGvJle3hFIROZig3/view?usp=drivesdk"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/arm-rurdu.jpg"
+              alt="Ar-Raheeq Al-makhtum - Roman Urdu"
+            />Ar-Raheeq Al-makhtum - Roman Urdu</a
+          >
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <div class="row">
+      <h1>Salat (Namaz)</h1>
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/11NP4_mFeTOvfCEJQSU1X2InF2KkTk5qe"
+          >
+            <img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/ssn-eng.jpg"
+              alt="Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In English)"
+            />
+            Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In Roman
+            English)</a
+          >
+        </div>
+      </div>
+
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/11UdZEHNEfb94Hsj2UFZjWVeNhS03Wwxz"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/ssn-rurdu.jpg"
+              alt="Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In Roman Urdu)"
+            />Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In
+            Roman Urdu)</a
+          >
+        </div>
+      </div>
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/11NP4_mFeTOvfCEJQSU1X2InF2KkTk5qe"
+          >
+            <img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/ssn-eng.jpg"
+              alt="Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In English)"
+            />
+            Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In Roman
+            English)</a
+          >
+        </div>
+      </div>
+
+      <div class="col-sm px-2 py-2 mx-2 my-2">
+        <div class="border rounded">
+          <a
+            href="https://drive.google.com/drive/folders/11UdZEHNEfb94Hsj2UFZjWVeNhS03Wwxz"
+            ><img
+              class="img-fluid img-thumbnail float-left"
+              src="img/books_cover/ssn-rurdu.jpg"
+              alt="Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In Roman Urdu)"
+            />Mukhtasar Sahih Salat un Nabi ﷺ (By Hafiz Zubair Ali Zai In
+            Roman Urdu)</a
+          >
+        </div>
+      </div>
+    </div>
+    <hr />
+  </section>
+
+  <br />
+
+
 
 
     <!-- scroll back to top button -->
@@ -711,29 +635,13 @@
     </button>
 
     <!-- scroll back to top button -->
+  
+<script src="./main.js"></script>
+<!-- bootstrap script -->
 
-    <hr />
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 
-    <!-- bootstrap script -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <!-- bootstrap script end -->
-    <script src="sidebar.js"></script>
-
-    <script src="backtotop.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+<!-- bootstrap script end -->
+</body>
 </html>
