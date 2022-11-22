@@ -80,10 +80,10 @@ nav > ul > li > a:hover {
 	border-bottom: 0.4vh solid hsl(210, 60%, 45%);
 } */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
 	nav {
 		font-size: 3.8vw;
-		height: 15vw;
+		height: 12vw;
 		padding: 0 5vw 0 1vw;
 	}
 
@@ -109,6 +109,7 @@ nav > ul > li > a:hover {
 		color: #fff;
 		cursor: default;
         margin-top: 4.5vw;
+        font-size: 4.5vw;
 	}
 
 	nav > ul {

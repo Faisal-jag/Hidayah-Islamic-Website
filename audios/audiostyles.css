@@ -88,7 +88,7 @@ body{
   .playlist-info-track,.playlist-duration{
     padding-top: 7px;
     padding-bottom: 7px;
-    color: #e9cc95;
+    color: #ffffff;
     font-size: 14px;
     pointer-events: none;
   }
@@ -114,6 +114,10 @@ body{
     padding-bottom: 5px;
   }
   .fas{
-    color: #ffc266;
+    color: #ffffff;
     font-size: 20px;
+  }
+
+  h1{
+    margin-top: 5vh;
   }
